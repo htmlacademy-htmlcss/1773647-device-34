@@ -8,48 +8,76 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <img src="#" alt="logo device">
-        <label for="search"></label>
-        <input type="search" id="search" placeholder="Текст поиска">
+        <a href="#">
+          <img src="#" alt="logo device">
+        </a>
+        <div class="container-user-menu">
+          <input type="search" id="search" placeholder="Текст поиска">
         <button>Найти</button>
-        <ul class="navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="login.html">Войти</a>
+        <ul class="user-menu">
+          <li class="user-item">
+            <a class="user-link" href="login.html">Войти</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="compare.html">Сравнить</a>
+          <li class="user-item">
+            <a class="user-link" href="compare.html">Сравнить</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="cart.html">
-              <span class="visually-hidden">
-                Корзина
-              </span>
+          <li class="user-item">
+            <a class="user-link" href="cart.html">
+              <span class="visually-hidden">Корзина</span>
             </a>
           </li>
         </ul>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="shippin.html">Доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="warranty.html">Гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
+        </div>
+
+        <div class="catalog">
+            <a class="page-link" href="catalog.html">Каталог товаров</a>
+            <button class="button-menu">
+              <span class="visually-hidden">Развернуть меню</span>
+            </button>
+            <ul class="catalog-menu">
+              <li class="catalog-item">
+                <a href="#" class="catalog-link">Виртуальная реальность</a>
+              </li>
+              <li class="catalog-item">
+                <a href="#" class="catalog-link">Моноподы для cелфи</a>
+              </li>
+              <li class="catalog-item">
+                <a href="#" class="catalog-link">Экшн-камеры</a>
+              </li>
+              <li class="catalog-item">
+                <a href="#" class="catalog-link">Фитнес-браслеты</a>
+              </li>
+              <li class="catalog-item">
+                <a href="#" class="catalog-link">Умные часы</a>
+              </li>
+              <li class="catalog-item">
+                <a href="#" class="catalog-link">Квадрокоптеры</a>
+              </li>
+            </ul>
+        </div>
+
+        <div class="container-page-menu">
+          <ul class="page-menu">
+            <li class="page-item">
+              <a class="page-link" href="shippin.html">Доставка</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="warranty.html">Гарантия</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main class="main-index">
-      <h1 class="visually-hidden">Device</h1>
+      <h1 class="visually-hidden">Интернет-магазин Device</h1>
 
       <section class="slider">
-        <img src="#" alt="Kвадрокоптер">
         <h2 class="title title-slider">Порхает как бабочка,жалит как пчела!</h2>
+        <img src="#" alt="Kвадрокоптер">
         <p class="about-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
         </p>
         <a href="#" class="button">Подробнее</a>
@@ -77,39 +105,53 @@
         </ul>
       </section>
 
-      <section class="aside">
-        <h4 class="aside-subtitle">Доставка</h4>
-        <h4 class="aside-subtitle">Гарантия</h4>
-        <h4 class="aside-subtitle">Кредит</h4>
-        <h2 class="aside-title title">Доставка</h2>
+      <section class="services">
+        <h2 class="visually-hidden title">Наши услуги</h2>
+        <nav class="service-navigation">
+          <ul class="service-navigation-list">
+            <li class="service-navigation-item">Доставка</li>
+            <li class="service-navigation-item">Гарантия</li>
+            <li class="service-navigation-item">Кредит</li>
+          </ul>
+        </nav>
+        <div class="services-container">
+          <h4 class="services-title title">Доставка</h4>
         <p class="about-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-      </section>
-
-      <section class="slogan">
-        <h3 class="slogan-subtitle subtitle">Доставим редкий товар под заказ</h3>
+        </div>
       </section>
 
       <section class="information">
-        <h2 class="title information-title">О нас</h2>
-        <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p class="about-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-        <ul class="information-list">
-          <li class="information-item">Меловые линии</li>
-          <li class="information-item">СДИК</li>
-          <li class="information-item">ТоксБерри</li>
-        </ul>
-        <a href="#" class="button">Подробнее о нас</a>
-        <h2 class="information-title title ">Контакты</h2>
-        <p class="about-text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
-        <h4 class="information-subtitle">Интернет-магазин «Девайс»</h4>
-        <address class="address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-        <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
-        <h3 class="information-subtitle subtitle">Время работы</h3>
-        <ul class="information-schedule">
-          <li class="information-schedule-item">пн—пт: с 10:00 до 22:00</li>
-          <li class="information-schedule-item">сб—вс: с 10:00 до 19:00</li>
-        </ul>
-        <a class="button" href="#">Напишите нам</a>
+        <div class="slogan">
+          <strong class="slogan-subtitle">Доставим редкий товар под заказ</strong>
+        </div>
+
+        <div class="container-about-us">
+          <h2 class="title information-title">О нас</h2>
+          <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="about-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+          <ul class="information-list">
+            <li class="information-item">Меловые линии</li>
+            <li class="information-item">СДИК</li>
+            <li class="information-item">ТоксБерри</li>
+          </ul>
+          <a href="#" class="button">Подробнее о нас</a>
+        </div>
+
+        <div class="container-contacts">
+          <h2 class="information-title title ">Контакты</h2>
+          <p class="about-text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
+          <h4 class="information-subtitle">Интернет-магазин «Девайс»</h4>
+          <article>
+            <address class="address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+          </article>
+          <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
+          <h3 class="information-subtitle subtitle">Время работы</h3>
+          <ul class="information-schedule">
+            <li class="information-schedule-item">пн—пт: с 10:00 до 22:00</li>
+            <li class="information-schedule-item">сб—вс: с 10:00 до 19:00</li>
+          </ul>
+          <a class="button" href="#">Напишите нам</a>
+        </div>
       </section>
 
       <section class="mailing">
@@ -123,7 +165,6 @@
       <footer class="page-footer">
         <section class="footer-contacts">
           <h2 class="visually-hidden title">Контакты</h2>
-          <img class="footer-contacts-logo" src="#" alt="logo device">
           <a href="index.html">
             <img class="footer-contacts-logo" src="#" alt="logo device">
           </a>
