@@ -163,9 +163,83 @@
                 </li>
               </ul>
             </fieldset>
-
-          <button class="button" type="submit">Показать</button>
+            <button class="button" type="submit">Показать</button>
         </form>
+
+        <div class="container-sorting">
+          <h3 class="subtitle">Сортировка:</h3>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular">Популярные</option>
+            <option value="cheap">Сначала дешёвое</option>
+            <option value="expensive">Сначала дорогое</option>
+          </select>
+          <a href="#" class="button-arrow">
+            <span class="visually-hidden">Стрелка верх</span>
+          </a>
+          <a class="button-arrow" href="#">
+            <span class="visually-hidden">Стрелка вниз</span>
+          </a>
+        </div>
+
+        <ul class="product-list">
+          <li class="product-card">
+            <a href="#" class="product-card-link">
+              <img class="product-card-image" src="#" alt="Любительская селфи-палка.">
+              <h4 class="product-card-title">Любительская селфи-палка</h4>
+            </a>
+            <b class="product-card-price">500 ₽</b>
+          </li>
+
+          <li class="product-card">
+            <a href="#" class="product-card-link">
+              <img class="product-card-image" src="#" alt="Профессиональная селфи-палка.">
+              <h4 class="product-card-title">Профессиональная селфи-палка</h4>
+            </a>
+            <b class="product-card-price">1 500 ₽</b>
+          </li>
+
+          <li class="product-card">
+            <a href="#" class="product-card-link">
+              <img class="product-card-image" src="#" alt="Непотопляемая селфи-палка">
+              <h4 class="product-card-title">Непотопляемая селфи-палка</h4>
+            </a>
+            <b class="product-card-price">2 500 ₽</b>
+          </li>
+
+          <li class="product-card">
+            <a href="#" class="product-card-link">
+              <img class="product-card-image" src="#" alt="Селфи-палка «Следуй за мной».">
+              <h4 class="product-card-title">Селфи-палка «Следуй за мной»</h4>
+            </a>
+            <b class="product-card-price">1 500 ₽</b>
+          </li>
+        </ul>
+        <button class="product-button" type="button">Загрузить ещЁ</button>
+
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a href="#" class="pagination-link pagination-prev pagination-disabled">Назад</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#" class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#" class="pagination-link">2</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#" class="pagination-link">3</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#" class="pagination-link">...</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#" class="pagination-link">15</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#" class="pagination-link pagination-prev pagination-disabled">Вперед</a>
+          </li>
+        </ul>
+
       </section>
     </main>
 
