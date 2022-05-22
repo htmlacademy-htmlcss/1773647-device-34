@@ -117,10 +117,13 @@
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/">
           <h3 class="subtitle">Фильтр:</h3>
 
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость</legend>
-            <input type="range" min="0" max="5000" step="1">
-          </fieldset>
+          <div class="range">
+            <h4 class="catalog-filter-title">Стоимость</h4>
+            <div class="track">
+              <div class="dot-left"></div>
+              <div class="dot-right"></div>
+            </div>
+          </div>
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
@@ -217,12 +220,10 @@
             <b class="product-card-price">1 500 ₽</b>
           </li>
         </ul>
-        <button class="product-button" type="button">Загрузить ещЁ</button>
+        <button class="product-button" type="button">Загрузить ещё</button>
 
+        <button type="button" class="pagination-link pagination-prev pagination-disabled">Назад</button>
         <ul class="pagination">
-          <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-prev pagination-disabled">Назад</a>
-          </li>
           <li class="pagination-item">
             <a href="#" class="pagination-link pagination-current">1</a>
           </li>
@@ -238,10 +239,8 @@
           <li class="pagination-item">
             <a href="#" class="pagination-link">15</a>
           </li>
-          <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-prev pagination-disabled">Вперед</a>
-          </li>
         </ul>
+        <button type="button" class="pagination-link pagination-prev pagination-disabled">Вперед</button>
 
       </section>
     </main>
