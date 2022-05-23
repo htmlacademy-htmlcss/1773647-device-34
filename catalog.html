@@ -12,8 +12,10 @@
           <img src="#" alt="logo device.">
         </a>
         <div class="container-user-menu">
-          <input type="search" id="search" placeholder="Текст поиска">
-          <button>Найти</button>
+          <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
+            <input type="search" id="search" placeholder="Текст поиска">
+            <button type="submit">Найти</button>
+          </form>
           <ul class="user-menu">
             <li class="user-item">
               <a href="">Коля Петухов</a>
@@ -246,18 +248,18 @@
     </main>
 
     <footer class="page-footer">
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
+      <div class="footer-logo">
         <a href="index.html">
           <img class="footer-contacts-logo" src="#" alt="logo device.">
         </a>
+      </div>
+
         <article class="footer-contacts-address">
           <h2 class="visually-hidden">Адрес</h2>
           <address class="address">
             <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </address>
         </article>
-      </section>
 
       <div class="footer-services">
         <nav class="footer-navigation">
@@ -295,11 +297,10 @@
         </nav>
       </div>
 
-      <section class="footer-phone">
-        <h2 class="visually-hidden">Как с нами связаться</h2>
+      <div class="footer-phone">
         <a href="tel:+78128121212" class="footer-phone">+7 (812) 812-12-12</a>
         <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
-      </section>
+      </div>
     </footer>
 
   </body>
