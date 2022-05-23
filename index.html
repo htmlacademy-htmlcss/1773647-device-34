@@ -8,23 +8,23 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a href="#">
+        <a href="index.html">
           <img src="#" alt="logo device.">
         </a>
         <div class="container-user-menu">
-          <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
-            <input type="search" id="search" placeholder="Текст поиска">
+          <form class="form-search" action="https://echo.htmlacademy.ru/" method="post">
+            <input type="search" id="search" name="search" placeholder="Текст поиска">
             <button type="submit">Найти</button>
           </form>
           <ul class="user-menu">
             <li class="user-item">
-              <a class="user-link" href="login.html">Войти</a>
+              <a class="user-link" href="#">Войти</a>
             </li>
             <li class="user-item">
-              <a class="user-link" href="compare.html">Сравнить</a>
+              <a class="user-link" href="#">Сравнить</a>
             </li>
             <li class="user-item">
-              <a class="user-link" href="cart.html">
+              <a class="user-link" href="#">
                 <span class="visually-hidden">Корзина</span>
               </a>
             </li>
@@ -33,7 +33,7 @@
 
         <div class="catalog">
             <a class="page-link" href="catalog.html">Каталог товаров</a>
-            <button class="button-menu">
+            <button class="button-menu" type="button">
               <span class="visually-hidden">Развернуть меню</span>
             </button>
         </div>
@@ -41,13 +41,13 @@
         <div class="container-page-menu">
           <ul class="page-menu">
             <li class="page-item">
-              <a class="page-link" href="shippin.html">Доставка</a>
+              <a class="page-link" href="#">Доставка</a>
             </li>
             <li class="page-item">
-              <a class="page-link" href="warranty.html">Гарантия</a>
+              <a class="page-link" href="#">Гарантия</a>
             </li>
             <li class="page-item">
-              <a class="page-link" href="contacts.html">Контакты</a>
+              <a class="page-link" href="#">Контакты</a>
             </li>
           </ul>
         </div>
@@ -149,14 +149,14 @@
 
         <div class="services-delivery" id="tab-delivery">
           <h3 class="services-title title">Доставка</h3>
-        <p class="about-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <p class="about-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
       </section>
 
       <section class="delivery">
         <h2 class="visually-hidden">Информация о доставке</h2>
         <div class="container-button">
-          <a href="#" class="delivery-button" type="button">Доставим редкий товар под заказ</a>
+          <a href="#" class="delivery-button">Доставим редкий товар под заказ</a>
         </div>
       </section>
 
@@ -192,7 +192,7 @@
         <h2 class="mailing-title title">Подпишитесь на рассылку</h2>
         <p class="about-text">Еженедельный дайджест с обзорами новинок,длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="get">
-          <input type="text" placeholder="Ваш e-mail">
+          <input type="email" name="email" placeholder="Ваш e-mail">
         <button class="mailing-button" type="submit">Подписаться</button>
         </form>
         <span class="about-text">Это бесплатно</span>
@@ -257,26 +257,27 @@
 
     <section class="modal">
       <h2 class="modal-title title">Доставка под заказ</h2>
-      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post"></form>
-      <p class="modal-form-name">
-        <label class="form-name" for="name">Ваше имя:</label>
-        <input class="name" type="text" id="name" placeholder="Введите имя">
-      </p>
-      <p class="modal-form-email">
-        <label class="form-email" for="email">Ваш e-mail:</label>
-        <input id="email" type="email" placeholder="Введите почту">
-      </p>
-      <p class="modal-form-text">
-        <label class="form-text" for="text">Что нужно привезти:</label>
-        <input id="text" type="text" placeholder="В свободной форме">
-      </p>
-      <p class="modal-form-number">
-        <button class="number-minus" type="button">-</button>
-        <label for="number">Количество</label>
-        <input type="number" id="number" min="0" max="100" value="1" readonly>
-        <button class="number-plus" type="button">+</button>
-      </p>
-      <button class="submit" type="button">Отправить</button>
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="modal-form-name">
+          <label class="form-name" for="name">Ваше имя:</label>
+          <input class="name" type="text" id="name" name="name" placeholder="Введите имя">
+        </p>
+        <p class="modal-form-email">
+          <label class="form-email" for="email">Ваш e-mail:</label>
+          <input id="email" type="email" name="email" placeholder="Введите почту">
+        </p>
+        <p class="modal-form-text">
+          <label class="form-text" for="text">Что нужно привезти:</label>
+          <input id="text" type="text" name="text" placeholder="В свободной форме">
+        </p>
+        <p class="modal-form-number">
+          <button class="number-minus" type="button">-</button>
+          <label for="number">Количество</label>
+          <input type="number" id="number" name="number" min="0" max="100" value="1" readonly>
+          <button class="number-plus" type="button">+</button>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
     </section>
 
   </body>
