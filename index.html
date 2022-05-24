@@ -59,6 +59,7 @@
 
       <section class="slider">
         <h2 class="visually-hidden">Популярные товары</h2>
+        <button type="button" class="slider-button">Стрелка назад</button>
         <ol class="slider-list">
           <li class="slider-item">
             <h2 class="title title-slider">Порхает как бабочка,жалит как пчела!</h2>
@@ -76,6 +77,7 @@
               </tr>
             </table>
           </li>
+
           <li class="slider-item">
             <h2 class="title title-slider">Худеем правильно!</h2>
             <img src="#" alt="Тонкий черный фитнес-браслет, имеющий маленький сенсорный экран.">
@@ -90,6 +92,7 @@
               </tr>
             </table>
           </li>
+
           <li class="slider-item">
             <h2 class="title title-slider">Делай селфи, как Бен Стиллер!</h2>
             <img src="#" alt="Черная палка для селфи, которая имеет синий вставки на лапах.">
@@ -109,9 +112,10 @@
             </table>
           </li>
         </ol>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+        <button type="button" class="slider-button">Стрелка вперед</button>
+        <button type="button" class="dot"></button>
+        <button type="button" class="dot"></button>
+        <button type="button" class="dot"></button>
       </section>
 
       <section class="products">
@@ -150,6 +154,16 @@
         <div class="services-delivery" id="tab-delivery">
           <h3 class="services-title title">Доставка</h3>
           <p class="about-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
+
+        <div class="services-delivery" id="tab-delivery">
+          <h3 class="services-title title">Гарантия</h3>
+          <p class="about-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+        </div>
+
+        <div class="services-delivery" id="tab-delivery">
+          <h3 class="services-title title">Кредит</h3>
+          <p class="about-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
         </div>
       </section>
 
@@ -206,52 +220,53 @@
         </a>
       </div>
 
-        <article class="footer-contacts-address">
+      <div class="footer-information">
+        <article class="footer-information-address">
           <h2 class="visually-hidden">Адрес</h2>
           <address class="address">
             <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </address>
         </article>
 
-      <div class="footer-services">
-        <nav class="footer-navigation">
-          <ul class="footer-navigation-list">
-            <li class="footer-navigation-item">
-              <a class="footer-navigation-link" href="shippin.html">Доставка</a>
-            </li>
-            <li class="footer-navigation-item">
-              <a class="footer-navigation-link" href="warranty.html">Гарантия</a>
-            </li>
-            <li class="footer-navigation-item">
-              <a class="footer-navigation-link" href="contacts.html">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <ul class="footer-information-list">
+          <li class="footer-information-item">
+            <a class="footer-information-link" href="shippin.html">Доставка</a>
+          </li>
+          <li class="footer-information-item">
+            <a class="footer-information-link" href="warranty.html">Гарантия</a>
+          </li>
+          <li class="footer-information-item">
+            <a class="footer-information-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
 
-        <nav class="footer-social">
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button" href="https://t.me/htmlacademy">
-                <span>Телеграмм</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-                <span>Youtube</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://twitter.com/htmlacademy_ru">
-                <span>Твиттер</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="footer-information-phone">
+          <a href="tel:+78128121212" class="footer-phone">+7 (812) 812-12-12</a>
+        </div>
       </div>
 
-      <div class="footer-phone">
-        <a href="tel:+78128121212" class="footer-phone">+7 (812) 812-12-12</a>
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+      <div class="footer-social">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="https://t.me/htmlacademy">
+              <span>Телеграмм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <span>Youtube</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://twitter.com/htmlacademy_ru">
+              <span>Твиттер</span>
+            </a>
+          </li>
+        </ul>
+
+        <a href="https://htmlacademy.ru/" class="htmlacademy-link">
+          <img src="#" alt="Логотип html acadey">
+        </a>
       </div>
     </footer>
 
