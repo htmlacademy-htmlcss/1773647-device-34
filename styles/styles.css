@@ -20,13 +20,44 @@
   font-family: "Raleway";
   src:url(./fonts/raleway/raleway-800.woff2) format("woff2"),
       url(./fonts/raleway/raleway-800.woff) format("woff");
-  font-style: normal;
   font-style: 800;
   font-display: swap;
+}
+
+:root{
+  --white: #fff;
+  --black: #000000;
+  --dark:#444444;
+  --light:#F0F0F0;
+  --gray:#DCDCDC;
+  --light-gray:#EBEBEB;
+  --yellow-dark:#FFC700;
+  --yellow-light: #FFE17F;
+  --purple:#AF4FFF;
+  --brown:#64534A;
 }
 
 body{
   font-family: "Rubik","Arial",sans-serif;
   font-size: 18px;
   line-height: 30px;
+  color: var(--dark);
+}
+
+/* Шапка */
+
+.page-header {
+  text-decoration: none;
+  color: var(--black);
+  background-color: #FFE17F;
+}
+
+.page-link {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-style: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black);
 }
