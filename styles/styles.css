@@ -44,6 +44,27 @@ body{
   color: var(--dark);
 }
 
+.button {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: var(--black);
+  background-color: var(--yellow-light);
+}
+
+.title {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--black);
+}
+
 /* Шапка */
 
 .page-header {
@@ -65,4 +86,79 @@ body{
   text-align: center;
   text-transform: uppercase;
   color: var(--black);
+}
+
+/* Слайдер */
+
+.title-slider{
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--black);
+}
+
+.about-text{
+  font-family: "Rubik","Arial",sans-serif;
+}
+
+.description tr:first-child {
+  font-size: 36px;
+  line-height: 30px;
+  color: var(--black);
+}
+
+.description tr:last-child{
+  font-size: 16px;
+}
+
+/* Список продуктов */
+
+.products-navigation-item{
+  background-color: var(--yellow-light);
+}
+
+.products-navigation-item a{
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: var(--black);
+}
+
+/* Наши услуги */
+
+.services-tab-active{
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--yellow-light);
+  background-color: var(--black);
+}
+
+.services-tab{
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--black);
+  background-color: var(--yellow-light);
+}
+
+.services {
+  background-color: var(--light);
+}
+
+.services-delivery{
+  background-image: url("../images/delivery.svg");
+  background-repeat: no-repeat;
+  background-size: 136px 164px;
 }
