@@ -47,15 +47,20 @@ body{
 /* Шапка */
 
 .page-header {
-  text-decoration: none;
   color: var(--black);
   background-color: #FFE17F;
 }
 
+.user-link{
+  line-height: 30px;
+  text-decoration: none;
+  color: var(--black);
+}
+
 .page-link {
   font-family: "Raleway", "Arial", sans-serif;
-  font-style: 800;
-  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
