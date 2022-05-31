@@ -272,3 +272,16 @@ body{
   background: rgba(255, 255, 255, 0.3);
   color: var(--white);
 }
+
+/* Модалка */
+
+.modal-form p{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.modal .button{
+  border: none;
+}
