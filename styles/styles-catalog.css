@@ -102,6 +102,14 @@ body{
 
 /* Каталог */
 
+.inner-header-title{
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--black);
+}
+
 .breadcrumbs-link{
   font-size: 16px;
   line-height: 19px;
@@ -127,4 +135,94 @@ body{
 .select-control{
   color: var(--black);
   border: none;
+}
+
+/* Продукты */
+
+.product-card-image{
+  background-color: var(--light);
+}
+
+.product-card a{
+  font-weight: 700;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.product-card b{
+  font-weight: 400;
+  color: var(--dark);
+}
+
+.product-button{
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--black);
+  border: 3px solid #E5E5E5;
+  background-color: var(--white);
+}
+
+/* Пагинация */
+
+.container-pagination{
+  background: var(--light-gray);
+}
+
+.pagination-link{
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.pagination-item a {
+  font-family: "Rubik","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--dark);
+}
+
+/* Подвал */
+
+.page-footer{
+  background-color: var(--dark);
+}
+
+.footer-address{
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+  color: var(--white);
+}
+
+.footer-information-link{
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer-phone{
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white);
+}
+
+.button-social{
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--white);
 }
