@@ -56,6 +56,7 @@ body{
   letter-spacing: 2px;
   color: var(--black);
   background-color: var(--yellow-light);
+  border: none;
 }
 
 .title {
@@ -64,4 +65,66 @@ body{
   font-size: 50px;
   line-height: 50px;
   color: var(--black);
+}
+
+.subtitle{
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--black);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* Шапка */
+
+.page-header {
+  color: var(--black);
+  background-color: #FFE17F;
+}
+
+.user-link{
+  line-height: 30px;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.page-link {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+/* Каталог */
+
+.breadcrumbs-link{
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--black);
+  text-decoration: none;
+}
+
+/* Фильтр */
+
+.catalog-filter-title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.control{
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--black);
+}
+
+.select-control{
+  color: var(--black);
+  border: none;
 }
