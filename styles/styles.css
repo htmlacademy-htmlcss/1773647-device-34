@@ -53,9 +53,8 @@ body{
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
   color: var(--black);
-  background-color: var(--yellow-light);
 }
 
 .title {
@@ -70,7 +69,7 @@ body{
 
 .page-header {
   color: var(--black);
-  background-color: #FFE17F;
+  background-color: var(--yellow-light);
 }
 
 .user-link{
@@ -82,10 +81,12 @@ body{
 .page-link {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
-  text-decoration: none;
+  font-size: 18px;
   line-height: 21px;
-  text-align: center;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   color: var(--black);
 }
 
@@ -137,7 +138,7 @@ body{
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--yellow-light);
   background-color: var(--black);
@@ -149,7 +150,7 @@ body{
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--black);
   background-color: var(--yellow-light);
@@ -157,24 +158,6 @@ body{
 
 .services {
   background-color: var(--light);
-}
-
-.services-delivery{
-  background-image: url("../images/delivery.svg");
-  background-repeat: no-repeat;
-  background-size: 136px 164px;
-}
-
-.services-guarantee {
-  background-image:url("../images/guarantee.svg");
-  background-repeat: no-repeat;
-  background-size: 171px 195px;
-}
-
-.services-credit{
-  background-image:url("../images/credit.svg");
-  background-repeat: no-repeat;
-  background-size: 156px 188px;
 }
 
 /* Информация о достаке */
@@ -188,7 +171,7 @@ body{
   font-size: 20px;
   line-height: 23px;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--black);
