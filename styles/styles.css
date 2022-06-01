@@ -44,7 +44,7 @@ body{
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  color: var(--dark);
+  color: var(--color-primary-text);
 }
 
 .button {
@@ -56,7 +56,7 @@ body{
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
-  color: var(--black);
+  color: var(--color-dark-text);
 }
 
 .title {
@@ -64,20 +64,20 @@ body{
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  color: var(--black);
+  color: var(--color-dark-text);
 }
 
 /* Шапка */
 
 .page-header {
-  color: var(--black);
-  background-color: var(--yellow-light);
+  color: var(--color-dark-text);
+  background-color: var(--bg-bright);
 }
 
 .user-link{
   line-height: 30px;
   text-decoration: none;
-  color: var(--black);
+  color: var(--color-dark-text);
 }
 
 .page-link {
@@ -89,7 +89,7 @@ body{
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  color: var(--black);
+  color: var(--color-dark-text);
 }
 
 /* Слайдер */
@@ -99,7 +99,7 @@ body{
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  color: var(--black);
+  color: var(--color-dark-text);
 }
 
 .about-text{
@@ -109,7 +109,7 @@ body{
 .description tr:first-child {
   font-size: 36px;
   line-height: 30px;
-  color: var(--black);
+  color: var(--color-dark-text);
 }
 
 .description tr:last-child{
@@ -120,7 +120,7 @@ body{
 /* Список продуктов */
 
 .products-navigation-item{
-  background-color: var(--yellow-light);
+  background-color: var(--bg-bright);
 }
 
 .products-navigation-item a{
@@ -129,7 +129,7 @@ body{
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
-  color: var(--black);
+  color: var(--color-dark-text);
 }
 
 /* Наши услуги */
@@ -142,7 +142,7 @@ body{
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--yellow-light);
+  color: var(--bg-bright);
   background-color: var(--black);
 }
 
@@ -155,17 +155,17 @@ body{
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--black);
-  background-color: var(--yellow-light);
+  background-color: var(--bg-bright);
 }
 
 .services {
-  background-color: var(--light);
+  background-color: var(--bg-light);
 }
 
 /* Информация о достаке */
 
 .delivery{
-  background-color: var(--light);
+  background-color: var(--bg-light);
 }
 
 .delivery-button{
@@ -176,7 +176,7 @@ body{
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--black);
+  color: var(--color-dark-text);
 }
 
 /* О нас */
@@ -185,7 +185,7 @@ body{
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: var(--black);
+  color: var(--color-dark-text);
 }
 
 /* Контакты */
@@ -196,7 +196,7 @@ body{
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--dark);
+  color: var(--color-dark-text);
 }
 
 .address{
@@ -204,13 +204,13 @@ body{
 }
 
 .phone{
-  color: var(--dark);
+  color: var(--color-dark-text);
 }
 
 /* Подписаться на рассылку */
 
 .mailing{
-  background-color: var(--light);
+  background-color: var(--bg-light);
 }
 
 .mailing-button{
@@ -226,14 +226,14 @@ body{
 /* Подвал */
 
 .page-footer{
-  background-color: var(--dark);
+  background-color: var(--color-primary-text);
 }
 
 .footer-address{
   font-size: 16px;
   font-style: normal;
   line-height: 20px;
-  color: var(--white);
+  color: var(--color-light);
 }
 
 .footer-information-link{
@@ -243,19 +243,18 @@ body{
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--color-light);
   text-decoration: none;
 }
 
 .footer-phone{
   font-size: 16px;
   line-height: 20px;
-  color: var(--white);
+  color: var(--color-light);
 }
 
 .button-social{
-  background: rgba(255, 255, 255, 0.3);
-  color: var(--white);
+  color: var(--color-light);
 }
 
 /* Модалка */
@@ -264,7 +263,7 @@ body{
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: var(--black);
+  color: var(--color-dark-text);
 }
 
 .modal .button{

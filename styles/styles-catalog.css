@@ -25,16 +25,18 @@
 }
 
 :root{
-  --white: #fff;
-  --black: #000000;
-  --dark:#444444;
-  --light:#F0F0F0;
-  --gray:#DCDCDC;
-  --light-gray:#EBEBEB;
-  --yellow-dark:#FFC700;
-  --yellow-light: #FFE17F;
-  --purple:#AF4FFF;
-  --brown:#64534A;
+  --color-light: #fff;
+  --color-dark-text: #000000;
+  --color-primary-text:#444444;
+  --bg-light:#F0F0F0;
+  --bg-light-dark:#EBEBEB;
+  --bg-dark:#DCDCDC;
+  --bg-bright: #FFE17F;
+  --hover:#FFC700;
+  --focus:#AF4FFF;
+  --color-status-error:#ff3d3d;
+  --color-status-warning:#fd912e;
+  --color-status-progress:#08af00;
 }
 
 body{
@@ -42,7 +44,7 @@ body{
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  color: var(--dark);
+  color: var(--color-primary-text);
 }
 
 .button {
@@ -54,7 +56,7 @@ body{
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
-  color: var(--black);
+  color: var(--color-dark-text);
   border: none;
 }
 
@@ -63,7 +65,7 @@ body{
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  color: var(--black);
+  color: var(--color-dark-text);
 }
 
 .subtitle{
@@ -71,7 +73,7 @@ body{
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
-  color: var(--black);
+  color: var(--color-dark-text);
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
@@ -79,14 +81,14 @@ body{
 /* Шапка */
 
 .page-header {
-  color: var(--black);
+  color: var(--color-dark-text);
   background-color: #FFE17F;
 }
 
 .user-link{
   line-height: 30px;
   text-decoration: none;
-  color: var(--black);
+  color: var(--color-dark-text);
 }
 
 .page-link {
@@ -96,7 +98,7 @@ body{
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--color-dark-text);
 }
 
 /* Каталог */
@@ -106,59 +108,59 @@ body{
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  color: var(--black);
+  color: var(--color-dark-text);
 }
 
 .breadcrumbs-link{
   font-size: 16px;
   line-height: 19px;
-  color: var(--black);
+  color: var(--color-dark-text);
   text-decoration: none;
 }
 
 /* Фильтр */
 
 .container-catalog{
-  background-color: var(--light);
+  background-color: var(--bg-light);
 }
 
 .catalog-filter-title{
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: var(--black);
+  color: var(--color-dark-text);
 }
 
 .control{
   font-size: 16px;
   line-height: 19px;
-  color: var(--black);
+  color: var(--color-dark-text);
 }
 
 .select-control{
-  color: var(--black);
+  color: var(--color-dark-text);
   border: none;
 }
 
 /* Продукты */
 
 .container-product{
-  background-color: var(--white);
+  background-color: var(--color-light);
 }
 
 .product-card-image{
-  background-color: var(--light);
+  background-color: var(--bg-light);
 }
 
 .product-card a{
   font-weight: 700;
-  color: var(--black);
+  color: var(--color-dark-text);
   text-decoration: none;
 }
 
 .product-card b{
   font-weight: 400;
-  color: var(--dark);
+  color: var(--color-primary-text);
 }
 
 .product-button{
@@ -169,15 +171,15 @@ body{
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--color-dark-text);
   border: 3px solid #E5E5E5;
-  background-color: var(--white);
+  background-color: var(--color-light);
 }
 
 /* Пагинация */
 
 .container-pagination{
-  background: var(--light-gray);
+  background: var(--bg-light-dark);
 }
 
 .pagination-link{
@@ -188,7 +190,7 @@ body{
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--black);
+  color: var(--color-primary-text);
 }
 
 .pagination-item a {
@@ -196,20 +198,20 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: var(--dark);
+  color: var(--color-dark-text);
 }
 
 /* Подвал */
 
 .page-footer{
-  background-color: var(--dark);
+  background-color: var(--color-primary-text);
 }
 
 .footer-address{
   font-size: 16px;
   font-style: normal;
   line-height: 20px;
-  color: var(--white);
+  color: var(--color-light);
 }
 
 .footer-information-link{
@@ -219,14 +221,14 @@ body{
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--color-light);
   text-decoration: none;
 }
 
 .footer-phone{
   font-size: 16px;
   line-height: 20px;
-  color: var(--white);
+  color: var(--color-light);
 }
 
 .button-social{
