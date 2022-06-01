@@ -232,6 +232,5 @@ body{
 }
 
 .button-social{
-  background: rgba(255, 255, 255, 0.3);
-  color: var(--white);
+  color: var(--color-light);
 }
