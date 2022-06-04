@@ -279,6 +279,20 @@ body{
   background-color: var(--color-primary-text);
 }
 
+.container-footer{
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.footer-information{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text{
+  width: 240px;
+}
+
 .footer-address{
   font-size: 16px;
   font-style: normal;
@@ -301,6 +315,17 @@ body{
   font-size: 16px;
   line-height: 20px;
   color: var(--color-light);
+}
+
+.footer-social{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-inner{
+  width: 80px;
+  height: 7px;
+  background-color: var(--hover);
 }
 
 .button-social{
