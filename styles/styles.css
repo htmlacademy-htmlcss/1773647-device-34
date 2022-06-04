@@ -295,6 +295,28 @@ body{
   background-color: var(--bg-light);
 }
 
+.container-mailing{
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.container-mailing-text{
+  display: flex;
+}
+
+.container-mailing-text p{
+  width: 550px;
+  margin-left: auto;
+}
+
+.container-mailing-form{
+  display: flex;
+}
+
+.mailing-text{
+  margin-left: auto;
+}
+
 .mailing-button{
   font-size: 18px;
   line-height: 21px;
