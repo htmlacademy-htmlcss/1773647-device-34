@@ -184,6 +184,17 @@ body{
   background-color: var(--bg-light);
 }
 
+.catalog-products{
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.catalog-filter-group{
+  width: 200px;
+  margin-right: 60px;
+}
+
 .catalog-filter-title{
   font-weight: 700;
   font-size: 18px;
@@ -205,6 +216,7 @@ body{
 /* Продукты */
 
 .container-product{
+  width: 840px;
   background-color: var(--color-light);
 }
 
