@@ -165,6 +165,7 @@ body{
 
 .breadcrumbs{
   display: flex;
+  padding: 0;
 }
 
 .breadcrumbs-item{
