@@ -90,7 +90,7 @@ body{
 
 .page-header {
   color: var(--color-dark-text);
-  background-color: #FFE17F;
+  background-color: var(--bg-bright);
 }
 
 .user-link{
@@ -102,11 +102,47 @@ body{
 .page-link {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
-  text-decoration: none;
+  font-size: 18px;
   line-height: 21px;
-  text-align: center;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   color: var(--color-dark-text);
+}
+
+.navigation{
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.navigation-list{
+  margin: 0;
+  padding: 0;
+}
+
+.form-search{
+  width: 520px;
+  margin-right: 26px;
+}
+
+.user-link{
+  max-width: 500px;
+}
+
+.user-link-login{
+  margin-right: 176px;
+}
+
+.catalog{
+  max-width: 293px;
+}
+
+.page-menu{
+  max-width: 470px;
+  margin-left: auto;
 }
 
 .main-container{
@@ -115,12 +151,24 @@ body{
 
 /* Каталог */
 
+.inner-header{
+  width: 1160px;
+  margin: 0 auto;
+}
 .inner-header-title{
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: var(--color-dark-text);
+}
+
+.breadcrumbs{
+  display: flex;
+}
+
+.breadcrumbs-item{
+  margin-right: 36px;
 }
 
 .breadcrumbs-link{
