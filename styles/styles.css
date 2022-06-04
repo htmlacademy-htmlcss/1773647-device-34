@@ -145,6 +145,18 @@ body{
   margin: 0 auto;
 }
 
+.slider-list{
+  padding: 0;
+}
+
+.slider-item{
+  display: flex;
+}
+
+.holder-slider{
+  margin-left: 40px;
+}
+
 .title-slider{
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
