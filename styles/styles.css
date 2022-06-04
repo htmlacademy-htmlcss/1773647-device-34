@@ -100,11 +100,50 @@ body{
   color: var(--color-dark-text);
 }
 
+.navigation{
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.navigation-list{
+  margin: 0;
+  padding: 0;
+}
+
+.form-search{
+  width: 520px;
+  margin-right: 26px;
+}
+
+.user-link{
+  max-width: 500px;
+}
+
+.user-link-login{
+  margin-right: 176px;
+}
+
+.catalog{
+  max-width: 293px;
+}
+
+.page-menu{
+  max-width: 470px;
+  margin-left: auto;
+}
+
 .main-container{
   flex-grow: 1;
 }
 
 /* Слайдер */
+
+.container-slider{
+  width: 1160px;
+  margin: 0 auto;
+}
 
 .title-slider{
   font-family: "Raleway", "Arial", sans-serif;
@@ -131,8 +170,16 @@ body{
 
 /* Список продуктов */
 
-.products-navigation-item{
-  background-color: var(--bg-bright);
+.products{
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.products-navigation-list{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .products-navigation-item a{
@@ -145,6 +192,19 @@ body{
 }
 
 /* Наши услуги */
+
+.services{
+  background-color: var(--bg-light);
+}
+
+.container-services{
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.container-column{
+  display: flex;
+}
 
 .services-tab-active{
   font-family: "Raleway", "Arial", sans-serif;
@@ -170,10 +230,6 @@ body{
   background-color: var(--bg-bright);
 }
 
-.services {
-  background-color: var(--bg-light);
-}
-
 /* Информация о достаке */
 
 .delivery{
@@ -193,6 +249,11 @@ body{
 
 /* О нас */
 
+.information{
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .information-item{
   font-weight: 700;
   font-size: 18px;
@@ -200,7 +261,16 @@ body{
   color: var(--color-dark-text);
 }
 
+.container-about-us{
+  max-width: 520px;
+}
+
 /* Контакты */
+
+.container-contacts{
+  max-width: 530px;
+  margin-left: auto;
+}
 
 .information-subtitle{
   font-family: "Raleway", "Arial", sans-serif;
