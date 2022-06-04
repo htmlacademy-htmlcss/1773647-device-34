@@ -121,19 +121,6 @@ body{
   padding: 0;
 }
 
-.user-link{
-  max-width: 500px;
-}
-
-.user-link-login{
-  margin-right: 176px;
-}
-
-.page-menu{
-  max-width: 470px;
-  margin-left: auto;
-}
-
 .main-container{
   flex-grow: 1;
 }

@@ -93,6 +93,17 @@ body{
   background-color: var(--bg-bright);
 }
 
+.navigation{
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.container-user-menu{
+  display: flex;
+  justify-content: space-between;
+}
+
 .user-link{
   line-height: 30px;
   text-decoration: none;
@@ -111,38 +122,14 @@ body{
   color: var(--color-dark-text);
 }
 
-.navigation{
+.container-menu{
   display: flex;
-  width: 1160px;
-  margin: 0 auto;
-  margin-top: 20px;
+  justify-content: space-between;
 }
 
 .navigation-list{
   margin: 0;
   padding: 0;
-}
-
-.form-search{
-  width: 520px;
-  margin-right: 26px;
-}
-
-.user-link{
-  max-width: 500px;
-}
-
-.user-link-login{
-  margin-right: 176px;
-}
-
-.catalog{
-  max-width: 293px;
-}
-
-.page-menu{
-  max-width: 470px;
-  margin-left: auto;
 }
 
 .main-container{
