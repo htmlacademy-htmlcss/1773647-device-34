@@ -233,7 +233,13 @@ body{
 /* Информация о достаке */
 
 .delivery{
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.container-button{
   background-color: var(--bg-light);
+  text-align: center;
 }
 
 .delivery-button{
