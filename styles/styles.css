@@ -55,6 +55,11 @@ body{
   color: var(--color-primary-text);
 }
 
+.page-container{
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .button {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -83,8 +88,6 @@ body{
 }
 
 .navigation{
-  width: 1160px;
-  margin: 0 auto;
   margin-top: 20px;
 }
 
@@ -127,11 +130,6 @@ body{
 
 /* Слайдер */
 
-.container-slider{
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .slider-list{
   padding: 0;
 }
@@ -169,11 +167,6 @@ body{
 
 /* Список продуктов */
 
-.products{
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .products-navigation-list{
   display: flex;
   justify-content: space-between;
@@ -194,11 +187,6 @@ body{
 
 .services{
   background-color: var(--bg-light);
-}
-
-.container-services{
-  width: 1160px;
-  margin: 0 auto;
 }
 
 .container-column{
@@ -231,11 +219,6 @@ body{
 
 /* Информация о достаке */
 
-.delivery{
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .container-button{
   background-color: var(--bg-light);
   text-align: center;
@@ -253,11 +236,6 @@ body{
 }
 
 /* О нас */
-
-.information{
-  width: 1160px;
-  margin: 0 auto;
-}
 
 .information-item{
   font-weight: 700;
@@ -300,11 +278,6 @@ body{
   background-color: var(--bg-light);
 }
 
-.container-mailing{
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .container-mailing-text{
   display: flex;
 }
@@ -336,11 +309,6 @@ body{
 
 .page-footer{
   background-color: var(--color-primary-text);
-}
-
-.container-footer{
-  width: 1160px;
-  margin: 0 auto;
 }
 
 .footer-information{

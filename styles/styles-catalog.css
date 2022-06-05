@@ -55,6 +55,11 @@ body{
   color: var(--color-primary-text);
 }
 
+.page-container{
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .button {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -94,8 +99,6 @@ body{
 }
 
 .navigation{
-  width: 1160px;
-  margin: 0 auto;
   margin-top: 20px;
 }
 
@@ -138,10 +141,6 @@ body{
 
 /* Каталог */
 
-.inner-header{
-  width: 1160px;
-  margin: 0 auto;
-}
 .inner-header-title{
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -174,8 +173,6 @@ body{
 
 .catalog-products{
   display: flex;
-  width: 1160px;
-  margin: 0 auto;
 }
 
 .catalog-filter-group{
@@ -265,11 +262,6 @@ body{
 
 .page-footer{
   background-color: var(--color-primary-text);
-}
-
-.container-footer{
-  width: 1160px;
-  margin: 0 auto;
 }
 
 .footer-information{
