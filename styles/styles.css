@@ -248,6 +248,12 @@ body{
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.products-navigation-item{
+  margin-bottom: 80px;
+  width: 160px;
 }
 
 .products-navigation-item a{
