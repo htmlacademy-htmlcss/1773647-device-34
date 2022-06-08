@@ -76,7 +76,6 @@ body{
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
@@ -89,6 +88,12 @@ body{
   font-size: 50px;
   line-height: 50px;
   color: var(--color-dark-text);
+  margin: 0;
+}
+
+.about-text{
+  font-family: "Rubik","Arial",sans-serif;
+  margin: 0;
 }
 
 /* Шапка */
@@ -190,6 +195,7 @@ body{
 
 .slider-item{
   display: flex;
+  margin-bottom: 120px;
 }
 
 .holder-slider{
@@ -202,10 +208,26 @@ body{
   font-size: 50px;
   line-height: 50px;
   color: var(--color-dark-text);
+  margin-top: 110px;
+  margin-bottom: 50px;
 }
 
-.about-text{
-  font-family: "Rubik","Arial",sans-serif;
+.about-text-slider{
+  margin-bottom: 70px;
+}
+
+.button-slider{
+  display: block;
+  margin-bottom: 60px;
+}
+
+.description td {
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.description-text td{
+  padding-bottom: 0;
 }
 
 .description tr:first-child {
