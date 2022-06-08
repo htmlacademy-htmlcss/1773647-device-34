@@ -107,10 +107,21 @@ body{
   justify-content: space-between;
 }
 
+.navigation-list{
+  display: flex;
+  list-style-type: none;
+}
+
 .user-link{
+  display: block;
   line-height: 30px;
   text-decoration: none;
   color: var(--color-dark-text);
+  padding: 30px 35px;
+}
+
+.user-link-login{
+  margin-right: 175px;
 }
 
 .page-link {
