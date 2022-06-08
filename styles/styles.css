@@ -95,33 +95,75 @@ body{
 
 .page-header {
   color: var(--color-dark-text);
-  background-color: var(--bg-bright);
 }
 
 .navigation{
   margin-top: 20px;
+  background-color: var(--bg-bright);
+}
+
+.header-logo{
+  margin-left: 60px;
 }
 
 .container-user-menu{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
+
+/* Поиск */
+
+.form-search{
+  margin-top: 30px;
+  margin-bottom: 23px;
+  margin-left: 60px;
+}
+
+/* Пользовательское меню */
 
 .navigation-list{
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-item{
+  padding: 23px 18px;
+}
+
+.user-item:last-child{
+  margin-right: 44px;
 }
 
 .user-link{
-  display: block;
   line-height: 30px;
   text-decoration: none;
   color: var(--color-dark-text);
-  padding: 30px 35px;
 }
 
-.user-link-login{
-  margin-right: 175px;
+/* Каталог и услуги */
+
+.container-menu{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.catalog a{
+  padding: 30px;
+  margin-left: 30px;
+}
+
+.page-item{
+  padding: 23px 23px;
+}
+
+.page-item:last-child{
+  margin-right: 37px;
 }
 
 .page-link {
@@ -134,16 +176,6 @@ body{
   text-decoration: none;
   text-align: center;
   color: var(--color-dark-text);
-}
-
-.container-menu{
-  display: flex;
-  justify-content: space-between;
-}
-
-.navigation-list{
-  margin: 0;
-  padding: 0;
 }
 
 .main-container{
