@@ -267,12 +267,14 @@ body{
 
 /* Наши услуги */
 
-.services{
-  background-color: var(--bg-light);
-}
-
 .container-column{
   display: flex;
+}
+
+.container-tab{
+  display: flex;
+  flex-direction: column;
+  width: 290px;
 }
 
 .services-tab-active{
@@ -299,6 +301,24 @@ body{
   background-color: var(--bg-bright);
 }
 
+.container-inner{
+  margin-left: 116px;
+  margin-bottom: 70px;
+}
+
+.services-text{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.services-title{
+  margin-bottom: 50px;
+}
+
+.services-about-text{
+  max-width: 450px;
+}
+
 /* Информация о достаке */
 
 .container-button{
@@ -307,6 +327,7 @@ body{
 }
 
 .delivery-button{
+  display: block;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 20px;
   line-height: 23px;
@@ -315,9 +336,14 @@ body{
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-dark-text);
+  padding: 40px;
 }
 
 /* О нас */
+
+.delivery{
+  margin-bottom: 70px;
+}
 
 .information-item{
   font-weight: 700;
