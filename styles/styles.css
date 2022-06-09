@@ -267,6 +267,10 @@ body{
 
 /* Наши услуги */
 
+.services{
+  margin-bottom: 70px;
+}
+
 .container-column{
   display: flex;
 }
@@ -303,7 +307,6 @@ body{
 
 .container-inner{
   margin-left: 116px;
-  margin-bottom: 70px;
 }
 
 .services-text{
@@ -339,10 +342,34 @@ body{
   padding: 40px;
 }
 
-/* О нас */
-
 .delivery{
   margin-bottom: 70px;
+}
+
+/* О нас */
+
+.information{
+  margin-bottom: 70px;
+}
+
+.information-inner{
+  width: 80px;
+  height: 7px;
+  background-color: var(--color-dark-text);
+}
+
+.information-title{
+  margin-bottom: 65px;
+}
+
+.information-about-text{
+  margin-bottom: 50px;
+}
+
+.information-list{
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 50px;
 }
 
 .information-item{
@@ -350,6 +377,11 @@ body{
   font-size: 18px;
   line-height: 20px;
   color: var(--color-dark-text);
+  margin-bottom: 20px;
+}
+
+.information-item:last-child{
+  margin-bottom: 0;
 }
 
 .container-about-us{
@@ -370,6 +402,8 @@ body{
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-dark-text);
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .address{
@@ -378,6 +412,26 @@ body{
 
 .phone{
   color: var(--color-dark-text);
+}
+
+.information-subject{
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.information-schedule{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.information-schedule-item{
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.information-schedule-item:last-child{
+  margin-bottom: 0;
 }
 
 /* Подписаться на рассылку */
