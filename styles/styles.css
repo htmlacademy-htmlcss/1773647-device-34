@@ -442,6 +442,7 @@ body{
 
 .container-mailing-text{
   display: flex;
+  margin-bottom: 150px;
 }
 
 .container-mailing-text p{
@@ -451,6 +452,7 @@ body{
 
 .container-mailing-form{
   display: flex;
+  margin-bottom: 55px;
 }
 
 .mailing-text{
@@ -473,6 +475,14 @@ body{
   background-color: var(--color-primary-text);
 }
 
+.container-footer{
+  margin-top: 50px;
+}
+
+.footer-logo{
+  margin-bottom: 40px;
+}
+
 .footer-information{
   display: flex;
   justify-content: space-between;
@@ -489,6 +499,18 @@ body{
   color: var(--color-light);
 }
 
+.footer-information-list{
+  display: flex;
+}
+
+.footer-information-item{
+  margin-right: 35px;
+}
+
+.footer-information-item:last-child{
+  margin-right: 0;
+}
+
 .footer-information-link{
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -498,6 +520,7 @@ body{
   text-transform: uppercase;
   color: var(--color-light);
   text-decoration: none;
+
 }
 
 .footer-phone{
