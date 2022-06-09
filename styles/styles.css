@@ -438,6 +438,11 @@ body{
 
 .mailing{
   background-color: var(--bg-light);
+  padding: 1px;
+}
+
+.container-mailing{
+  margin-top: 70px;
 }
 
 .container-mailing-text{
