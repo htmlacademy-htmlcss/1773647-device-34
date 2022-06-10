@@ -100,6 +100,7 @@ body{
   color: var(--color-dark-text);
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin: 0;
 }
 
 /* Шапка */
@@ -235,6 +236,11 @@ body{
   display: flex;
 }
 
+.catalog-subtitle{
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+
 .catalog-filter-group{
   width: 200px;
   margin-right: 60px;
@@ -245,6 +251,7 @@ body{
   font-size: 18px;
   line-height: 20px;
   color: var(--color-dark-text);
+  margin: 0;
 }
 
 .control{
@@ -259,6 +266,12 @@ body{
 }
 
 /* Продукты */
+
+.container-sorting{
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0 25px 0;
+}
 
 .container-product{
   width: 840px;
@@ -292,6 +305,7 @@ body{
   color: var(--color-dark-text);
   border: 3px solid #E5E5E5;
   background-color: var(--color-light);
+  margin: 0 40px 45px 40px;
 }
 
 /* Пагинация */
