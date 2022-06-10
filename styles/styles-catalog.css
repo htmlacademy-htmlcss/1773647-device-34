@@ -263,6 +263,7 @@ body{
 .container-product{
   width: 840px;
   background-color: var(--color-light);
+  padding: 1px;
 }
 
 .product-card-image{
@@ -296,7 +297,14 @@ body{
 /* Пагинация */
 
 .container-pagination{
+  display: flex;
+  justify-content: space-between;
   background: var(--bg-light-dark);
+  margin: 0 40px 80px 40px;
+}
+
+.pagination{
+  display: flex;
 }
 
 .pagination-link{
@@ -308,6 +316,7 @@ body{
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-primary-text);
+  padding: 25px;
 }
 
 .pagination-item{
@@ -319,7 +328,9 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: var(--color-dark-text);
+  color: var(--color-primary-text);
+  opacity: 0.3;
+  padding: 10px;
 }
 
 /* Подвал */
