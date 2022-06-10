@@ -104,7 +104,14 @@ body{
 
 .navigation{
   margin-top: 20px;
+}
+
+/* фон для шапки */
+.box {
+  width: 1160px;
+  height: 165px;
   background-color: var(--bg-bright);
+
 }
 
 .header-logo{
@@ -165,6 +172,7 @@ body{
 
 .page-item{
   padding: 23px 23px;
+  border: 1px solid var(--color-dark-text);
 }
 
 .page-item:last-child{
@@ -181,6 +189,7 @@ body{
   text-decoration: none;
   text-align: center;
   color: var(--color-dark-text);
+  border: 1px solid var(--color-dark-text);
 }
 
 .main-container{
@@ -188,6 +197,10 @@ body{
 }
 
 /* Слайдер */
+
+.slider{
+  border: 1px solid var(--color-dark-text);
+}
 
 .slider-list{
   padding: 0;
