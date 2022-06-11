@@ -103,14 +103,22 @@ body{
 }
 
 .navigation{
+  /*position: relative;*/
   margin-top: 20px;
+  /*z-index: 2;*/
 }
 
 /* фон для шапки */
-.box {
+/*.box {
+  position: absolute;
+  z-index: 1;
   width: 1160px;
+  height: 300px;
   background-color: var(--bg-bright);
-}
+  top: 40px;
+  left: 50%;
+  margin-left: -580px;
+}*/
 
 .header-logo{
   margin-left: 60px;
@@ -357,9 +365,11 @@ body{
 }
 
 .information-inner{
+  display: inline-block;
   width: 80px;
   height: 7px;
   background-color: var(--color-dark-text);
+  margin-bottom: 50px;
 }
 
 .information-title{
