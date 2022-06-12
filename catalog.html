@@ -12,16 +12,18 @@
     <!-- Шапка -->
 
     <header class="page-header">
-      <nav class="navigation">
-        <a href="index.html">
-          <img src="images/logo-device.svg" width="145" height="36" alt="logo device.">
-        </a>
+      <nav class="page-container navigation">
+        <div class="box">
+          <a href="index.html" aria-current="page" class="header-logo">
+            <img src="images/logo-device.svg" width="145" height="36" alt="logo device.">
+          </a>
 
           <div class="container-user-menu">
             <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
-              <input type="search" id="search" name="search" placeholder="Текст поиска"/>
+              <input type="search" id="search" name="search" placeholder="Текст поиска" />
               <button type="submit">Найти</button>
             </form>
+
             <ul class="navigation-list user-menu">
               <li class="user-item">
                 <a class="user-link user-link-login" href="#">Войти</a>
@@ -39,33 +41,34 @@
 
           <div class="container-menu">
             <div class="catalog">
-            <a class="page-link" href="catalog.html">Каталог товаров</a>
-            <button class="button-menu" type="button">
-              <span class="visually-hidden">Развернуть меню</span>
-            </button>
+              <a class="page-link" href="catalog.html">Каталог товаров</a>
+              <button class="button-menu" type="button">
+                <span class="visually-hidden">Развернуть меню</span>
+              </button>
             </div>
 
             <div class="container-page-menu">
-            <ul class="navigation-list page-menu">
-              <li class="page-item">
-                <a class="page-link" href="#">Доставка</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">Гарантия</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">Контакты</a>
-              </li>
-            </ul>
+              <ul class="navigation-list page-menu">
+                <li class="page-item">
+                  <a class="page-link" href="#">Доставка</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Гарантия</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Контакты</a>
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
       </nav>
     </header>
 
     <!-- Каталог -->
 
     <main class="main-container main-inner">
-      <header class="inner-header">
+      <header class="page-container inner-header">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -83,10 +86,10 @@
       <!-- Фильтр -->
 
       <div class="container-catalog">
-      <section class="catalog-products">
-        <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
+      <section class="page-container catalog-products">
+        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/">
-          <h3 class="subtitle">Фильтр:</h3>
+          <h3 class="subtitle catalog-subtitle">Фильтр:</h3>
 
           <div class="range">
             <h4 class="catalog-filter-title">Стоимость</h4>
@@ -143,8 +146,6 @@
             </fieldset>
             <button class="button" type="submit">Показать</button>
         </form>
-
-
 
         <!-- Продукты -->
 
@@ -203,9 +204,10 @@
 
               <div class="container-pagination">
                 <a href="#" type="button" class="pagination-link pagination-prev pagination-disabled">Назад</a>
+
                 <ol class="pagination">
                   <li class="pagination-item">
-                    <a href="#" class="pagination-link pagination-current">1</a>
+                    <a href="#" class="pagination-link pagination-current" aria-current="page">1</a>
                   </li>
                   <li class="pagination-item">
                     <a href="#" class="pagination-link">2</a>
@@ -216,12 +218,14 @@
                   <li class="pagination-item">
                     <a href="#" class="pagination-link">...</a>
                   </li>
-                  <li class="pagination-item">
-                    <a href="#" class="pagination-link" value="15">15</a>
+                  <li class="pagination-item" value="15">
+                    <a href="#" class="pagination-link">15</a>
                   </li>
                 </ol>
+
                 <a href="#" type="button" class="pagination-link">Вперед</a>
               </div>
+
             </div>
           </div>
         </div>
@@ -232,24 +236,16 @@
     <!-- Подвал -->
 
     <footer class="page-footer">
-      <div class="container-footer">
+      <div class="page-container container-footer">
         <div class="footer-logo">
-          <a href="index.html">
-            <img
-              class="footer-contacts-logo"
-              src="images/logo-device-yellow.svg"
-              width="145"
-              height="36"
-              alt="logo device."
-            />
+          <a href="index.html" aria-current="page">
+            <img class="footer-contacts-logo" src="images/logo-device-yellow.svg" width="145" height="36" alt="logo device."/>
           </a>
         </div>
 
         <div class="footer-information">
           <address class="footer-address">
-            <p class="footer-text about-text">
-              Санкт-Петербург, набережная реки Карповки, 5, литера П.
-            </p>
+            <p class="footer-text about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </address>
 
           <ul class="footer-information-list">
@@ -274,34 +270,23 @@
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="button button-social" href="https://t.me/htmlacademy">
-                <span>Телеграмм</span>
+                <span class="visually-hidden">Телеграмм</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a
-                class="button button-social"
-                href="https://www.youtube.com/user/htmlacademyru"
-              >
-                <span>Youtube</span>
+              <a class="button button-social" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Youtube</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a
-                class="button button-social"
-                href="https://twitter.com/htmlacademy_ru"
-              >
-                <span>Твиттер</span>
+              <a class="button button-social" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Твиттер</span>
               </a>
             </li>
           </ul>
 
           <a class="footer-logo-html" href="https://htmlacademy.ru/" class="htmlacademy-link">
-            <img
-              src="images/logo-html-academy.svg"
-              width="115"
-              height="33"
-              alt="Логотип html acadey"
-            />
+            <img src="images/logo-html-academy.svg" width="115" height="33" alt="Логотип html acadey"/>
           </a>
         </div>
       </div>
