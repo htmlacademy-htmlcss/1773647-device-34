@@ -103,13 +103,13 @@ body{
 }
 
 .navigation{
-  /*position: relative;*/
+  position: relative;
   margin-top: 20px;
-  /*z-index: 2;*/
+  z-index: 2;
 }
 
 /* фон для шапки */
-/*.box {
+.box {
   position: absolute;
   z-index: 1;
   width: 1160px;
@@ -118,7 +118,7 @@ body{
   top: 40px;
   left: 50%;
   margin-left: -580px;
-}*/
+}
 
 .header-logo{
   margin-left: 60px;
@@ -204,6 +204,7 @@ body{
 
 .slider-list{
   padding: 0;
+  margin: 0;
 }
 
 .slider-item{
@@ -289,12 +290,12 @@ body{
   display: flex;
   min-height: 390px;
 }
-
 .container-tab{
   display: flex;
   flex-direction: column;
   width: 290px;
   color: var(--color-dark-text);
+  margin-top: 65px;
 }
 
 .services-tab-active{
@@ -322,7 +323,19 @@ body{
   margin-bottom: 35px;
 }
 
+.tab-inner{
+  display: inline-block;
+  width: 7px;
+  height: 320px;
+  background-color: var(--color-dark-text);
+}
+
 .container-inner{
+  margin-top: 72px;
+}
+
+.services-text{
+  margin-bottom: 145px;
   margin-left: 116px;
 }
 
@@ -332,6 +345,7 @@ body{
 
 .services-about-text{
   max-width: 450px;
+
 }
 
 /* Информация о достаке */
