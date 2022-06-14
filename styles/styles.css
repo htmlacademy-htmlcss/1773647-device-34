@@ -103,21 +103,7 @@ body{
 }
 
 .navigation{
-  position: relative;
   margin-top: 20px;
-  z-index: 2;
-}
-
-/* фон для шапки */
-.box {
-  position: absolute;
-  z-index: 1;
-  width: 1160px;
-  height: 300px;
-  background-color: var(--bg-bright);
-  top: 40px;
-  left: 50%;
-  margin-left: -580px;
 }
 
 .header-logo{
@@ -139,6 +125,10 @@ body{
 }
 
 /* Пользовательское меню */
+
+.navigation{
+  background: linear-gradient(#fff 10%, #FFE17F 10%, #FFE17F 90%);
+}
 
 .navigation-list{
   display: flex;
@@ -201,6 +191,10 @@ body{
 }
 
 /* Слайдер */
+
+.slider{
+  background: linear-gradient(#FFE17F 8%, #fff 8%, #fff 92%);
+}
 
 .slider-list{
   padding: 0;
@@ -466,11 +460,10 @@ body{
 
 .mailing{
   background-color: var(--bg-light);
-  padding: 1px;
 }
 
 .container-mailing{
-  margin-top: 70px;
+  padding-top: 70px;
 }
 
 .container-mailing-text{
