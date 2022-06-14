@@ -113,10 +113,6 @@ body{
   margin-top: 20px;
 }
 
-.header-logo{
-  margin-left: 60px;
-}
-
 .container-user-menu{
   display: flex;
   justify-content: space-between;
@@ -128,13 +124,20 @@ body{
 .form-search{
   margin-top: 30px;
   margin-bottom: 23px;
-  margin-left: 60px;
 }
 
 /* Пользовательское меню */
 
 .navigation{
   background: linear-gradient(#fff 10%, #FFE17F 10%, #FFE17F 90%);
+}
+
+.container-navigation{
+  padding: 0 60px;
+}
+
+.user-link-login{
+  padding: 23px 18px;
 }
 
 .navigation-list{
@@ -146,11 +149,7 @@ body{
 }
 
 .user-item{
-  padding: 23px 18px;
-}
-
-.user-item:last-child{
-  margin-right: 44px;
+  padding: 23px 0 23px 18px;
 }
 
 .user-link{
@@ -169,16 +168,11 @@ body{
 }
 
 .catalog a{
-  padding: 30px;
-  margin-left: 30px;
+  padding: 30px 30px 30px 0;
 }
 
 .page-item{
-  padding: 23px 23px;
-}
-
-.page-item:last-child{
-  margin-right: 37px;
+  padding: 23px 0 23px 23px;
 }
 
 .page-link {
