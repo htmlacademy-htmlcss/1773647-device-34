@@ -113,12 +113,6 @@ body{
   margin-top: 20px;
 }
 
-/* фон для шапки */
-.box {
-  width: 1160px;
-  background-color: var(--bg-bright);
-}
-
 .header-logo{
   margin-left: 60px;
 }
@@ -138,6 +132,10 @@ body{
 }
 
 /* Пользовательское меню */
+
+.navigation{
+  background: linear-gradient(#fff 10%, #FFE17F 10%, #FFE17F 90%);
+}
 
 .navigation-list{
   display: flex;
