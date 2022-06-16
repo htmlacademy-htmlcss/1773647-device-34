@@ -149,7 +149,11 @@ body{
 }
 
 .user-item{
-  padding: 23px 0 23px 18px;
+  padding: 22px;
+}
+
+.user-item:last-child{
+  padding-right: 0;
 }
 
 .user-link{
@@ -172,7 +176,11 @@ body{
 }
 
 .page-item{
-  padding: 23px 0 23px 23px;
+  padding: 22px 22px;
+}
+
+.page-item:last-child{
+  padding-right: 0;
 }
 
 .page-link {

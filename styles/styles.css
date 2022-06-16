@@ -142,7 +142,11 @@ body{
 }
 
 .user-item{
-  padding: 23px 0 23px 18px;
+  padding: 22px;
+}
+
+.user-item:last-child{
+  padding-right: 0;
 }
 
 .user-link{
@@ -165,7 +169,11 @@ body{
 }
 
 .page-item{
-  padding: 23px 0 23px 23px;
+  padding: 22px 22px;
+}
+
+.page-item:last-child{
+  padding-right: 0;
 }
 
 .page-link {
@@ -269,7 +277,6 @@ body{
 
 /* Наши услуги */
 
-
 .container-column{
   display: flex;
 }
@@ -286,6 +293,18 @@ body{
   margin-top: 65px;
 }
 
+.services-tab{
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--black);
+  padding: 13px 0 13px 20px;
+  margin-bottom: 35px;
+}
+
 .services-tab-active{
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -299,17 +318,6 @@ body{
   margin-bottom: 35px;
 }
 
-.services-tab{
-  font-family: "Raleway", "Arial", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--black);
-  padding: 13px 0 13px 20px;
-  margin-bottom: 35px;
-}
 
 .tab-inner{
   display: inline-block;
@@ -338,6 +346,11 @@ body{
 
 /* Информация о достаке */
 
+.delivery{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
 .container-button{
   background-color: var(--bg-light);
   text-align: center;
@@ -354,10 +367,6 @@ body{
   text-decoration: none;
   color: var(--color-dark-text);
   padding: 40px;
-}
-
-.delivery{
-  margin-bottom: 70px;
 }
 
 /* О нас */
