@@ -110,6 +110,7 @@ body{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 /* Поиск */
@@ -195,7 +196,7 @@ body{
 /* Слайдер */
 
 .slider{
-  background: linear-gradient(#FFE17F 8%, #fff 8%, #fff 92%);
+  background: linear-gradient(#FFE17F 23%, #fff 23%, #fff 76%);
 }
 
 .slider-list{
