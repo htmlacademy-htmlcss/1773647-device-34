@@ -103,31 +103,14 @@ body{
 }
 
 .navigation{
-  /*position: relative;*/
   margin-top: 20px;
-  /*z-index: 2;*/
-}
-
-/* фон для шапки */
-/*.box {
-  position: absolute;
-  z-index: 1;
-  width: 1160px;
-  height: 300px;
-  background-color: var(--bg-bright);
-  top: 40px;
-  left: 50%;
-  margin-left: -580px;
-}*/
-
-.header-logo{
-  margin-left: 60px;
 }
 
 .container-user-menu{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 /* Поиск */
@@ -135,10 +118,21 @@ body{
 .form-search{
   margin-top: 30px;
   margin-bottom: 23px;
-  margin-left: 60px;
 }
 
 /* Пользовательское меню */
+
+.navigation{
+  background: linear-gradient(#fff 10%, #FFE17F 10%, #FFE17F 90%);
+}
+
+.container-navigation{
+  padding: 0 60px;
+}
+
+.user-link-login{
+  padding: 23px 18px;
+}
 
 .navigation-list{
   display: flex;
@@ -149,11 +143,11 @@ body{
 }
 
 .user-item{
-  padding: 23px 18px;
+  padding: 22px;
 }
 
 .user-item:last-child{
-  margin-right: 44px;
+  padding-right: 0;
 }
 
 .user-link{
@@ -172,16 +166,15 @@ body{
 }
 
 .catalog a{
-  padding: 30px;
-  margin-left: 30px;
+  padding: 30px 30px 30px 0;
 }
 
 .page-item{
-  padding: 23px 23px;
+  padding: 22px 22px;
 }
 
 .page-item:last-child{
-  margin-right: 37px;
+  padding-right: 0;
 }
 
 .page-link {
@@ -202,8 +195,13 @@ body{
 
 /* Слайдер */
 
+.slider{
+  background: linear-gradient(#FFE17F 23%, #fff 23%, #fff 76%);
+}
+
 .slider-list{
   padding: 0;
+  margin: 0;
 }
 
 .slider-item{
@@ -280,34 +278,17 @@ body{
 
 /* Наши услуги */
 
-
-.container-column{
-  display: flex;
+.visually-hidden{
+  display:none;
 }
 
 .container-services{
-  display: flex;
-  min-height: 390px;
-}
-
-.container-tab{
-  display: flex;
-  flex-direction: column;
-  width: 290px;
-  color: var(--color-dark-text);
-}
-
-.services-tab-active{
-  font-family: "Raleway", "Arial", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--bg-bright);
-  background-color: var(--color-dark-text);
-  padding: 13px 148px 13px 20px;
-  margin-bottom: 35px;
+  display:grid;
+  grid-template-columns: 280px 565px;
+  grid-template-areas:
+    "label content"
+    "label content"
+    "label content";
 }
 
 .services-tab{
@@ -317,12 +298,13 @@ body{
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--color-dark-text);
   padding: 13px 0 13px 20px;
   margin-bottom: 35px;
 }
 
 .container-inner{
+  grid-area: content;
   margin-left: 116px;
 }
 
@@ -330,11 +312,39 @@ body{
   margin-bottom: 50px;
 }
 
-.services-about-text{
-  max-width: 450px;
+.services-text{
+  display: none;
+}
+
+.tab-one:checked ~ .container-inner>.services-text-one {
+  display: block;
+}
+
+.tab-two:checked ~ .container-inner>.services-text-two {
+  display: block;
+}
+
+.tab-three:checked ~ .container-inner>.services-text-three {
+  display: block;
+}
+
+.tab:checked+.services-tab {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: var(--color-dark-text);
+  color: var(--bg-bright);
 }
 
 /* Информация о достаке */
+
+.delivery{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
 
 .container-button{
   background-color: var(--bg-light);
@@ -354,14 +364,14 @@ body{
   padding: 40px;
 }
 
-.delivery{
-  margin-bottom: 70px;
-}
-
 /* О нас */
 
 .information{
   margin-bottom: 70px;
+}
+
+.container-column{
+  display: flex;
 }
 
 .information-inner{
@@ -452,11 +462,11 @@ body{
 
 .mailing{
   background-color: var(--bg-light);
-  padding: 1px;
 }
 
 .container-mailing{
-  margin-top: 70px;
+  padding-top: 70px;
+  padding-bottom: 55px;
 }
 
 .container-mailing-text{
@@ -471,7 +481,6 @@ body{
 
 .container-mailing-form{
   display: flex;
-  margin-bottom: 55px;
 }
 
 .mailing-text{
