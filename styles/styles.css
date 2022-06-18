@@ -599,13 +599,63 @@ body{
 
 /* Модалка */
 
+.modal{
+  display: block;
+  width: 920px;
+  margin: auto;
+}
+
+.container-modal{
+  padding: 80px;
+  border: 10px solid #000000;
+  background: var(--color-light);
+}
+
+.modal-title{
+  margin-bottom: 40px;
+}
+
+.modal-form{
+  display: grid;
+  grid-template-columns: 360px 140px 180px;
+  column-gap: 40px;
+  row-gap: 60px;
+}
+
 .modal-form p{
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   color: var(--color-dark-text);
+  margin: 0;
 }
 
-.modal .button{
+.modal-form-name {
+  grid-column: 1/2;
+}
+
+.modal-form-email{
+  grid-column: 2/4;
+}
+
+.modal-form-text{
+  grid-column: 1/3;
+}
+
+.modal-form-number{
+  grid-column: 3/4;
+}
+
+.modal-form-inner{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label{
+  margin-bottom: 15px;
+}
+
+.button-modal{
   border: none;
+  justify-self: start;
 }

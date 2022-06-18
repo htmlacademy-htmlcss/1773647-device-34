@@ -327,28 +327,30 @@
   </footer>
 
   <section class="modal">
-    <h2 class="modal-title title">Доставка под заказ</h2>
+    <div class="container-modal">
+      <h2 class="modal-title title">Доставка под заказ</h2>
     <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-      <p class="modal-form-name">
-        <label class="form-name" for="name">Ваше имя:</label>
+      <p class="modal-form-inner modal-form-name">
+        <label class="form-label" for="name">Ваше имя:</label>
         <input class="name" type="text" id="name" name="name" placeholder="Введите имя" />
       </p>
-      <p class="modal-form-email">
-        <label class="form-email" for="email">Ваш e-mail:</label>
+      <p class="modal-form-inner modal-form-email">
+        <label class="form-label" for="email">Ваш e-mail:</label>
         <input id="email" type="email" name="email" placeholder="Введите почту" />
       </p>
-      <p class="modal-form-text">
-        <label class="form-text" for="text">Что нужно привезти:</label>
+      <p class="modal-form-inner modal-form-text">
+        <label class="form-label" for="text">Что нужно привезти:</label>
         <input id="text" type="text" name="text" placeholder="В свободной форме" />
       </p>
-      <p class="modal-form-number">
+      <p class="modal-form-inner modal-form-number">
         <button class="number-minus" type="button">-</button>
-        <label for="number">Количество</label>
+        <label class="form-label" for="number">Количество</label>
         <input type="number" id="number" name="number" min="0" max="100" value="1" readonly />
         <button class="number-plus" type="button">+</button>
       </p>
-      <button class="button" type="submit">Отправить</button>
+      <button class="button button-modal" type="submit">Отправить</button>
     </form>
+    </div>
   </section>
 </body>
 
