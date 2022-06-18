@@ -278,20 +278,17 @@ body{
 
 /* Наши услуги */
 
-.container-column{
-  display: flex;
+.visually-hidden{
+  display:none;
 }
 
 .container-services{
-  display: flex;
-  min-height: 390px;
-}
-.container-tab{
-  display: flex;
-  flex-direction: column;
-  width: 290px;
-  color: var(--color-dark-text);
-  margin-top: 65px;
+  display:grid;
+  grid-template-columns: 280px 565px;
+  grid-template-areas:
+    "label content"
+    "label content"
+    "label content";
 }
 
 .services-tab{
@@ -301,38 +298,13 @@ body{
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--color-dark-text);
   padding: 13px 0 13px 20px;
   margin-bottom: 35px;
 }
 
-.services-tab-active{
-  font-family: "Raleway", "Arial", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--bg-bright);
-  background-color: var(--color-dark-text);
-  padding: 13px 148px 13px 20px;
-  margin-bottom: 35px;
-}
-
-
-.tab-inner{
-  display: inline-block;
-  width: 7px;
-  height: 320px;
-  background-color: var(--color-dark-text);
-}
-
 .container-inner{
-  margin-top: 72px;
-}
-
-.services-text{
-  margin-bottom: 145px;
+  grid-area: content;
   margin-left: 116px;
 }
 
@@ -340,9 +312,31 @@ body{
   margin-bottom: 50px;
 }
 
-.services-about-text{
-  max-width: 450px;
+.services-text{
+  display: none;
+}
 
+.tab-one:checked ~ .container-inner>.services-text-one {
+  display: block;
+}
+
+.tab-two:checked ~ .container-inner>.services-text-two {
+  display: block;
+}
+
+.tab-three:checked ~ .container-inner>.services-text-three {
+  display: block;
+}
+
+[name="tab"]:checked+.services-tab {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: var(--color-dark-text);
+  color: var(--bg-bright);
 }
 
 /* Информация о достаке */
@@ -374,6 +368,10 @@ body{
 
 .information{
   margin-bottom: 70px;
+}
+
+.container-column{
+  display: flex;
 }
 
 .information-inner{

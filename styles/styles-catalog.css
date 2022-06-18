@@ -299,6 +299,7 @@ body{
 
 .product-card-image{
   background-color: var(--bg-light);
+  object-fit: cover;
 }
 
 .product-card{
