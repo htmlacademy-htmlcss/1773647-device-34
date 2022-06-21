@@ -72,6 +72,7 @@ body{
 }
 
 .button {
+  display: inline-block;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -80,6 +81,9 @@ body{
   text-decoration: none;
   letter-spacing: 0.2em;
   color: var(--color-dark-text);
+  cursor: pointer;
+  padding: 10px 6px;
+  background: linear-gradient(#fff 40%, #FFE17F 40%, #FFE17F 60%, #fff 60%, #fff 100%);
 }
 
 .title {
@@ -228,7 +232,7 @@ body{
 }
 
 .button-slider{
-  display: block;
+  display: inline-block;
   margin-bottom: 60px;
 }
 
@@ -301,6 +305,7 @@ body{
   color: var(--color-dark-text);
   padding: 13px 0 13px 20px;
   margin-bottom: 35px;
+  cursor: pointer;
 }
 
 .container-inner{
@@ -495,6 +500,8 @@ body{
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border: 3px solid #C4C4C4;
+  cursor: pointer;
+  padding: 20px 40px;
 }
 
 /* Подвал */

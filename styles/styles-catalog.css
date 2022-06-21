@@ -72,6 +72,7 @@ body{
 }
 
 .button {
+  display: inline-block;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -82,6 +83,9 @@ body{
   letter-spacing: 0.2em;
   color: var(--color-dark-text);
   border: none;
+  cursor: pointer;
+  padding: 10px 6px;
+  background: linear-gradient(#fff 40%, #FFE17F 40%, #FFE17F 60%, #fff 60%, #fff 100%);
 }
 
 .title {
@@ -272,6 +276,10 @@ body{
 .select-control{
   color: var(--color-dark-text);
   border: none;
+}
+
+.button-catalog{
+  background: linear-gradient(#F0F0F0 40%, #FFE17F 40%, #FFE17F 60%, #F0F0F0 60%, #F0F0F0 100%);
 }
 
 /* Продукты */
