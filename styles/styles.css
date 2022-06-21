@@ -216,6 +216,7 @@ body{
 /* Слайдер */
 
 .slider{
+  margin-bottom: 70px;
   background: linear-gradient(#FFE17F 23%, #fff 23%, #fff 76%);
 }
 
@@ -294,6 +295,10 @@ body{
   line-height: 24px;
   text-decoration: none;
   color: var(--color-dark-text);
+}
+
+.products-icons{
+  background-color: var(--bg-bright);
 }
 
 /* Наши услуги */
