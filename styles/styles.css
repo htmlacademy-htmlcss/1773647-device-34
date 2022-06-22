@@ -498,6 +498,10 @@ body{
   display: flex;
 }
 
+.container-about-us{
+  position: relative;
+}
+
 .information-inner{
   display: inline-block;
   width: 80px;
@@ -509,6 +513,13 @@ body{
 .information-title{
   margin-bottom: 65px;
 }
+
+/* .information-title::before{
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  background-color: var(--color-dark-text);
+} */
 
 .information-about-text{
   margin-bottom: 50px;
@@ -608,7 +619,12 @@ body{
 }
 
 .mailing-text{
+  margin: auto 0;
+  padding-left: 32px;
   margin-left: auto;
+  background-image: url("../images/icons/icons-tick-big.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 .mailing-button{
