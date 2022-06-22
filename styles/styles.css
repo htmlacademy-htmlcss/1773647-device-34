@@ -216,8 +216,22 @@ body{
 /* Слайдер */
 
 .slider{
+  position: relative;
   margin-bottom: 70px;
   background: linear-gradient(#FFE17F 23%, #fff 23%, #fff 76%);
+}
+
+.slider-button-left{
+  position: absolute;
+  top: 210px;
+  left: 30px;
+  min-width: 20px;
+  min-height: 60px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../images/icons/icons-left-arrow.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .slider-list{
@@ -273,6 +287,41 @@ body{
   font-weight: 400;
 }
 
+.slider-button-right{
+  position: absolute;
+  top: 210px;
+  left: 540px;
+  min-width: 20px;
+  min-height: 60px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../images/icons/icons-right-arrow.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.container-dot{
+  position: absolute;
+  right: 0;
+  bottom: 160px;
+  display: grid;
+  grid-template-columns: repeat(3, 12px);
+  column-gap: 20px;
+}
+
+.dot{
+  min-width: 12px;
+  min-height: 12px;
+  background: var(--color-light);
+  border: 2px solid var(--color-dark-text);
+  border-radius: 50%;
+  padding: 0;
+}
+
+.dot-active{
+  background-color: var(--color-dark-text);
+}
+
 /* Список продуктов */
 
 .products-navigation-list{
@@ -295,10 +344,6 @@ body{
   line-height: 24px;
   text-decoration: none;
   color: var(--color-dark-text);
-}
-
-.products-icons{
-  background-color: var(--bg-bright);
 }
 
 /* Наши услуги */
