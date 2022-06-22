@@ -351,12 +351,11 @@ body{
 }
 
 .dot{
-  min-width: 12px;
-  min-height: 12px;
   background: var(--color-light);
   border: 2px solid var(--color-dark-text);
   border-radius: 50%;
-  padding: 0;
+  padding: 6px;
+  cursor: pointer;
 }
 
 .dot-active{
@@ -389,9 +388,10 @@ body{
 
 /* Наши услуги */
 
-.visually-hidden{
-  display:none;
+.services{
+  background: linear-gradient(#fff 16%, #F0F0F0 16%, #F0F0F0 100%);
 }
+
 
 .container-services{
   display:grid;
@@ -400,6 +400,7 @@ body{
     "label content"
     "label content"
     "label content";
+  padding-bottom: 70px;
 }
 
 .services-tab{
@@ -459,6 +460,7 @@ body{
 }
 
 .container-button{
+  position: relative;
   background-color: var(--bg-light);
   text-align: center;
 }
@@ -474,6 +476,16 @@ body{
   text-decoration: none;
   color: var(--color-dark-text);
   padding: 40px;
+  background: url("../images/icons/icons-truck.svg"),
+  url("../images/icons/icons-information.svg");
+  background-repeat:no-repeat;
+  background-position:center left, center right 30px;
+}
+
+.delivery-button::before{
+  position: absolute;
+  background-color: var(--bg-bright);
+  width: 125px;
 }
 
 /* О нас */
