@@ -134,7 +134,7 @@ body{
 /* Пользовательское меню */
 
 .navigation{
-  background: linear-gradient(#fff 10%, #FFE17F 10%, #FFE17F 90%);
+  background: llinear-gradient(var(--color-light) 20px, var(--bg-bright) 20px, var(--bg-bright) 100%);
 }
 
 .container-navigation{
@@ -308,10 +308,6 @@ body{
   background-color: var(--color-light);
   padding: 70px 40px 78px 40px;
 }
-
-/* .button-arrow{
-  background-color:#000000;
-} */
 
 .product-list{
   display: grid;
