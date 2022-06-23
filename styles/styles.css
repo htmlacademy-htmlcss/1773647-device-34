@@ -371,16 +371,23 @@ body{
   padding: 0;
   list-style-type: none;
   margin-bottom: 80px;
-  position: relative;
 }
 
-.products-icons-1::before{
+.products-icons::before{
   content:"";
-  position: absolute;
+  display: block;
   width: 160px;
   height: 160px;
   background-color: var(--bg-bright);
-  background-image: url("../images/products-icons/products-virtual-reality.svg");
+  margin-bottom: 30px;
+}
+
+.products-icons-1::after{
+  content:"";
+  width: 160px;
+  height: 160px;
+  background-image: url(../images/products-icons/products-virtual-reality.svg);
+  display: inline-block;
 }
 
 .products-navigation-item{
