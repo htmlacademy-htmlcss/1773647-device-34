@@ -370,6 +370,11 @@ body{
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+}
+
+.products-icons-1{
+  background-image: url("../images/products-icons/products-virtual-reality.svg");
 }
 
 .products-navigation-item{
@@ -498,28 +503,18 @@ body{
   display: flex;
 }
 
-.container-about-us{
-  position: relative;
-}
-
-.information-inner{
-  display: inline-block;
-  width: 80px;
-  height: 7px;
-  background-color: var(--color-dark-text);
-  margin-bottom: 50px;
-}
-
 .information-title{
   margin-bottom: 65px;
 }
 
-/* .information-title::before{
-  position: absolute;
+.information-title::before{
+  content:"";
+  display: block;
   width: 80px;
   height: 7px;
   background-color: var(--color-dark-text);
-} */
+  margin-bottom: 40px;
+}
 
 .information-about-text{
   margin-bottom: 50px;
@@ -541,6 +536,16 @@ body{
 
 .information-item:last-child{
   margin-bottom: 0;
+}
+
+.information-item::before{
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--hover);
+  border-radius: 50%;
+  margin-right: 26px;
 }
 
 .container-about-us{
