@@ -370,15 +370,20 @@ body{
   margin: 0;
   padding: 0;
   list-style-type: none;
-
+  margin-bottom: 80px;
+  position: relative;
 }
 
-.products-icons-1{
+.products-icons-1::before{
+  content:"";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background-color: var(--bg-bright);
   background-image: url("../images/products-icons/products-virtual-reality.svg");
 }
 
 .products-navigation-item{
-  margin-bottom: 80px;
   width: 160px;
 }
 
