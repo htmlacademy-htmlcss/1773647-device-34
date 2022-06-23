@@ -135,6 +135,7 @@ body{
 }
 
 .user-link{
+  position: relative;
   line-height: 30px;
   text-decoration: none;
   color: var(--color-dark-text);
@@ -143,6 +144,21 @@ body{
 
 .user-link-login{
   padding: 23px 18px 23px 30px;
+}
+
+.icon-basket::before{
+  content:"2";
+  position: absolute;
+  top: 0;
+  left: -17px;
+  width: 21px;
+  height: 21px;
+  background-color: var(--color-light);
+  border-radius: 50%;
+  font-family: "Rubik","Arial",sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
 }
 
 .user-link-icon{
@@ -348,6 +364,7 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 12px);
   column-gap: 20px;
+  z-index: 2;
 }
 
 .dot{
@@ -472,18 +489,30 @@ body{
 
 .services{
   background-color: var(--bg-light);
-  background: linear-gradient(var(--color-light) 30px, var(--bg-light) 30px, var(--bg-light) 290px);
+  background: linear-gradient(var(--color-light) 100px, var(--bg-light) 100px, var(--bg-light) 290px);
 }
-
 
 .container-services{
   display:grid;
-  grid-template-columns: 280px 565px;
+  grid-template-columns: 280px 1fr;
   grid-template-areas:
     "label content"
     "label content"
     "label content";
   padding-bottom: 70px;
+  padding-top: 70px;
+  position: relative;
+  z-index: 2;
+}
+
+.container-services::before{
+  content:"";
+  position: absolute;
+  width: 7px;
+  height: 320px;
+  left: 280px;
+  top: 0px;
+  background-color: var(--color-dark-text);
 }
 
 .services-tab{
@@ -500,16 +529,48 @@ body{
 }
 
 .container-inner{
+  position: relative;
   grid-area: content;
   margin-left: 116px;
 }
 
 .services-title{
-  margin-bottom: 50px;
+  margin-bottom: 34px;
 }
 
 .services-text{
   display: none;
+}
+
+.services-text{
+  max-width: 480px;
+}
+
+.services-text-one::before{
+  content:"";
+  position: absolute;
+  width: 136px;
+  height: 164px;
+  background-image: url(../images/delivery.svg);
+  right: 0;
+}
+
+.services-text-two::before{
+  content:"";
+  position: absolute;
+  width: 171px;
+  height: 195px;
+  background-image: url(../images/guarantee.svg);
+  right: 0;
+}
+
+.services-text-three::before{
+  content:"";
+  position: absolute;
+  width: 156px;
+  height: 188px;
+  background-image: url(../images/credit.svg);
+  right: 0;
 }
 
 .tab-one:checked ~ .container-inner>.services-text-one {
@@ -522,6 +583,23 @@ body{
 
 .tab-three:checked ~ .container-inner>.services-text-three {
   display: block;
+}
+
+.services-tab::before{
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 34px;
+  background:linear-gradient(var(--bg-light) 7px, var(--bg-bright) 7px,var(--bg-bright) 15px, var(--bg-light) 15px);
+  z-index: -1;
+  left: 0;
+}
+
+.services-tab-one::before{
+  content: "";
+  position: absolute;
+  height: 34px;
+  background:linear-gradient(var(--color-light) 7px, var(--bg-bright) 7px,var(--bg-bright) 15px, var(--bg-light) 15px);
 }
 
 .tab:checked+.services-tab {
