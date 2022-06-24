@@ -511,6 +511,32 @@ body{
   padding: 10px;
 }
 
+.pagination-link-button:hover{
+  background-color: var(--bg-dark);
+}
+
+.pagination-link-button:focus{
+  outline: none;
+  border: 2px solid var(--focus);
+}
+
+.pagination-link-button:active{
+  opacity: 0.3;
+}
+
+.pagination-link-pare:hover{
+  color: var(--color-primary-text);
+}
+
+.pagination-link-pare:focus{
+  outline: none;
+  border: 2px solid var(--focus);
+}
+
+.pagination-link-pare:active{
+  opacity: 0.1;
+}
+
 /* Подвал */
 
 .page-footer{
