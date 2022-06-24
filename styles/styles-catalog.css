@@ -92,13 +92,13 @@ body{
   background: var(--bg-bright);
 }
 
-.button:active{
-  background-color: var(--hover);
-}
-
 .button:focus{
   outline: none;
   border: 2px solid var(--focus);
+}
+
+.button:active{
+  background-color: var(--hover);
 }
 
 .button:disabled{
@@ -129,15 +129,16 @@ body{
   opacity: 0.6;
 }
 
-.link-states:active{
-  opacity: 0.3;
-}
-
 .link-states:focus{
   outline: none;
   border: 2px solid var(--focus);
   opacity: 1;
 }
+
+.link-states:active{
+  opacity: 0.3;
+}
+
 
 /* Шапка */
 
@@ -567,6 +568,22 @@ body{
   text-decoration: none;
 }
 
+.footer-information-states:hover{
+  color: var(--hover);
+  text-decoration: underline;
+}
+
+.footer-information-states:focus{
+  outline: none;
+  border: 2px solid var(--focus);
+}
+
+.footer-information-states:active{
+  color: var(--hover);
+  text-decoration: underline;
+  opacity: 0.3;
+}
+
 .footer-information-phone{
   margin-left: auto;
 }
@@ -629,4 +646,15 @@ body{
   margin-right: 0;
 }
 
+.button-social:hover{
+  background-color: var(--hover);
+}
 
+.button-social:focus{
+  outline: none;
+  border: 2px solid var(--focus);
+}
+
+.button-social:active{
+  background-color: var(--hover);
+}

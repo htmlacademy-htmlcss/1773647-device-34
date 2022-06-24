@@ -90,13 +90,13 @@ body{
   background-color: var(--bg-bright);
 }
 
-.button:active{
-  background-color: var(--hover);
-}
-
 .button:focus{
   outline: none;
   border: 2px solid var(--focus);
+}
+
+.button:active{
+  background-color: var(--hover);
 }
 
 .button:disabled{
@@ -121,13 +121,13 @@ body{
   opacity: 0.6;
 }
 
-.link-states:active{
-  opacity: 0.3;
-}
-
 .link-states:focus{
   outline: none;
   border: 2px solid var(--focus);
+}
+
+.link-states:active{
+  opacity: 0.3;
 }
 
 /* Шапка */
@@ -446,6 +446,20 @@ body{
   margin-bottom: 30px;
 }
 
+.products-icons:hover::before{
+  background-color:var(--hover);
+}
+
+.products-navigation-item:focus{
+  outline: none;
+  border: 2px solid var(--focus);
+}
+
+.products-navigation-item:active{
+  opacity: 0.3;
+}
+
+
 .products-icons-1::after{
   content:"";
   width: 160px;
@@ -664,13 +678,13 @@ body{
   background: var(--bg-bright);
 }
 
-.services-tab:active{
-  background-color: var(--hover);
-}
-
 .services-tab:focus{
   outline: none;
   border: 2px solid var(--focus);
+}
+
+.services-tab:active{
+  background-color: var(--hover);
 }
 
 /* Информация о достаке */
@@ -707,6 +721,19 @@ body{
   position: absolute;
   background-color: var(--bg-bright);
   width: 125px;
+}
+
+/* .delivery-button:hover::before{
+  background-color: var(--hover);
+} */
+
+.delivery-button:focus{
+  outline: none;
+  border: 2px solid var(--focus);
+}
+
+.delivery-button:disabled{
+  opacity: 0.3;
 }
 
 /* О нас */
@@ -917,6 +944,22 @@ body{
   text-decoration: none;
 }
 
+.footer-information-states:hover{
+  color: var(--hover);
+  text-decoration: underline;
+}
+
+.footer-information-states:focus{
+  outline: none;
+  border: 2px solid var(--focus);
+}
+
+.footer-information-states:active{
+  color: var(--hover);
+  text-decoration: underline;
+  opacity: 0.3;
+}
+
 .footer-information-phone{
   margin-left: auto;
 }
@@ -977,6 +1020,19 @@ body{
 
 .footer-social-item:last-child{
   margin-right: 0;
+}
+
+.button-social:hover{
+  background-color: var(--hover);
+}
+
+.button-social:focus{
+  outline: none;
+  border: 2px solid var(--focus);
+}
+
+.button-social:active{
+  background-color: var(--hover);
 }
 
 /* Модалка */
