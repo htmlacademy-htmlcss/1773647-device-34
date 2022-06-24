@@ -318,6 +318,34 @@ body{
   display: flex;
   justify-content: space-between;
   margin: 25px 0 25px 0;
+  position: relative;
+}
+
+.button-arrow-one::before{
+  content:"";
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  background-image: url("../images/icons/icons-sort-up.svg");
+  background-repeat: no-repeat;
+  right: 70px;
+  top: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.button-arrow-two::before{
+  content:"";
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  background-image: url("../images/icons/icons-sort-up-two.svg");
+  background-repeat: no-repeat;
+  right: 40px;
+  top: 10px;
+  padding: 10px;
+  margin: auto;
+  cursor: pointer;
 }
 
 .container-product{
