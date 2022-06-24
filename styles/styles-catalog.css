@@ -88,6 +88,8 @@ body{
   background: linear-gradient(#fff 40%, #FFE17F 40%, #FFE17F 60%, #fff 60%, #fff 100%);
 }
 
+
+
 .title {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -107,6 +109,20 @@ body{
   margin: 0;
 }
 
+.link-states:hover{
+  opacity: 0.6;
+}
+
+.link-states:active{
+  opacity: 0.3;
+}
+
+.link-states:focus{
+  outline: none;
+  border: 2px solid var(--focus);
+  opacity: 1;
+}
+
 /* Шапка */
 
 .page-header {
@@ -119,19 +135,6 @@ body{
 
 .header-logo{
   padding-top: 20px;
-}
-
-.logo:hover{
-  opacity: 0.6;
-}
-
-.logo:active{
-  opacity: 0.3;
-}
-
-.logo:focus{
-  outline: none;
-  border: 2px solid var(--focus);
 }
 
 .container-user-menu{
@@ -217,6 +220,11 @@ body{
   align-items: center;
 }
 
+.catalog:focus{
+  outline: none;
+  border: 2px solid var(--focus);
+}
+
 .catalog{
   padding: 30px 30px 30px 0;
 }
@@ -248,6 +256,10 @@ body{
   border-radius: 50%;
   background-color: var(--bg-bright);
   margin-left: 7px;
+}
+
+.button-menu:hover{
+  opacity: 1;
 }
 
 .main-container{
