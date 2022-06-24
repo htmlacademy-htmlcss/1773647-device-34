@@ -253,6 +253,7 @@ body{
 }
 
 .breadcrumbs-item{
+  position: relative;
   margin-right: 36px;
   list-style-type: none;
 }
@@ -266,6 +267,20 @@ body{
   line-height: 19px;
   color: var(--color-dark-text);
   text-decoration: none;
+}
+
+.breadcrumbs-link::after{
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 7px;
+  background-image: url("../images/icons/icons-bread-crumbs.svg");
+  top: 12px;
+  right: -19px;
+}
+
+.breadcrumbs-item:last-child .breadcrumbs-link::after {
+  content: none;
 }
 
 /* Фильтр */
