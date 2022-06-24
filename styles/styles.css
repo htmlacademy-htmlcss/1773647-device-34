@@ -86,6 +86,23 @@ body{
   background: linear-gradient(#fff 40%, #FFE17F 40%, #FFE17F 60%, #fff 60%, #fff 100%);
 }
 
+.button:hover{
+  background-color: var(--bg-bright);
+}
+
+.button:active{
+  background-color: var(--hover);
+}
+
+.button:focus{
+  outline: none;
+  border: 2px solid var(--focus);
+}
+
+.button:disabled{
+  opacity: 0.3;
+}
+
 .title {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -415,6 +432,11 @@ body{
   margin-bottom: 80px;
 }
 
+.products-navigation-item:focus{
+  outline: none;
+  border: 2px solid var(--focus);
+}
+
 .products-icons::before{
   content:"";
   display: block;
@@ -636,6 +658,19 @@ body{
   text-transform: uppercase;
   background-color: var(--color-dark-text);
   color: var(--bg-bright);
+}
+
+.services-tab:hover{
+  background: var(--bg-bright);
+}
+
+.services-tab:active{
+  background-color: var(--hover);
+}
+
+.services-tab:focus{
+  outline: none;
+  border: 2px solid var(--focus);
 }
 
 /* Информация о достаке */

@@ -88,6 +88,22 @@ body{
   background: linear-gradient(#fff 40%, #FFE17F 40%, #FFE17F 60%, #fff 60%, #fff 100%);
 }
 
+.button:hover{
+  background: var(--bg-bright);
+}
+
+.button:active{
+  background-color: var(--hover);
+}
+
+.button:focus{
+  outline: none;
+  border: 2px solid var(--focus);
+}
+
+.button:disabled{
+  opacity: 0.3;
+}
 
 
 .title {
