@@ -72,6 +72,7 @@ body{
 }
 
 .button {
+  position: relative;
   display: inline-block;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -83,14 +84,27 @@ body{
   color: var(--color-dark-text);
   cursor: pointer;
   padding: 10px 34px;
-  background: linear-gradient(#fff 40%, #FFE17F 40%, #FFE17F 60%, #fff 60%, #fff 100%);
+  z-index: 2;
+}
+
+.button::before{
+  content:"";
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  left: 0%;
+  right: 0%;
+  top: 40%;
+  bottom: 40%;
+  background-color: var(--bg-bright);
+  z-index: -1;
 }
 
 .button:hover{
   background-color: var(--bg-bright);
 }
 
-.button:focus{
+.button:focus-visible{
   outline: 2px solid var(--focus);
 }
 
@@ -120,7 +134,7 @@ body{
   opacity: 0.6;
 }
 
-.link-states:focus{
+.link-states:focus-visible{
   outline: 2px solid var(--focus);
 }
 
@@ -222,10 +236,9 @@ body{
 .catalog{
   display: flex;
   align-items: center;
-  padding: 30px 30px 30px 0;
 }
 
-.catalog:focus{
+.catalog:focus-visible{
   outline: 2px solid var(--focus);
 }
 
@@ -260,6 +273,10 @@ body{
 
 .button-menu:hover{
   opacity: 1;
+}
+
+.button-menu:focus{
+  outline: none;
 }
 
 .main-container{
@@ -427,7 +444,7 @@ body{
   margin-bottom: 80px;
 }
 
-.products-navigation-item:focus{
+.products-navigation-item:focus-visible{
   outline: 2px solid var(--focus);
 }
 
@@ -451,7 +468,6 @@ body{
 .products-navigation-item:active{
   opacity: 0.3;
 }
-
 
 .products-icons-1::after{
   content:"";
@@ -570,6 +586,7 @@ body{
 }
 
 .services-tab{
+  position: relative;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -642,18 +659,14 @@ body{
 .services-tab::before{
   content: "";
   position: absolute;
+  height: 8px;
   width: 160px;
-  height: 34px;
-  background:linear-gradient(var(--bg-light) 7px, var(--bg-bright) 7px,var(--bg-bright) 15px, var(--bg-light) 15px);
+  left: 0%;
+  right: 0%;
+  top: 40%;
+  bottom: 40%;
+  background-color: var(--bg-bright);
   z-index: -1;
-  left: 0;
-}
-
-.services-tab-one::before{
-  content: "";
-  position: absolute;
-  height: 34px;
-  background:linear-gradient(var(--color-light) 7px, var(--bg-bright) 7px,var(--bg-bright) 15px, var(--bg-light) 15px);
 }
 
 .tab:checked+.services-tab {
@@ -671,7 +684,7 @@ body{
   background: var(--bg-bright);
 }
 
-.services-tab:focus{
+.services-tab:focus-visible{
   outline: 2px solid var(--focus);
 }
 
@@ -715,11 +728,8 @@ body{
   width: 125px;
 }
 
-/* .delivery-button:hover::before{
-  background-color: var(--hover);
-} */
 
-.delivery-button:focus{
+.delivery-button:focus-visible{
   outline: 2px solid var(--focus);
 }
 
@@ -884,7 +894,7 @@ body{
   border: 3px solid var(--color-light);
 }
 
-.mailing-button:focus{
+.mailing-button:focus-visible{
   outline: 2px solid var(--focus);
 }
 
@@ -960,7 +970,7 @@ body{
   text-decoration: underline;
 }
 
-.footer-information-states:focus{
+.footer-information-states:focus-visible{
   outline: 2px solid var(--focus);
 }
 
@@ -1036,7 +1046,7 @@ body{
   background-color: var(--hover);
 }
 
-.button-social:focus{
+.button-social:focus-visible{
   outline: 2px solid var(--focus);
 }
 
