@@ -91,8 +91,7 @@ body{
 }
 
 .button:focus{
-  outline: none;
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
 }
 
 .button:active{
@@ -122,8 +121,7 @@ body{
 }
 
 .link-states:focus{
-  outline: none;
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
 }
 
 .link-states:active{
@@ -230,8 +228,7 @@ body{
 }
 
 .catalog:focus{
-  outline: none;
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
 }
 
 .page-item{
@@ -433,9 +430,7 @@ body{
 }
 
 .products-navigation-item:focus{
-  outline: none;
-  border: 2px solid var(--focus);
-}
+  outline: 2px solid var(--focus);
 
 .products-icons::before{
   content:"";
@@ -451,8 +446,7 @@ body{
 }
 
 .products-navigation-item:focus{
-  outline: none;
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
 }
 
 .products-navigation-item:active{
@@ -679,8 +673,7 @@ body{
 }
 
 .services-tab:focus{
-  outline: none;
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
 }
 
 .services-tab:active{
@@ -728,8 +721,7 @@ body{
 } */
 
 .delivery-button:focus{
-  outline: none;
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
 }
 
 .delivery-button:disabled{
@@ -950,8 +942,7 @@ body{
 }
 
 .footer-information-states:focus{
-  outline: none;
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
 }
 
 .footer-information-states:active{
@@ -1027,8 +1018,7 @@ body{
 }
 
 .button-social:focus{
-  outline: none;
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
 }
 
 .button-social:active{

@@ -93,8 +93,7 @@ body{
 }
 
 .button:focus{
-  outline: none;
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
 }
 
 .button:active{
@@ -130,8 +129,7 @@ body{
 }
 
 .link-states:focus{
-  outline: none;
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
   opacity: 1;
 }
 
@@ -238,8 +236,7 @@ body{
 }
 
 .catalog:focus{
-  outline: none;
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
 }
 
 .catalog{
@@ -389,8 +386,8 @@ body{
   height: 10px;
   background-image: url("../images/icons/icons-sort-up.svg");
   background-repeat: no-repeat;
+  background-position: center;
   right: 70px;
-  top: 10px;
   padding: 10px;
   cursor: pointer;
 }
@@ -402,8 +399,8 @@ body{
   height: 10px;
   background-image: url("../images/icons/icons-sort-up-two.svg");
   background-repeat: no-repeat;
+  background-position: center;
   right: 40px;
-  top: 10px;
   padding: 10px;
   margin: auto;
   cursor: pointer;
@@ -516,8 +513,7 @@ body{
 }
 
 .pagination-link-button:focus{
-  outline: none;
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
 }
 
 .pagination-link-button:active{
@@ -529,8 +525,7 @@ body{
 }
 
 .pagination-link-pare:focus{
-  outline: none;
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
 }
 
 .pagination-link-pare:active{
@@ -600,8 +595,7 @@ body{
 }
 
 .footer-information-states:focus{
-  outline: none;
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
 }
 
 .footer-information-states:active{
@@ -677,8 +671,7 @@ body{
 }
 
 .button-social:focus{
-  outline: none;
-  border: 2px solid var(--focus);
+  outline: 2px solid var(--focus);
 }
 
 .button-social:active{
