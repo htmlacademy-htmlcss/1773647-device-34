@@ -876,6 +876,26 @@ body{
   padding: 20px 40px;
 }
 
+.mailing-button:hover{
+  background-color: var(--color-dark-text);
+  color: var(--color-light);
+  border: 3px solid var(--color-light);
+}
+
+.mailing-button:focus{
+  outline: 2px solid var(--focus);
+}
+
+.mailing-button:active{
+  background-color: var(--color-dark-text);
+  color: #4C4C4C;
+  border: 3px solid var(--color-light);
+}
+
+.mailing-button:disabled{
+  opacity: 0.3;
+}
+
 /* Подвал */
 
 .page-footer{
