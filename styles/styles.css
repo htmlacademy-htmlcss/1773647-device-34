@@ -98,9 +98,12 @@ body{
   bottom: 40%;
   background-color: var(--bg-bright);
   z-index: -1;
+  transition: background-color 0.2s ease-in-out;
 }
 
-.button:hover{
+.button:hover::before{
+  height: 100%;
+  top: 0;
   background-color: var(--bg-bright);
 }
 
@@ -108,7 +111,9 @@ body{
   outline: 2px solid var(--focus);
 }
 
-.button:active{
+.button:active::before{
+  height: 100%;
+  top: 0;
   background-color: var(--hover);
 }
 
@@ -366,20 +371,20 @@ body{
   line-height: 50px;
   color: var(--color-dark-text);
   margin-top: 110px;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 .about-text-slider{
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 .button-slider{
   display: inline-block;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .description td {
-  padding-bottom: 20px;
+  padding-bottom: 12px;
   padding-right: 20px;
 }
 
@@ -414,7 +419,7 @@ body{
 .container-dot{
   position: absolute;
   right: 0;
-  bottom: 160px;
+  bottom: 170px;
   display: grid;
   grid-template-columns: repeat(3, 12px);
   column-gap: 20px;

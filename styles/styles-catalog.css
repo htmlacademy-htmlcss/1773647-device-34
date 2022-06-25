@@ -99,17 +99,22 @@ body{
   bottom: 40%;
   background-color: var(--bg-bright);
   z-index: -1;
+  transition: background-color 0.2s ease-in-out;
 }
 
-.button:hover{
-  background: var(--bg-bright);
+.button:hover::before{
+  height: 100%;
+  top: 0;
+  background-color: var(--bg-bright);
 }
 
 .button:focus-visible{
   outline: 2px solid var(--focus);
 }
 
-.button:active{
+.button:active::before{
+  height: 100%;
+  top: 0;
   background-color: var(--hover);
 }
 
