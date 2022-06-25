@@ -72,6 +72,7 @@ body{
 }
 
 .button {
+  position: relative;
   display: inline-block;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -99,7 +100,7 @@ body{
   bottom: 40%;
   background-color: var(--bg-bright);
   z-index: -1;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, height 0.2s ease-in-out, top 0.2s ease-in-out;
 }
 
 .button:hover::before{
