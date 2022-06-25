@@ -147,7 +147,7 @@ body{
   opacity: 0.6;
 }
 
-.link-states:focus{
+.link-states:focus-visible{
   outline: 2px solid var(--focus);
   opacity: 1;
 }
@@ -406,6 +406,7 @@ body{
   right: 70px;
   padding: 10px;
   cursor: pointer;
+  opacity: 0.2;
 }
 
 .button-arrow-two::before{
@@ -420,6 +421,23 @@ body{
   padding: 10px;
   margin: auto;
   cursor: pointer;
+  opacity: 0.2;
+}
+
+.button-arrow-one:hover:before,
+.button-arrow-two:hover:before{
+  opacity: 0.5;
+}
+
+.button-arrow-one:focus-visible:before,
+.button-arrow-two:focus-visible:before{
+  outline: 2px solid var(--focus);
+  opacity: 1;
+}
+
+.button-arrow-one:active:before,
+.button-arrow-two:active:before{
+  opacity: 1;
 }
 
 .container-product{
@@ -555,6 +573,7 @@ body{
 
 .pagination-link-pare:hover{
   color: var(--color-primary-text);
+  opacity: 1;
 }
 
 .pagination-link-pare:focus-visible{
