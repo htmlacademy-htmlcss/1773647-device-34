@@ -137,7 +137,6 @@ body{
   opacity: 0.3;
 }
 
-
 /* Шапка */
 
 .page-header {
@@ -177,29 +176,31 @@ body{
 }
 
 .user-link{
-  position: relative;
   line-height: 30px;
   text-decoration: none;
   color: var(--color-dark-text);
 }
 
-.icon-basket::before{
-  content:"2";
-  position: absolute;
-  top: 0;
-  left: -17px;
-  width: 21px;
-  height: 21px;
-  background-color: var(--color-light);
-  border-radius: 50%;
+.icon-number{
+  position: relative;
   font-family: "Rubik","Arial",sans-serif;
   font-size: 14px;
   line-height: 17px;
   text-align: center;
+  width: 21px;
+  height: 21px;
+  background-color: var(--color-light);
+  border-radius: 50%;
+  padding: 2px 6px;
+  margin-right: -10px;
+  z-index: 1;
+  bottom: 2px;
 }
 
 .user-link-icon{
+  position: relative;
   margin-right: 12px;
+  z-index: 0;
 }
 
 .user-link-current{
@@ -464,6 +465,23 @@ body{
   width: 100%;
   margin-bottom: 45px;
   padding: 18px 0;
+}
+
+.product-button:hover{
+  border: 3px solid var(--color-dark-text);
+}
+
+.product-button:focus{
+  outline: 2px solid var(--focus);
+}
+
+.product-button:active{
+  border: 3px solid var(--color-dark-text);
+  opacity: 0.3;
+}
+
+.product-button:disabled{
+  opacity: 0.3;
 }
 
 /* Пагинация */
