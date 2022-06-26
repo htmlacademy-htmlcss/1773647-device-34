@@ -466,11 +466,11 @@ body{
   background-color:var(--hover);
 }
 
-.products-navigation-item:focus{
+.products-icons:focus-visible{
   outline: 2px solid var(--focus);
 }
 
-.products-navigation-item:active{
+.products-icons:active{
   opacity: 0.3;
 }
 
@@ -711,6 +711,7 @@ body{
 }
 
 .delivery-button{
+  position: relative;
   display: block;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 20px;
@@ -721,21 +722,63 @@ body{
   text-decoration: none;
   color: var(--color-dark-text);
   padding: 40px;
-  background: url("../images/icons/icons-truck.svg"),
-  url("../images/icons/icons-information.svg");
-  background-repeat:no-repeat;
-  background-position:center left, center right 30px;
+}
+
+.tooltip{
+  position: absolute;
+  right: 42px;
+  top: 30px;
+  width: 40px;
+  height: 40px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: var(--color-dark-text);
+  background-color: var(--bg-dark);
+  border: none;
+  border-radius: 50%;
+  opacity: 0.5;
 }
 
 .delivery-button::before{
+  content:"";
   position: absolute;
-  background-color: var(--bg-bright);
   width: 125px;
+  height: 100%;
+  background-color: var(--bg-bright);
+  top: 0;
+  left: 0;
 }
 
+.delivery-button::after{
+  content:"";
+  position: absolute;
+  width: 47px;
+  height: 31px;
+  background-image: url(../images/icons/icons-truck.svg);
+  left: 39px;
+  top: 35px;
+}
+
+.delivery-button:hover:before{
+  content:"";
+  position: absolute;
+  width: 125px;
+  height: 100%;
+  background-color: var(--hover);
+  top: 0;
+  left: 0;
+}
+
+.tooltip:hover{
+  opacity: 1;
+}
 
 .delivery-button:focus-visible{
   outline: 2px solid var(--focus);
+}
+
+.delivery-button:active{
+  opacity: 0.3;
 }
 
 .delivery-button:disabled{
