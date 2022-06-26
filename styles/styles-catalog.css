@@ -25,7 +25,7 @@
 }
 
 :root{
-  --color-light: #fff;
+  --color-light: #ffffff;
   --color-dark-text: #000000;
   --color-primary-text:#444444;
   --bg-light:#F0F0F0;
@@ -271,6 +271,10 @@ body{
   color: var(--color-dark-text);
 }
 
+.page-link{
+  outline: none;
+}
+
 .button-menu{
   padding: 17px 20px;
   border: 2px solid #000000;
@@ -292,7 +296,7 @@ body{
   flex-grow: 1;
 }
 
-.catalog:focus-visible{
+.catalog:focus-within{
   outline: 2px solid var(--focus);
 }
 
@@ -492,12 +496,13 @@ body{
   display: none;
 }
 
-.product-card:hover{
+.product-card-link:hover .product-card-image,
+.product-card-link:hover .product-card-content{
   opacity: 0.6;
 }
 
-.product-card-button:hover{
-  display: block;
+.product-card-link .product-card-button{
+  display: none;
   position: absolute;
   font-family: 'Raleway';
   font-size: 18px;
@@ -511,15 +516,27 @@ body{
   z-index: 1;
 }
 
-.product-card-button:hover::before{
+.product-card-button::before{
   content:"";
   position: absolute;
   height: 8px;
   width: 220px;
   left: 0;
-  top: 8px;
+  top: 6px;
   background-color: var(--bg-bright);
   z-index: -1;
+}
+
+.product-card-link:hover .product-card-button{
+  display: block;
+}
+
+.product-card-link:focus-visible{
+  outline: 2px solid var(--focus);
+}
+
+.product-card-link:active .product-card-button::before{
+  background-color: var(--hover);
 }
 
 .product-button{
@@ -613,6 +630,8 @@ body{
 
 .pagination-link-pare:focus-visible{
   outline: 2px solid var(--focus);
+  color: rgba(68, 68, 68, 0.3);
+  opacity: 1;
 }
 
 .pagination-link-pare:active{
@@ -627,6 +646,7 @@ body{
 
 .container-footer{
   margin-top: 50px;
+  margin-bottom: 60px;
 }
 
 .footer-logo{
@@ -738,7 +758,6 @@ body{
   column-gap: 15px;
   margin: 0;
   padding: 0;
-  margin-bottom: 60px;
 }
 
 .button-social{
@@ -798,7 +817,7 @@ body{
   outline: none;
 }
 
-.button-social:focus-visible{
+.footer-social-item:focus-within{
   outline: 2px solid var(--focus);
 }
 
@@ -808,15 +827,17 @@ body{
   opacity: 0.3;
 }
 
+/* Лого html */
+
+.footer-logo-html{
+  fill: var(--hover);
+}
+
 .footer-logo-html:hover{
   fill: var(--color-light);
 }
 
 .logo-html:focus-visible{
-  outline: none;
-}
-
-.footer-logo-html:focus-visible{
   outline: 2px solid var(--focus);
 }
 
