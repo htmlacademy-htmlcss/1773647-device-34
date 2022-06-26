@@ -668,6 +668,22 @@ body{
   color: var(--color-light);
 }
 
+.footer-phone:hover{
+  color: var(--hover);
+}
+
+.footer-phone:focus{
+  outline: none;
+}
+
+.footer-phone:focus-visible{
+  outline: 2px solid var(--focus);
+}
+
+.footer-phone:active{
+  opacity: 0.3;
+}
+
 /* Соц сети */
 
 .footer-social{
