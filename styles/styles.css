@@ -96,6 +96,7 @@ body{
   right: 0%;
   top: 40%;
   bottom: 40%;
+  border:none;
   background-color: var(--bg-bright);
   z-index: -1;
   transition: background-color 0.2s ease-in-out, height 0.2s ease-in-out, top 0.2s ease-in-out;
@@ -616,10 +617,6 @@ body{
 
 .services-text{
   display: none;
-}
-
-.services-text{
-  max-width: 480px;
 }
 
 .services-text-one::before{
