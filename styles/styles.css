@@ -1116,6 +1116,10 @@ body{
 }
 
 .button-social:focus-visible{
+  outline: none;
+}
+
+.footer-social-item:focus-visible{
   outline: 2px solid var(--focus);
 }
 
@@ -1127,6 +1131,10 @@ body{
 
 .footer-logo-html:hover{
   fill: var(--color-light);
+}
+
+.logo-html:focus-visible{
+  outline: none;
 }
 
 .footer-logo-html:focus-visible{
