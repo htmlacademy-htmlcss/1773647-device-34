@@ -134,6 +134,7 @@ body{
 .about-text{
   font-family: "Rubik","Arial",sans-serif;
   margin: 0;
+  max-width: 470px;
 }
 
 .link-states:hover{
