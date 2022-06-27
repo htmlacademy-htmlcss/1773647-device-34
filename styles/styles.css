@@ -1215,6 +1215,11 @@ body{
   background: var(--color-light);
 }
 
+.modal-close{
+  border:none;
+  padding: 0;
+}
+
 .modal-close::before{
   content: "";
   position: absolute;
@@ -1223,6 +1228,7 @@ body{
   background-image:url("../images/icons/icons-cross.svg");
   right: 80px;
   top: 96px;
+  cursor: pointer;
 }
 
 .modal-close:hover:before{
@@ -1294,7 +1300,7 @@ body{
 .field-name{
   background-image: url("../images/icons/icons-modal-logo.svg");
   background-repeat: no-repeat;
-  background-position: 325px, 24px;
+  background-position: right 24px center;
 }
 
 .form-text{
@@ -1307,7 +1313,7 @@ body{
 .field-email{
   background-image: url("../images/icons/icons-modal-email.svg");
   background-repeat: no-repeat;
-  background-position: 325px, 24px;
+  background-position: right 24px center;
 }
 
 .error{
@@ -1326,11 +1332,11 @@ body{
   display: flex;
 }
 
-.number-minus,
-.number-plus{
+.button-number{
   width: 60px;
   height: 60px;
   border: none;
+  cursor: pointer;
 }
 
 .field-number{
@@ -1338,6 +1344,28 @@ body{
   height: 56px;
   padding: 0;
   text-align: center;
+}
+
+.field:hover{
+  background-color: var(--bg-dark);
+}
+
+.field:focus,
+.button-number:focus{
+  outline: none;
+}
+
+.field:focus-visible,
+.button-number:focus-visible{
+  outline: 2px solid var(--focus);
+}
+
+.field:active{
+  background-color: var(--bg-light-dark);
+}
+
+.field:disabled{
+  opacity: 0.3;
 }
 
 .button-modal{
