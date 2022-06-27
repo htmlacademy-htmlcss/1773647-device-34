@@ -269,7 +269,7 @@
     <section class="mailing">
       <div class="page-container container-mailing">
         <div class="container-mailing-text">
-          <h2 class="mailing-title title">Подпишитесь на рассылку</h2>
+          <h2 class="mailing-title title">Подпишитесь <br> на рассылку</h2>
           <p class="about-text">Еженедельный дайджест с обзорами новинок,длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         </div>
 
@@ -347,6 +347,7 @@
   <section class="modal">
     <div class="container-modal">
       <h2 class="modal-title title">Доставка под заказ</h2>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
       <p class="modal-form-inner modal-form-name">
         <label class="form-label" for="name">Ваше имя:</label>
@@ -355,7 +356,7 @@
       </p>
       <p class="modal-form-inner modal-form-email">
         <label class="form-label" for="email">Ваш e-mail:</label>
-        <input class="field field-email error" id="email" type="email" name="email" placeholder="Почта" active/>
+        <input class="field field-email error" id="email" type="email" name="email" placeholder="Почта"/>
         <span class="error-text">Забавный у вас адрес</span>
       </p>
       <p class="modal-form-inner modal-form-text">
@@ -364,11 +365,11 @@
       </p>
       <p class="modal-form-inner modal-form-number">
         <label class="form-label" for="number">Количество</label>
-        <div class="container-number">
+        <span class="container-number">
           <button class="number-minus" type="button">—</button>
           <input class="field field-number" type="number" id="number" name="number" min="0" max="100" value="1" readonly />
           <button class="number-plus" type="button">+</button>
-        </div>
+        </span>
       </p>
       <button class="button button-modal" type="submit">Отправить</button>
     </form>
