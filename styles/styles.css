@@ -1203,15 +1203,26 @@ body{
 /* Модалка */
 
 .modal{
+  position: relative;
   display: block;
   width: 920px;
   margin: auto;
 }
 
 .container-modal{
-  padding: 80px;
+  padding: 72px;
   border: 10px solid #000000;
   background: var(--color-light);
+}
+
+.container-modal::before{
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-image:url("../images/icons/icons-cross.svg");
+  right: 80px;
+  top: 96px;
 }
 
 .modal-title{
@@ -1258,7 +1269,67 @@ body{
   margin-bottom: 15px;
 }
 
+.field{
+  padding: 20px 0 20px 20px;
+  background-color: var(--bg-light);
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border: 2px solid var(--bg-light);
+}
+
+.field-name{
+  background-image: url("../images/icons/icons-modal-logo.svg");
+  background-repeat: no-repeat;
+  background-position: 325px, 24px;
+}
+
+.form-text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-dark-text);
+}
+
+.field-email{
+  background-image: url("../images/icons/icons-modal-email.svg");
+  background-repeat: no-repeat;
+  background-position: 325px, 24px;
+}
+
+.error{
+  border: 2px solid var(--color-status-error);
+  color: var(--color-dark-text);
+}
+
+.error-text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-status-error);
+}
+
+.container-number{
+  display: flex;
+}
+
+.number-minus,
+.number-plus{
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--bg-light);
+}
+
+.field-number{
+  width: 60px;
+  height: 56px;
+  padding: 0;
+  text-align: center;
+}
+
 .button-modal{
   border: none;
   justify-self: start;
+  background-color: var(--color-light);
 }

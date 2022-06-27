@@ -350,21 +350,25 @@
     <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
       <p class="modal-form-inner modal-form-name">
         <label class="form-label" for="name">Ваше имя:</label>
-        <input class="name" type="text" id="name" name="name" placeholder="Введите имя" />
+        <input class="field field-name" type="text" id="name" name="name" placeholder="Введите имя" />
+        <span class="form-text">Добавьте имя</span>
       </p>
       <p class="modal-form-inner modal-form-email">
         <label class="form-label" for="email">Ваш e-mail:</label>
-        <input id="email" type="email" name="email" placeholder="Введите почту" />
+        <input class="field field-email error" id="email" type="email" name="email" placeholder="Почта" active/>
+        <span class="error-text">Забавный у вас адрес</span>
       </p>
       <p class="modal-form-inner modal-form-text">
         <label class="form-label" for="text">Что нужно привезти:</label>
-        <input id="text" type="text" name="text" placeholder="В свободной форме" />
+        <input class="field" id="text" type="text" name="text" placeholder="В свободной форме" />
       </p>
       <p class="modal-form-inner modal-form-number">
-        <button class="number-minus" type="button">-</button>
         <label class="form-label" for="number">Количество</label>
-        <input type="number" id="number" name="number" min="0" max="100" value="1" readonly />
-        <button class="number-plus" type="button">+</button>
+        <div class="container-number">
+          <button class="number-minus" type="button">—</button>
+          <input class="field field-number" type="number" id="number" name="number" min="0" max="100" value="1" readonly />
+          <button class="number-plus" type="button">+</button>
+        </div>
       </p>
       <button class="button button-modal" type="submit">Отправить</button>
     </form>
