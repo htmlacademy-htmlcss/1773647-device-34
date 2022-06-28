@@ -213,6 +213,49 @@ body{
   margin-left: -2px;
 }
 
+.button-search:focus-visible{
+  outline: none;
+}
+
+.button-search:hover{
+  background-color: var(--color-dark-text);
+  color: var(--color-light);
+}
+
+.input-search:focus-visible{
+  outline: none;
+}
+
+.input-search:focus-visible::before{
+  content:"";
+  position: absolute;
+  width: 363px;
+  height: 44px;
+  outline: 2px solid var(--focus);
+  top: 0;
+  left: 0;
+}
+
+.button-search:focus-visible::before{
+  content:"";
+  position: absolute;
+  width: 164px;
+  height: 44px;
+  outline: 2px solid var(--focus);
+  top: 0;
+  right: 0;
+}
+
+.button-search:active{
+  background-color: var(--color-dark-text);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-search:disabled,
+.input-search:disabled{
+  opacity: 0.3;
+}
+
 /* Пользовательское меню */
 
 .navigation{
