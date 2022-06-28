@@ -568,11 +568,6 @@ body{
   border: 2px solid var(--color-dark-text);
 }
 
-.select-control{
-  color: var(--color-dark-text);
-  border: none;
-}
-
 /* Bluetooth */
 
 .control-mark-radio{
@@ -602,10 +597,41 @@ body{
 /* Продукты */
 
 .container-sorting{
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin: 25px 0 25px 0;
   position: relative;
+}
+
+.subtitle-sorting{
+  margin-left: 40px;
+}
+
+.select-control{
+  font: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--color-dark-text);
+  border: none;
+  appearance: none;
+  background-color: var(--dg-dark);
+  background-image: url("../images/icons/icons-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.select-control:hover{
+  opacity: 0.6;
+}
+
+.select-control:focus-visible{
+  outline: 2px solid var(--focus);
+}
+
+.select-control:active{
+  opacity: 0.3;
 }
 
 .button-arrow-one::before{
