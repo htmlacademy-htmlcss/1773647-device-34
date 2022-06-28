@@ -308,6 +308,99 @@ body{
   padding-right: 0;
 }
 
+/* Popover */
+
+.user-link-basket{
+  position: relative;
+}
+
+.popover{
+  position: absolute;
+  background-color: var(--color-dark-text);
+  z-index: 3;
+  color: var(--color-light);
+  left: -120px;
+}
+
+.popover-cart::before{
+  content:"";
+  position: absolute;
+  width: 14px;
+  height: 6px;
+  background-image:url("../images/popover-triangle.svg");
+  top: -6px;
+  left: 153px;
+}
+
+.popover-list{
+  padding: 0;
+}
+
+.popover-user{
+  display: grid;
+  grid-template-columns: 39px 185px 10px;
+  gap: 23px;
+  list-style-type: none;
+  padding: 20px 20px;
+}
+
+.popover-link{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: var(--color-light);
+  max-width: 155px;
+}
+
+.close{
+  background-image: url("../images/icons/icons-close-white.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  border:none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container-price{
+  display: flex;
+  justify-content: space-between;
+  background-color: #1A1A1A;
+  padding: 20px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.popover-button{
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: var(--color-light);
+  border: none;
+  padding: 14px 23px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.popover-button:hover{
+  background-color: var(--bg-bright);
+}
+
+.popover-button:focus-visible{
+  outline: 2px solid var(--focus);
+}
+
+.popover-button:active{
+  background-color: var(--bg-bright);
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /* Каталог и услуги */
 
 .container-menu{
