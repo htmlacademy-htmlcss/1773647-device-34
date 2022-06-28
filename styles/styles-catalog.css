@@ -373,8 +373,9 @@ body{
 /* Стоимость */
 
 .range{
+  position: relative;
   width: 200px;
-  margin-bottom: 35px;
+  margin-bottom: 47px;
 }
 
 .range-scale{
@@ -478,16 +479,31 @@ body{
 /* Цвет */
 
 .catalog-filter-group{
+  position: relative;
   width: 200px;
   margin: 0;
   padding: 0;
   border: none;
   margin-right: 60px;
+  margin-bottom: 47px;
+}
+
+.catalog-filter-group-three{
   margin-bottom: 35px;
+}
+
+.catalog-filter-title::before{
+  content:"";
+  position: absolute;
+  width: 200px;
+  height: 2px;
+  background-color: var(--color-dark-text);
+  top: -12px;
 }
 
 .catalog-filter-list{
   padding: 0;
+  margin: 0;
 }
 
 .catalog-filter-item{
@@ -555,6 +571,27 @@ body{
 .select-control{
   color: var(--color-dark-text);
   border: none;
+}
+
+/* Bluetooth */
+
+.control-mark-radio{
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before{
+  position: absolute;
+  content:"";
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-dark-text);
+  border-radius: 50%;
+  top: 6px;
+  left: 6px;
+}
+
+.control-input[type="radio"]:checked + .control-mark{
+  border: 2px solid var(--color-dark-text);
 }
 
 .button-catalog{
