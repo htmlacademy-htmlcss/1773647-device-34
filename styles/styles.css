@@ -1360,12 +1360,17 @@ body{
   outline: 2px solid var(--focus);
 }
 
-.field:active{
+.field:disabled{
+  opacity: 0.3;
+}
+
+.field:invalid{
   background-color: var(--bg-light-dark);
 }
 
-.field:disabled{
-  opacity: 0.3;
+.field::placeholder {
+  color:  var(--color-dark-text);
+  opacity: 1;
 }
 
 .button-modal{

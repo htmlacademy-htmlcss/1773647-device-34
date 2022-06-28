@@ -361,23 +361,195 @@ body{
   margin-bottom: 60px;
 }
 
-.catalog-filter-group{
-  width: 200px;
-  margin-right: 60px;
-}
-
 .catalog-filter-title{
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   color: var(--color-dark-text);
   margin: 0;
+  margin-bottom: 20px;
+}
+
+/* Стоимость */
+
+.range{
+  width: 200px;
+  margin-bottom: 35px;
+}
+
+.range-scale{
+  position: relative;
+  height: 2px;
+  width: 200px;
+  background-color: var(--bg-dark);
+  margin-bottom: 11px;
+}
+
+.range-bar{
+  position: absolute;
+  height: 2px;
+  background-color: var(--color-dark-text);
+}
+
+.range-toggle{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius:50%;
+  border: 2px solid var(--color-dark-text);
+  background-color: var(--bg-light-dark);
+  cursor: pointer;
+}
+
+.range-toggle:hover{
+  opacity: 0.5;
+}
+
+.range-toggle:focus-visible::before{
+  content:"";
+  position: absolute;
+  left: -28%;
+  top: -28%;
+  width: 18px;
+  height: 18px;
+  border-radius: 0;
+  outline: none;
+  border:2px solid var(--focus);
+}
+
+.range-toggle:active{
+  background-color: var(--color-dark-text);
+}
+
+.toggle-min{
+  left: 0;
+  top: -9px;
+}
+
+.toggle-max{
+  left: 135px;
+  top: -9px;
+}
+
+.range-wrapper-inputs{
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-filter-label {
+  display: flex;
+  opacity: 0.3;
+}
+
+.range-input{
+  width: 30px;
+  border:none;
+  background-color: transparent;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 0;
+  padding-left: 5px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-filter-label{
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.catalog-filter-label:last-child{
+  margin-left: 67px;
+}
+
+.catalog-filter-label:focus{
+  outline: none;
+}
+
+.catalog-filter-label:focus-visible{
+  outline:2px solid var(--focus);
+  opacity: 1;
+}
+
+/* Цвет */
+
+.catalog-filter-group{
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-right: 60px;
+  margin-bottom: 35px;
+}
+
+.catalog-filter-list{
+  padding: 0;
+}
+
+.catalog-filter-item{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 17px;
 }
 
 .control{
+  position: relative;
+  display: block;
   font-size: 16px;
   line-height: 19px;
   color: var(--color-dark-text);
+  padding-left: 36px;
+}
+
+.control-mark{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -2px;
+  left: 0;
+  border: 2px solid #cccccc;
+  border-radius: 3px;
+}
+
+.control:hover .control-mark,
+.control:hover .control-label{
+  opacity: 0.6;
+}
+
+.control:focus-visible .control-mark{
+  border: 2px solid var(--focus);
+}
+
+.control:active .control-mark,
+.control:active .control-label{
+  opacity: 0.3;
+}
+
+.control:disabled + .control-mark,
+.control:disabled + .control-label{
+  opacity: 0.1;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before{
+  position: absolute;
+  content:"";
+  width: 10px;
+  height: 10px;
+  background-image: url("../images/icons/icons-tick.svg");
+  top: 4px;
+  left: 5px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark{
+  border: 2px solid var(--color-dark-text);
 }
 
 .select-control{
