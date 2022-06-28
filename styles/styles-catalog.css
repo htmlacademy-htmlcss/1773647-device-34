@@ -171,15 +171,21 @@ body{
 }
 
 .container-user-menu{
-  display: grid;
+  /* display: grid;
   grid-template-columns: 510px 240px 255px;
   gap: 17px;
+  align-items: center; */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
 
 /* Поиск */
 
 .form-search{
+  position: relative;
   display: flex;
   margin-top: 30px;
   margin-bottom: 23px;
@@ -330,6 +336,59 @@ body{
 
 .page-item:last-child{
   padding-right: 0;
+}
+
+/* Subcatalog */
+
+.container-subcatalog{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1160px;
+  background-color: var(--bg-bright);
+  left: -60px;
+  top:35px;
+  z-index: 3;
+}
+
+.subcatalog{}
+
+.subcatalog{
+  padding: 0;
+  margin: 0;
+  padding-top: 32px;
+  padding-right: 57px;
+  padding-bottom: 57px;
+}
+
+.subcatalog:first-child{
+  padding-left: 60px;
+}
+
+.subcatalog-item{
+  margin-right: 72px;
+  margin-bottom: 18px;
+}
+
+.subcatalog-item{
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  list-style-type: none;
+}
+
+.subcatalog-link{
+  text-decoration: none;
+  color: var(--color-dark-text);
+}
+
+.catalog:focus-visible .container-subcatalog{
+  display: block;
+}
+
+.container-subcatalog{
+  display: none;
 }
 
 .page-link {
