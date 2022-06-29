@@ -498,8 +498,6 @@ body{
   z-index: 3;
 }
 
-.subcatalog{}
-
 .subcatalog{
   padding: 0;
   margin: 0;
@@ -1498,11 +1496,11 @@ body{
   row-gap: 60px;
 }
 
-.modal-form p{
+.modal-form{
+  color: var(--color-dark-text);
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: var(--color-dark-text);
   margin: 0;
 }
 
@@ -1520,6 +1518,7 @@ body{
 
 .modal-form-number{
   grid-column: 3/4;
+  position: relative;
 }
 
 .modal-form-inner{
@@ -1534,10 +1533,10 @@ body{
 .field{
   padding: 20px 0 20px 20px;
   background-color: var(--bg-light);
-  border: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: rgba(0, 0, 0, 0.3);
   border: 2px solid var(--bg-light);
 }
 
@@ -1615,6 +1614,64 @@ body{
 .field::placeholder {
   color:  var(--color-dark-text);
   opacity: 1;
+}
+
+.modal-tooltip-info{
+  display: none;
+}
+
+.tooltip-modal{
+  position: absolute;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: var(--color-dark-text);
+  text-align: center;
+  width: 26px;
+  height: 26px;
+  background-color: var(--bg-bright);
+  border: none;
+  border-radius: 50%;
+  right: 32px;
+  top:-2px;
+}
+
+.modal-tooltip{
+  position: absolute;
+  width: 200px;
+  min-height: 100px;
+  top: 470px;
+  right: 35px;
+  background-color: var(--color-dark-text);
+  color: var(--color-light);
+  padding: 18px;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.modal-tooltip::before{
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 6px;
+  top: -6px;
+  right: 80px;
+  background-image: url("../images/popover-triangle.svg");
+}
+
+.tooltip-text{
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.tooltip-modal:focus-visible{
+  outline: none;
+}
+
+.tooltip-modal:focus-visible .modal-tooltip{
+  display: block;
 }
 
 .button-modal{

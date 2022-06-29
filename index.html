@@ -416,10 +416,14 @@
       </p>
       <p class="modal-form-inner modal-form-text">
         <label class="form-label" for="text">Что нужно привезти:</label>
-        <input class="field" id="text" type="text" name="text" placeholder="В свободной форме" />
+        <input class="field" id="text" type="text" name="text" placeholder="В свободной форме"/>
       </p>
       <p class="modal-form-inner modal-form-number">
-        <label class="form-label" for="number">Количество</label>
+        <label class="form-label" for="number">Количество:</label>
+        <button class="tooltip-modal">i</button>
+        <div class="modal-tooltip-info modal-tooltip">
+          <p class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
+        </div>
         <span class="container-number">
           <button class="button-number number-minus" type="button">—</button>
           <input class="field field-number" type="number" id="number" name="number" min="0" max="100" value="1" readonly />
