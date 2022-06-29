@@ -1203,6 +1203,19 @@ body{
   background-position: left center;
 }
 
+.mailing-form-input{
+  width: 558px;
+  height:55px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #C4C4C4;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 16px;
+}
+
 .mailing-button{
   font-size: 18px;
   line-height: 21px;
@@ -1212,17 +1225,23 @@ body{
   text-transform: uppercase;
   border: 3px solid #C4C4C4;
   cursor: pointer;
-  padding: 20px 40px;
+  padding: 18px 40px;
+  margin-left: -6px;
 }
 
 .mailing-button:hover{
   background-color: var(--color-dark-text);
   color: var(--color-light);
-  border: 3px solid var(--color-light);
+  border: 3px solid var(--color-dark-text);
 }
 
 .mailing-button:focus-visible{
   outline: 2px solid var(--focus);
+}
+
+.mailing-form-inputn:focus-visible{
+  outline: none;
+  background-color: var(--bg-dark);
 }
 
 .mailing-button:active{
@@ -1493,7 +1512,7 @@ body{
   display: grid;
   grid-template-columns: 360px 140px 180px;
   column-gap: 40px;
-  row-gap: 60px;
+  row-gap: 40px;
 }
 
 .modal-form{
@@ -1524,6 +1543,7 @@ body{
 .modal-form-inner{
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .form-label{
@@ -1537,7 +1557,7 @@ body{
   font-size: 16px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.3);
-  border: 2px solid var(--bg-light);
+  border: none;
 }
 
 .field-name{
@@ -1560,7 +1580,7 @@ body{
 }
 
 .error{
-  border: 2px solid var(--color-status-error);
+  outline: 2px solid var(--color-status-error);
   color: var(--color-dark-text);
 }
 
@@ -1576,15 +1596,43 @@ body{
 }
 
 .button-number{
+  position: relative;
   width: 60px;
   height: 60px;
   border: none;
   cursor: pointer;
+  padding: 0;
+}
+
+.number-minus::before{
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 2px;
+  top: 29px;
+  left: 22px;
+  background-color: var(--color-dark-text);
+}
+
+.number-plus::before,
+.number-plus::after{
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 2px;
+  top: 29px;
+  left: 22px;
+  background-color: var(--color-dark-text);
+}
+
+.number-plus::before{
+  transform: rotate(90deg);
 }
 
 .field-number{
-  width: 56px;
-  height: 56px;
+  width: 60px;
+  height: 60px;
+  border: none;
   padding: 0;
   text-align: center;
 }
@@ -1616,7 +1664,65 @@ body{
   opacity: 1;
 }
 
-.modal-tooltip-info{
+.modal-tootip{
+  position: absolute;
+  width: 200px;
+  height: 160px;
+}
+
+.tooltip-button{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: var(--color-dark-text);
+  text-align: center;
+  width: 26px;
+  height: 26px;
+  background-color: var(--bg-bright);
+  border-radius: 50%;
+  margin-left: 122px;
+
+}
+
+.tooltip-text{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: var(--color-dark-text);
+  color: var(--color-light);
+  padding: 19px;
+  width: 164px;
+  right: 20px;
+  z-index: 2;
+  margin-top: 9px;
+  display: none;
+}
+
+.tooltip-text:before{
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 6px;
+  top: -6px;
+  right: 38px;
+  background-image: url("../images/popover-triangle.svg");
+}
+
+.tooltip-button:hover + .tooltip-text,
+.tooltip-button:focus + .tooltip-text {
+  display: block;
+}
+
+
+/* .modal-tooltip-info{
   display: none;
 }
 
@@ -1670,9 +1776,10 @@ body{
   outline: none;
 }
 
-.tooltip-modal:focus-visible .modal-tooltip{
+.tooltip-modal:hover .tooltip-text,
+.tooltip-modal:focus-visible .tooltip-text{
   display: block;
-}
+} */
 
 .button-modal{
   border: none;
