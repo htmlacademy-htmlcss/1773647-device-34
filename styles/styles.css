@@ -337,11 +337,14 @@ body{
 }
 
 .popover-user{
-  display: grid;
-  grid-template-columns: 39px 185px 10px;
-  gap: 23px;
+  display: flex;
   list-style-type: none;
   padding: 20px 20px;
+}
+
+.popover-product{
+  display: flex;
+  margin-right: 53px;
 }
 
 .popover-link{
@@ -351,6 +354,7 @@ body{
   text-decoration: none;
   color: var(--color-light);
   max-width: 155px;
+  margin-left: 23px;
 }
 
 .close{
@@ -383,7 +387,7 @@ body{
   text-transform: uppercase;
   background-color: var(--color-light);
   border: none;
-  padding: 14px 23px;
+  padding: 14px 21px;
   margin: 20px;
   cursor: pointer;
 }
@@ -399,6 +403,26 @@ body{
 .popover-button:active{
   background-color: var(--bg-bright);
   color: rgba(0, 0, 0, 0.3);
+}
+
+.popover-product:hover{
+  opacity: 0.6;
+}
+
+.popover-product:focus-within{
+  outline: 2px solid var(--focus);
+}
+
+.popover-product:active{
+  opacity: 0.3;
+}
+
+.user-link-basket:focus-within .popover{
+  display: block;
+}
+
+.popover{
+  display: none;
 }
 
 /* Каталог и услуги */
@@ -506,7 +530,7 @@ body{
   color: var(--color-dark-text);
 }
 
-.catalog:focus-visible .container-subcatalog{
+.catalog:focus-within .container-subcatalog{
   display: block;
 }
 
