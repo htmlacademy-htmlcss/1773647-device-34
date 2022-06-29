@@ -1216,6 +1216,10 @@ body{
   padding-left: 16px;
 }
 
+.mailing-error{
+  border-bottom: 3px solid var(--color-status-error);
+}
+
 .mailing-button{
   font-size: 18px;
   line-height: 21px;
@@ -1589,6 +1593,11 @@ body{
   font-size: 14px;
   line-height: 20px;
   color: var(--color-status-error);
+}
+
+.number-error{
+  display: none;
+  border: 2px solid var(--color-status-error);
 }
 
 .container-number{
