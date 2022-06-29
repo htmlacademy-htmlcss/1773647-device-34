@@ -79,11 +79,12 @@
 
         <div class="container-menu">
           <div class="catalog">
-            <a class="page-link" href="catalog.html">Каталог товаров</a>
-            <button class="button-menu" type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox=" 0 0 16 16" fill="none"><path d="M16 7.39H9v-7H7v7H0v2h7v7h2v-7h7v-2Z" fill="#000"/></svg>
-              <span class="visually-hidden">Развернуть меню</span>
-            </button>
+            <a class="page-link button-menu" href="#">Каталог товаров
+              <span class="button-menu-link"></span>
+            </a>
+
+            <!-- Subcatalog -->
+
             <div class="container-subcatalog">
               <ul class="subcatalog">
                 <li class="subcatalog-item">
@@ -331,7 +332,7 @@
         <div class="container-mailing-form">
           <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="get">
             <label class="visually-hidden" for="email">Ваш e-mail:</label>
-            <input class="mailing-form-input mailing-error" type="email" name="email" placeholder="Ваш e-mail" />
+            <input class="mailing-form-input" type="email" name="email" placeholder="Ваш e-mail" />
             <button class="mailing-button" type="submit">Подписаться</button>
           </form>
           <span class="mailing-text about-text">Это бесплатно</span>
@@ -399,7 +400,8 @@
     </div>
   </footer>
 
-  <section class="modal">
+  <!-- Модальное окно -->
+  <div class="modal modal-close">
     <div class="container-modal">
       <h2 class="modal-title title">Доставка под заказ</h2>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
@@ -423,15 +425,15 @@
 
         <!-- toltip -->
         <span class="modal-tootip">
-          <button class="tooltip-button" aria-labelledby="tooltip-label">i</button>
+          <button class="tooltip-button" type="button" aria-labelledby="tooltip-label">i</button>
           <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
         </span>
 
-        <span class="container-number number-error">
+        <span class="container-number">
           <button class="button-number number-minus" type="button">
             <span class="visually-hidden">Минус</span>
           </button>
-          <input class="field field-number" type="number" id="number" name="number" min="0" max="100" value="1" readonly />
+          <input class="field field-number" type="number" id="number" name="number" min="0" max="100" value="1"/>
           <button class="button-number number-plus" type="button">
             <span class="visually-hidden">Плюс</span>
           </button>
@@ -440,7 +442,7 @@
       <button class="button button-modal" type="submit">Отправить</button>
     </form>
     </div>
-  </section>
+  </div>
 </body>
 
 </html>
