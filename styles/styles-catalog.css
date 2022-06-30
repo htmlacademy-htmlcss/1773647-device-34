@@ -705,14 +705,17 @@ body{
   border-color: rgba(0, 0, 0, 0.6);
 }
 
+.range-toggle:focus-visible{
+  outline: none;
+}
+
 .range-toggle:focus-visible::before{
   content:"";
   position: absolute;
-  left: -28%;
-  top: -28%;
-  width: 18px;
-  height: 18px;
-  border-radius: 0;
+  left: -5px;
+  top: -5px;
+  width: 20px;
+  height: 20px;
   outline: none;
   border:2px solid var(--focus);
 }
@@ -841,9 +844,14 @@ body{
   opacity: 0.6;
 }
 
-.control-input:focus-visible + .control-mark{
+.control-input:focus-visible + .control-mark::after{
+  position: absolute;
+  content:"";
+  width: 28px;
+  height: 28px;
   border: 2px solid var(--focus);
-  outline-offset: 2px;
+  top: -6px;
+  left: -6px;
 }
 
 .control:active .control-mark,
