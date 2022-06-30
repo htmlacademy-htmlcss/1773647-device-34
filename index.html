@@ -20,7 +20,9 @@
 
         <div class="container-user-menu">
           <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
-            <input type="search" id="search" name="search" placeholder="Текст поиска" />
+            <div class="search">
+              <input class="input-search" type="search" id="search" name="search" placeholder="Текст поиска"/>
+            </div>
             <button class="button-search" type="submit">Найти</button>
           </form>
 
@@ -38,23 +40,79 @@
                 <svg class="user-link-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="13" fill="none"><path d="M6 .388916H4V12.3889h2V.388916ZM2 4.38892H0v7.99998h2V4.38892ZM10 3.38892H8v8.99998h2V3.38892Z" fill="#000"/></svg>
                 Сравнить</a>
             </li>
-            <li class="user-item">
+            <li class="user-item user-link-basket">
               <a class="user-link link-states" href="#">
                 <span class="icon-number">2</span>
                 <svg class="user-link-icon" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.3 5.39-3.5.2L8.6.69c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1l1.9-6.9v-.2c0-.4-.3-.8-.7-.8ZM8 2.29l2.2 3.2H5.9L8 2.29Z" fill="#000"/></svg>
-                <span class="user-link-basket">Корзина</span>
+                <span>Корзина</span>
               </a>
+
+              <!-- Поповер -->
+              <div class="popover popover-cart">
+                <ul class="popover-list">
+                  <li class="popover-user">
+                    <div class="popover-product">
+                      <img src="images/product-1-small.jpg" alt="Любительская черная селфи-палка, которая в развернутом состоянии держит телефон." width="39" height="43">
+                      <a class="popover-link" href="#">Любительская селфи-палка</a>
+                    </div>
+                    <button class="close">
+                      <span class="visually-hidden">Закрыть</span>
+                    </button>
+                  </li>
+                  <li class="popover-user">
+                    <div class="popover-product">
+                      <img src="images/product-2-small.jpg" alt="Профессиональная черная селфи-палка, которая свернута." width="39" height="43">
+                      <a class="popover-link" href="#">Профессиональная селфи-палка</a>
+                    </div>
+                    <button class="close">
+                      <span class="visually-hidden">Закрыть</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="container-price">
+                  <span>Товаров: 2</span>
+                  <span>Сумма: 2000 ₽</span>
+                </div>
+                <button class="popover-button">Открыть корзину</button>
+              </div>
             </li>
           </ul>
         </div>
 
         <div class="container-menu">
           <div class="catalog">
-            <a class="page-link" href="catalog.html">Каталог товаров</a>
-            <button class="button-menu" type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox=" 0 0 16 16" fill="none"><path d="M16 7.39H9v-7H7v7H0v2h7v7h2v-7h7v-2Z" fill="#000"/></svg>
-              <span class="visually-hidden">Развернуть меню</span>
+            <button type="button" class="page-link button-menu" href="#">Каталог товаров
+              <span class="button-menu-link"></span>
             </button>
+
+            <!-- Subcatalog -->
+
+            <div class="container-subcatalog">
+              <ul class="subcatalog">
+                <li class="subcatalog-item">
+                  <a class="subcatalog-link link-states" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="subcatalog-item">
+                  <a class="subcatalog-link link-states" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="subcatalog-item">
+                  <a class="subcatalog-link link-states" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="subcatalog">
+                <li class="subcatalog-item">
+                  <a class="subcatalog-link link-states" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="subcatalog-item">
+                  <a class="subcatalog-link link-states" href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="subcatalog">
+                <li class="subcatalog-item">
+                  <a class="subcatalog-link link-states" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="container-page-menu">
@@ -227,7 +285,7 @@
       <h2 class="visually-hidden">Информация о доставке</h2>
       <div class="container-button">
         <a href="#" class="delivery-button">Доставим редкий товар под заказ</a>
-        <button class="tooltip">i</button>
+        <button class="tooltip"></button>
       </div>
     </section>
 
@@ -269,14 +327,14 @@
     <section class="mailing">
       <div class="page-container container-mailing">
         <div class="container-mailing-text">
-          <h2 class="mailing-title title">Подпишитесь на рассылку</h2>
+          <h2 class="mailing-title title">Подпишитесь <br> на рассылку</h2>
           <p class="about-text">Еженедельный дайджест с обзорами новинок,длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         </div>
 
         <div class="container-mailing-form">
           <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="get">
             <label class="visually-hidden" for="email">Ваш e-mail:</label>
-            <input type="email" name="email" placeholder="Ваш e-mail" />
+            <input class="mailing-form-input" type="email" name="email" placeholder="Ваш e-mail" />
             <button class="mailing-button" type="submit">Подписаться</button>
           </form>
           <span class="mailing-text about-text">Это бесплатно</span>
@@ -344,32 +402,49 @@
     </div>
   </footer>
 
-  <section class="modal">
+  <!-- Модальное окно -->
+  <div class="modal modal-holder-close">
     <div class="container-modal">
       <h2 class="modal-title title">Доставка под заказ</h2>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
       <p class="modal-form-inner modal-form-name">
         <label class="form-label" for="name">Ваше имя:</label>
-        <input class="name" type="text" id="name" name="name" placeholder="Введите имя" />
+        <input class="field field-name" type="text" id="name" name="name" placeholder="Введите имя" />
+        <span class="form-text">Добавьте имя</span>
       </p>
       <p class="modal-form-inner modal-form-email">
         <label class="form-label" for="email">Ваш e-mail:</label>
-        <input id="email" type="email" name="email" placeholder="Введите почту" />
+        <input class="field field-email error" id="email" type="email" name="email" placeholder="Почта"/>
+        <span class="error-text">Забавный у вас адрес</span>
       </p>
       <p class="modal-form-inner modal-form-text">
         <label class="form-label" for="text">Что нужно привезти:</label>
-        <input id="text" type="text" name="text" placeholder="В свободной форме" />
+        <input class="field" id="text" type="text" name="text" placeholder="В свободной форме"/>
       </p>
       <p class="modal-form-inner modal-form-number">
-        <button class="number-minus" type="button">-</button>
-        <label class="form-label" for="number">Количество</label>
-        <input type="number" id="number" name="number" min="0" max="100" value="1" readonly />
-        <button class="number-plus" type="button">+</button>
+        <label class="form-label" for="number">Количество:</label>
+
+        <!-- toltip -->
+        <span class="modal-tootip">
+          <button class="tooltip-button" type="button" aria-labelledby="tooltip-label" aria-label="Информация"></button>
+          <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+        </span>
+
+        <span class="container-number">
+          <button class="button-number number-minus" type="button">
+            <span class="visually-hidden">Минус</span>
+          </button>
+          <input class="field field-number" type="number" id="number" name="number" min="0" max="100" value="1"/>
+          <button class="button-number number-plus" type="button">
+            <span class="visually-hidden">Плюс</span>
+          </button>
+        </span>
       </p>
       <button class="button button-modal" type="submit">Отправить</button>
     </form>
     </div>
-  </section>
+  </div>
 </body>
 
 </html>
