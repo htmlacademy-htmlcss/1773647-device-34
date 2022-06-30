@@ -252,6 +252,7 @@ body{
   width: 164px;
   height: 46px;
   outline: 2px solid var(--focus);
+  outline-offset: 1px;
   top: -1px;
   right: 23px;
 }
@@ -434,6 +435,10 @@ body{
   color: rgba(0, 0, 0, 0.3);
 }
 
+.popover-button:disabled{
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .popover-product:hover{
   opacity: 0.6;
 }
@@ -523,7 +528,7 @@ body{
   transform: rotate(90deg);
 }
 
-.button-menu:hover{
+.button-menu-link:hover{
   opacity: 1;
 }
 
