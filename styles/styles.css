@@ -1063,13 +1063,13 @@ body{
   top: 30px;
   width: 40px;
   height: 40px;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  color: var(--color-dark-text);
   background-color: var(--bg-dark);
   border: none;
   border-radius: 50%;
   opacity: 0.5;
+  background-image: url("../images/icons/icons-button-i.svg");
+  background-repeat: no-repeat;
+  background-position:19px 14px;
 }
 
 .tooltip:focus-visible{
@@ -1765,17 +1765,14 @@ input.field::placeholder{
   background-color: transparent;
   padding: 0;
   margin: 0;
-  display: block;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  color: var(--color-dark-text);
-  text-align: center;
   width: 26px;
   height: 26px;
   background-color: var(--bg-bright);
   border-radius: 50%;
   margin-left: 122px;
-
+  background-image: url("../images/icons/icons-modal-i.svg");
+  background-repeat: no-repeat;
+  background-position:11px 7px;
 }
 
 .tooltip-text{
