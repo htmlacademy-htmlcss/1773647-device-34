@@ -213,16 +213,16 @@ body{
   color: var(--color-light);
 }
 
-.input-search:focus-visible{
+/* .input-search:focus-visible{
   outline: none;
-}
+} */
 
-.input-search:focus-visible::before{
+.input-search:focus-visible{
   content:"";
-  position: absolute;
+  /* position: absolute; */
   width: 363px;
   height: 44px;
-  outline: 2px solid var(--focus);
+  border: 2px solid var(--focus);
   top: 0;
   left: 0;
 }
@@ -231,10 +231,10 @@ body{
   content:"";
   position: absolute;
   width: 164px;
-  height: 44px;
+  height: 46px;
   outline: 2px solid var(--focus);
-  top: 0;
-  right: 0;
+  top: -1px;
+  right: 23px;
 }
 
 .button-search:active{
@@ -359,6 +359,8 @@ body{
 }
 
 .close{
+  width: 10px;
+  height: 10px;
   background-image: url("../images/icons/icons-close-white.svg");
   background-repeat: no-repeat;
   background-position: right top;
@@ -393,11 +395,17 @@ body{
   cursor: pointer;
 }
 
+.popover-link:focus,
+.close:focus{
+  outline: none;
+}
+
 .popover-button:hover{
   background-color: var(--bg-bright);
 }
 
-.popover-button:focus-visible{
+.popover-button:focus-visible,
+.close:focus-visible{
   outline: 2px solid var(--focus);
 }
 
@@ -1506,9 +1514,9 @@ body{
   z-index: 5;
 }
 
-.modal-close{
+/* .modal-holder-close{
   display: none;
-}
+} */
 
 .container-modal{
   position: relative;
@@ -1520,7 +1528,7 @@ body{
 
 .modal-close{
   border:none;
-  padding: 0;
+  background: transparent;
 }
 
 .modal-close::before{
@@ -1530,7 +1538,7 @@ body{
   height: 26px;
   background-image:url("../images/icons/icons-cross.svg");
   right: 80px;
-  top: 96px;
+  top: 85px;
   cursor: pointer;
 }
 
@@ -1641,6 +1649,12 @@ input.field::placeholder{
   display: flex;
 }
 
+.field-number::-webkit-outer-spin-button,
+.field-number::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .number-error{
   border: 2px solid var(--color-status-error);
 }
@@ -1696,7 +1710,6 @@ input.field::placeholder{
   outline: none;
 }
 
-.field:focus-visible,
 .button-number:focus-visible{
   outline: 2px solid var(--focus);
 }
@@ -1738,7 +1751,6 @@ input.field::placeholder{
 
 .tooltip-text{
   position: absolute;
-  padding: 0;
   margin: 0;
   font-family: inherit;
   font-weight: 400;
@@ -1777,15 +1789,6 @@ input.field::placeholder{
   top: -6px;
   right: 80px;
   background-image: url("../images/popover-triangle.svg");
-}
-
-.tooltip-text{
-  padding: 0;
-  margin: 0;
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .tooltip-modal:focus-visible{

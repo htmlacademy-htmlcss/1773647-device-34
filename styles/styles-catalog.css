@@ -327,7 +327,16 @@ body{
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 22px;
+}
+
+.catalog{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.catalog:focus-within{
+  outline: 2px solid var(--focus);
 }
 
 .page-item{
@@ -338,31 +347,85 @@ body{
   padding-right: 0;
 }
 
+.page-link {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-dark-text);
+}
+
+.button-menu{
+  position: relative;
+  padding: 17px 60px 17px 0;
+  background-color: var(--bg-bright);
+  z-index: 4;
+}
+
+.button-menu-link{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: 0;
+  border: 2px solid var(--color-dark-text);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.button-menu-link::before,
+.button-menu-link::after{
+  content:"";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: var(--color-dark-text);
+  top: 24px;
+  left: 17px;
+}
+
+.button-menu-link::after{
+  transform: rotate(90deg);
+}
+
+.button-menu:hover{
+  opacity: 1;
+}
+
+.button-menu:focus-visible{
+  outline: none;
+}
+
+.button-menu:active::after{
+  transform: rotate(360deg);
+}
+
+.main-container{
+  flex-grow: 1;
+}
+
 /* Subcatalog */
 
 .container-subcatalog{
+  box-sizing: border-box;
   position: absolute;
   display: flex;
   flex-wrap: wrap;
   width: 1160px;
   background-color: var(--bg-bright);
   left: -60px;
-  top:35px;
+  top:45px;
   z-index: 3;
+  padding: 32px 60px 60px 60px;
 }
-
-.subcatalog{}
 
 .subcatalog{
   padding: 0;
   margin: 0;
-  padding-top: 32px;
-  padding-right: 57px;
-  padding-bottom: 57px;
-}
-
-.subcatalog:first-child{
-  padding-left: 60px;
 }
 
 .subcatalog-item{
@@ -383,53 +446,12 @@ body{
   color: var(--color-dark-text);
 }
 
-.catalog:focus-visible .container-subcatalog{
-  display: block;
+.catalog:focus-within .container-subcatalog{
+  display: flex;
 }
 
 .container-subcatalog{
   display: none;
-}
-
-.page-link {
-  font-family: "Raleway", "Arial", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: var(--color-dark-text);
-}
-
-.page-link{
-  outline: none;
-}
-
-.button-menu{
-  padding: 17px 20px;
-  border: 2px solid #000000;
-  opacity: 0.3;
-  border-radius: 50%;
-  background-color: var(--bg-bright);
-  margin-left: 7px;
-}
-
-.button-menu:hover{
-  opacity: 1;
-}
-
-.button-menu:focus-visible{
-  outline: none;
-}
-
-.main-container{
-  flex-grow: 1;
-}
-
-.catalog:focus-within{
-  outline: 2px solid var(--focus);
 }
 
 /* Каталог */
@@ -676,7 +698,7 @@ body{
   opacity: 0.6;
 }
 
-.control:focus-visible .control-mark{
+.control-input:focus-visible + .control-mark{
   border: 2px solid var(--focus);
 }
 
