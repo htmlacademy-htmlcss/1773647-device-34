@@ -23,7 +23,9 @@
 
           <div class="container-user-menu">
             <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
-              <input class="input-search" type="search" id="search" name="search" placeholder="Текст поиска" />
+              <div class="search">
+                <input class="input-search" type="search" id="search" name="search" placeholder="Текст поиска"/>
+              </div>
               <button class="button-search" type="submit">Найти</button>
             </form>
 
@@ -56,9 +58,9 @@
 
           <div class="container-menu">
             <div class="catalog">
-              <a class="page-link button-menu" href="#">Каталог товаров
+              <button type="button" class="page-link button-menu" href="#">Каталог товаров
                 <span class="button-menu-link"></span>
-              </a>
+              </button>
 
               <!-- Subcatalog -->
 
@@ -151,9 +153,11 @@
             </div>
 
             <div class="range-wrapper-inputs">
-              <label class="catalog-filter-label" for="">от<input class="range-input" type="number" value="0" name="min-price">
+              <label class="catalog-filter-label" for="">от
+                <input class="range-input" type="number" value="0" name="min-price">
               </label>
-              <label class="catalog-filter-label" for="">до<input class="range-input" type="number" value="5000" name="min-price" style="width: 70px">
+              <label class="catalog-filter-label" for="">до
+                <input class="range-input" type="number" value="5000" name="min-price" style="width: 70px">
               </label>
             </div>
           </div>

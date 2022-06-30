@@ -143,9 +143,34 @@ body{
 
 .link-states:focus-visible{
   outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
 
 .link-states:active{
+  opacity: 0.3;
+}
+
+.link-states-active{
+  border-bottom: 2px solid var(--color-dark-text);
+  padding-bottom: 4px;
+}
+
+.link-states-active:hover{
+  border-bottom: 2px solid var(--color-dark-text);
+  padding-bottom: 4px;
+  opacity: 0.6;
+}
+
+.link-states-active:focus-visible{
+  outline: 2px solid var(--focus);
+  outline-offset: 2px 2px 8px 2px;
+  border-bottom: 2px solid var(--color-dark-text);
+  padding-bottom: 4px;
+}
+
+.link-states-active:active{
+  border-bottom: 2px solid var(--color-dark-text);
+  padding-bottom: 4px;
   opacity: 0.3;
 }
 
@@ -162,7 +187,6 @@ body{
 .container-user-menu{
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -213,18 +237,13 @@ body{
   color: var(--color-light);
 }
 
-/* .input-search:focus-visible{
-  outline: none;
-} */
-
 .input-search:focus-visible{
-  content:"";
-  /* position: absolute; */
-  width: 363px;
-  height: 44px;
-  border: 2px solid var(--focus);
-  top: 0;
-  left: 0;
+  outline: none;
+}
+
+.search:focus-within{
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
 
 .button-search:focus-visible::before{
@@ -407,6 +426,7 @@ body{
 .popover-button:focus-visible,
 .close:focus-visible{
   outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
 
 .popover-button:active{
@@ -420,6 +440,7 @@ body{
 
 .popover-product:focus-within{
   outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
 
 .popover-product:active{
@@ -449,10 +470,6 @@ body{
   align-items: center;
 }
 
-.catalog:focus-within{
-  outline: 2px solid var(--focus);
-}
-
 .page-item{
   padding: 22px 22px;
 }
@@ -477,7 +494,7 @@ body{
   position: relative;
   padding: 17px 60px 17px 0;
   background-color: var(--bg-bright);
-  z-index: 4;
+  border:none;
 }
 
 .button-menu-link{
@@ -511,10 +528,11 @@ body{
 }
 
 .button-menu:focus-visible{
-  outline: none;
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
 
-.button-menu:active::after{
+.button-menu:focus .button-menu-link::after{
   transform: rotate(360deg);
 }
 
@@ -532,7 +550,7 @@ body{
   width: 1160px;
   background-color: var(--bg-bright);
   left: -60px;
-  top:45px;
+  top:59px;
   z-index: 3;
   padding: 32px 60px 60px 60px;
 }
@@ -739,6 +757,7 @@ body{
   width: 16px;
   height: 16px;
   outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
 
 /* Список продуктов */
@@ -754,6 +773,7 @@ body{
 
 .products-navigation-item:focus-within{
   outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
 
 .products-icons::before{
@@ -998,6 +1018,7 @@ body{
 
 .services-tab:focus-visible{
   outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
 
 .services-tab:active{
@@ -1086,6 +1107,7 @@ body{
 
 .delivery-button:focus-visible{
   outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
 
 .delivery-button:active{
@@ -1282,6 +1304,7 @@ body{
 
 .mailing-button:focus-visible{
   outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
 
 .mailing-button:active{
@@ -1514,9 +1537,9 @@ body{
   z-index: 5;
 }
 
-/* .modal-holder-close{
+.modal-holder-close{
   display: none;
-} */
+}
 
 .container-modal{
   position: relative;
@@ -1548,6 +1571,7 @@ body{
 
 .modal-close:focus-visible:before{
   outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
 
 .modal-close:active:before{
