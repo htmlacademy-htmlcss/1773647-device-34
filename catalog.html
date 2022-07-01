@@ -143,8 +143,9 @@
     <!-- Каталог -->
 
     <main class="main-container main-inner">
-      <header class="page-container inner-header">
-        <h1 class="inner-header-title">Моноподы для селфи</h1>
+      <header class="page-container">
+        <div class="inner-header">
+          <h1 class="inner-header-title">Моноподы для селфи</h1>
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a href="index.html" class="breadcrumbs-link link-states">Главная</a>
@@ -156,6 +157,7 @@
             <a class="breadcrumbs-link link-states">Моноподы для селфи</a>
           </li>
         </ol>
+        </div>
       </header>
 
       <!-- Фильтр -->
@@ -171,7 +173,7 @@
           <div class="range">
             <h4 class="catalog-filter-title">Стоимость</h4>
             <div class="range-scale">
-              <div class="range-bar" style="left: 0; width: 140px">
+              <div class="range-bar" style="left: 0; width: 130px">
                 <button class="range-toggle toggle-min" type="button">
                   <span class="visually-hidden">Изменить минимальную цену.</span>
                 </button>
@@ -264,11 +266,13 @@
 
             <div class="container-sorting">
               <h3 class="subtitle subtitle-sorting">Сортировка:</h3>
-              <select class="select-control" aria-label="Сортировка">
-                <option value="popular">Популярные</option>
-                <option value="cheap">Сначала дешёвое</option>
-                <option value="expensive">Сначала дорогое</option>
-              </select>
+              <div class="container-select-control">
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="popular">Популярные</option>
+                  <option value="cheap">Сначала дешёвое</option>
+                  <option value="expensive">Сначала дорогое</option>
+                </select>
+              </div>
               <div>
                 <a href="#" class="button-arrow-one">
                   <span class="visually-hidden">Пункт сортировки снизу верх</span>
@@ -286,7 +290,7 @@
                 <li class="product-card">
                   <a href="#" class="product-card-link">
                     <span class="product-card-button">Подробнее</span>
-                    <img class="product-card-image" src="images/catalog/product-1.jpeg" width="360" height="360" alt="Любительская черная селфи-палка, которая в развернутом состоянии держит телефон.">
+                    <img class="product-card-image" src="images/catalog/product-1.jpeg" width="360" height="380" alt="Любительская черная селфи-палка, которая в развернутом состоянии держит телефон.">
                     <div class="product-card-content">
                       <h4 class="product-card-title">Любительская селфи-палка</h4>
                       <b class="product-card-price">500 ₽</b>
@@ -297,7 +301,7 @@
                 <li class="product-card">
                   <a href="#" class="product-card-link">
                     <span class="product-card-button">Подробнее</span>
-                    <img class="product-card-image" src="images/catalog/product-2.jpeg" width="360" height="360" alt="Профессиональная черная селфи-палка, которая свернута.">
+                    <img class="product-card-image" src="images/catalog/product-2.jpeg" width="360" height="380" alt="Профессиональная черная селфи-палка, которая свернута.">
                     <div class="product-card-content">
                       <h4 class="product-card-title">Профессиональная селфи-палка</h4>
                       <b class="product-card-price">1 500 ₽</b>
@@ -308,7 +312,7 @@
                 <li class="product-card">
                   <a href="#" class="product-card-link">
                     <span class="product-card-button">Подробнее</span>
-                    <img class="product-card-image" src="images/catalog/product-3.jpeg" width="360" height="360" alt="Маленькая непотопляемая селфи-палка, имеющая желтые вставки на держатиле">
+                    <img class="product-card-image" src="images/catalog/product-3.jpeg" width="360" height="380" alt="Маленькая непотопляемая селфи-палка, имеющая желтые вставки на держатиле">
                     <div class="product-card-content">
                       <h4 class="product-card-title">Непотопляемая селфи-палка</h4>
                       <b class="product-card-price">2 500 ₽</b>
@@ -319,9 +323,9 @@
                 <li class="product-card">
                   <a href="#" class="product-card-link">
                     <span class="product-card-button">Подробнее</span>
-                    <img class="product-card-image" src="images/catalog/product-4.jpeg" width="360" height="360" alt="Селфи-палка имеет руку, которая может держать другую руку и имеет черный рукав. В отсеке для смартфона находится фиолетовый телефон">
+                    <img class="product-card-image" src="images/catalog/product-4.jpeg" width="360" height="380" alt="Селфи-палка имеет руку, которая может держать другую руку и имеет черный рукав. В отсеке для смартфона находится фиолетовый телефон">
                     <div class="product-card-content">
-                      <h4 class="product-card-title">Селфи-палка «Следуй за мной»</h4>
+                      <h4 class="product-card-title product-card-text">Селфи-палка «Следуй за мной»</h4>
                       <b class="product-card-price">1 500 ₽</b>
                     </div>
                   </a>
@@ -388,7 +392,7 @@
           </ul>
 
           <div class="footer-information-phone">
-            <a href="tel:+78128121212" class="footer-phone">+7 (812) 812-12-12</a>
+            <a href="tel:+78128121212" class="footer-phone">Тел.:+7 (812) 812-12-12</a>
           </div>
         </div>
 
