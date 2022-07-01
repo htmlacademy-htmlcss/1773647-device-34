@@ -1015,6 +1015,18 @@ body{
   list-style-type: none;
 }
 
+/* Метка NEW для товара */
+
+.product-new::before{
+  content:"";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("../images/icons/icons-new.svg");
+  top: 27px;
+  right: 27px;
+}
+
 .product-card a{
   font-weight: 700;
   color: var(--color-dark-text);
@@ -1043,16 +1055,6 @@ body{
 
 .product-card-button{
   display: none;
-}
-
-.product-new::before{
-  content:"";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-image: url("../images/icons/icons-new.svg");
-  top: 27px;
-  right: 27px;
 }
 
 .product-card-link:hover .product-card-image,
