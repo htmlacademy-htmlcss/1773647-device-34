@@ -44,6 +44,7 @@ html{
 }
 
 body{
+  min-width: 1200px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -188,7 +189,7 @@ body{
 }
 
 .navigation{
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .container-user-menu{
@@ -221,6 +222,10 @@ body{
   background-image: url("../images/icons/icons-search.svg");
   background-repeat: no-repeat;
   background-position: left 16px center;
+}
+
+input.input-search::placeholder{
+  color: var(--color-dark-text);
 }
 
 .button-search{
@@ -684,7 +689,7 @@ body{
 .range{
   position: relative;
   width: 200px;
-  margin-bottom: 47px;
+  margin-bottom: 53px;
 }
 
 .range-scale{
