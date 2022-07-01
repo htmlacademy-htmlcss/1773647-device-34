@@ -1549,14 +1549,14 @@ body{
   z-index: 5;
 }
 
-.modal-holder-close{
+/* .modal-holder-close{
   display: none;
-}
+} */
 
 .container-modal{
   position: relative;
   margin: auto;
-  padding: 72px;
+  padding: 60px 72px;
   border: 10px solid #000000;
   background: var(--color-light);
 }
@@ -1572,8 +1572,8 @@ body{
   width: 26px;
   height: 26px;
   background-image:url("../images/icons/icons-cross.svg");
-  right: 80px;
-  top: 85px;
+  right: 73px;
+  top: 73px;
   cursor: pointer;
 }
 
