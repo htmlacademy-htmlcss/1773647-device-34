@@ -311,14 +311,34 @@ input.input-search::placeholder{
   background-color: var(--color-light);
   border-radius: 50%;
   padding: 2px 6px;
-  margin-right: -10px;
+  margin-right: 15px;
   z-index: 1;
   bottom: 2px;;
 }
 
 .user-link-icon{
-  position: relative;
-  margin-right: 5px;
+  content: "";
+  background-image: url("../images/icons/icons-user.svg");
+  background-repeat: no-repeat;
+  background-position: 1px 4px;
+  padding-left: 24px;
+  z-index: 0;
+}
+
+.compare-link-icon{
+  content: "";
+  background-image: url("../images/icons/icons-compare.svg");
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+  padding-left: 24px;
+  z-index: 0;
+}
+
+.basket-link-icon{
+  content: "";
+  background-image: url("../images/icons/icons-basket.svg");
+  background-repeat: no-repeat;
+  background-position: 14px 4px;
   z-index: 0;
 }
 
@@ -335,6 +355,7 @@ input.input-search::placeholder{
 }
 
 .user-item{
+  position: relative;
   padding: 13px;
 }
 
@@ -786,8 +807,8 @@ input.input-search::placeholder{
 .dot-states:focus::before{
   content: "";
   position: absolute;
-  top: -2px;
-  left: -2px;
+  top: -4px;
+  left: -4px;
   width: 16px;
   height: 16px;
   outline: 2px solid var(--focus);
@@ -1472,7 +1493,6 @@ input.input-search::placeholder{
   display: grid;
   grid-template-columns: repeat(3,40px);
   column-gap: 15px;
-  margin: -7px;
   padding: 0;
   margin-left: 30px;
 }
