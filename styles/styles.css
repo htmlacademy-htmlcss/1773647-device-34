@@ -29,10 +29,14 @@
   --color-light: #ffffff;
   --color-dark-text: #000000;
   --color-primary-text:#444444;
+  --bg-popover:#1A1A1A;
   --bg-light:#F0F0F0;
   --bg-light-dark:#EBEBEB;
   --bg-dark:#DCDCDC;
   --bg-bright: #FFE17F;
+  --bb-mailing: #C4C4C4;
+  --br-mark: #cccccc;
+  --br-product: #E5E5E5;
   --hover:#FFC700;
   --focus:#AF4FFF;
   --color-status-error:#ff3d3d;
@@ -398,7 +402,7 @@ input.input-search::placeholder{
 .container-price{
   display: flex;
   justify-content: space-between;
-  background-color: #1A1A1A;
+  background-color: var(--bg-popover);
   padding: 13px;
   font-family: inherit;
   font-weight: 400;
@@ -604,7 +608,7 @@ input.input-search::placeholder{
 .slider{
   position: relative;
   margin-bottom: 70px;
-  background: linear-gradient(#FFE17F 23%, #fff 23%, #fff 76%);
+  background: linear-gradient(var(--bg-bright) 23%, var(--color-light) 23%, var(--color-light) 76%);
 }
 
 .slider-button-left{
@@ -1290,7 +1294,7 @@ input.input-search::placeholder{
   height:55px;
   background-color: transparent;
   border: none;
-  border-bottom: 3px solid #C4C4C4;
+  border-bottom: 3px solid var(--bb-mailing);
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
@@ -1318,7 +1322,7 @@ input.input-search::placeholder{
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  border: 3px solid #C4C4C4;
+  border: 3px solid var(--bb-mailing);
   cursor: pointer;
   padding: 18px 35px;
   margin-left: -6px;
@@ -1337,7 +1341,7 @@ input.input-search::placeholder{
 
 .mailing-button:active{
   background-color: var(--color-dark-text);
-  color: #4C4C4C;
+  color: var(--bb-mailing);
   border: 3px solid var(--color-light);
 }
 
@@ -1575,7 +1579,7 @@ input.input-search::placeholder{
   position: relative;
   margin: auto;
   padding: 60px 72px;
-  border: 10px solid #000000;
+  border: 10px solid var(--color-dark-text);
   background: var(--color-light);
 }
 

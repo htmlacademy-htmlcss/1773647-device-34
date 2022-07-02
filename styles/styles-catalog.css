@@ -28,10 +28,14 @@
   --color-light: #ffffff;
   --color-dark-text: #000000;
   --color-primary-text:#444444;
+  --bg-popover:#1A1A1A;
   --bg-light:#F0F0F0;
   --bg-light-dark:#EBEBEB;
   --bg-dark:#DCDCDC;
   --bg-bright: #FFE17F;
+  --bb-mailing: #C4C4C4;
+  --br-mark: #cccccc;
+  --br-product: #E5E5E5;
   --hover:#FFC700;
   --focus:#AF4FFF;
   --color-status-error:#ff3d3d;
@@ -400,7 +404,7 @@ input.input-search::placeholder{
 .container-price{
   display: flex;
   justify-content: space-between;
-  background-color: #1A1A1A;
+  background-color: var(--bg-popover);
   padding: 20px;
   font-family: inherit;
   font-weight: 400;
@@ -844,7 +848,7 @@ input.input-search::placeholder{
   width: 16px;
   height: 16px;
   left: 5px;
-  border: 2px solid #cccccc;
+  border: 2px solid var(--br-mark);
   border-radius: 3px;
 }
 
@@ -909,7 +913,7 @@ input.input-search::placeholder{
 }
 
 .button-catalog{
-  background: linear-gradient(#F0F0F0 40%, #FFE17F 40%, #FFE17F 60%, #F0F0F0 60%, #F0F0F0 100%);
+  background: linear-gradient(var(--bg-light) 40%, var(--bg-bright) 40%, var(--bg-bright) 60%, var(--bg-light) 60%, var(--bg-light) 100%);
   padding: 10px 50px;
 }
 
@@ -1133,7 +1137,7 @@ input.input-search::placeholder{
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-dark-text);
-  border: 3px solid #E5E5E5;
+  border: 3px solid var(--br-product);
   background-color: var(--color-light);
   width: 100%;
   margin-bottom: 43px;
