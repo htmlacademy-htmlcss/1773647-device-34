@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: "Rubik";
-  src:url("../fonts/rubik/rubik-400.woff2") format("woff2"),
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2"),
       url("../fonts/rubik/rubik-400.woff") format("woff");
   font-style: normal;
   font-weight: 400;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Rubik";
-  src:url("../fonts/rubik/rubik-700.woff2") format("woff2"),
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2"),
       url("../fonts/rubik/rubik-700.woff") format("woff");
   font-style: normal;
   font-weight: 700;
@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: "Raleway";
-  src:url("../fonts/raleway/raleway-800.woff2") format("woff2"),
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2"),
       url("../fonts/raleway/raleway-800.woff") format("woff");
   font-weight: 800;
   font-display: swap;
@@ -76,6 +76,8 @@ body{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* Button */
 
 .button {
   position: relative;
@@ -142,6 +144,8 @@ body{
   margin: 0;
   max-width: 500px;
 }
+
+/* Состояния ссылок */
 
 .link-states:hover{
   opacity: 0.6;
@@ -780,7 +784,7 @@ input.input-search::placeholder{
 }
 
 .dot-states:focus::before{
-  content:"";
+  content: "";
   position: absolute;
   top: -2px;
   left: -2px;
@@ -807,7 +811,7 @@ input.input-search::placeholder{
 }
 
 .products-icons::before{
-  content:"";
+  content: "";
   display: block;
   width: 160px;
   height: 160px;
@@ -824,7 +828,7 @@ input.input-search::placeholder{
 }
 
 .products-icons-1::after{
-  content:"";
+  content: "";
   width: 160px;
   height: 160px;
   background-image: url("../images/products-icons/products-virtual-reality.svg");
@@ -836,7 +840,7 @@ input.input-search::placeholder{
 }
 
 .products-icons-2::after{
-  content:"";
+  content: "";
   width: 160px;
   height: 160px;
   background-image: url("../images/products-icons/products-selfie-monopods.svg");
@@ -848,7 +852,7 @@ input.input-search::placeholder{
 }
 
 .products-icons-3::after{
-  content:"";
+  content: "";
   width: 160px;
   height: 160px;
   background-image: url("../images/products-icons/products-action-cameras.svg");
@@ -860,7 +864,7 @@ input.input-search::placeholder{
 }
 
 .products-icons-4::after{
-  content:"";
+  content: "";
   width: 160px;
   height: 160px;
   background-image: url("../images/products-icons/products-fitness-bracelets.svg");
@@ -872,7 +876,7 @@ input.input-search::placeholder{
 }
 
 .products-icons-5::after{
-  content:"";
+  content: "";
   width: 160px;
   height: 160px;
   background-image: url("../images/products-icons/products-smart-watch.svg");
@@ -884,7 +888,7 @@ input.input-search::placeholder{
 }
 
 .products-icons-6::after{
-  content:"";
+  content: "";
   width: 160px;
   height: 160px;
   background-image: url("../images/products-icons/products-quadcopters.svg");
@@ -931,7 +935,7 @@ input.input-search::placeholder{
 }
 
 .container-services::before{
-  content:"";
+  content: "";
   position: absolute;
   width: 7px;
   height: 320px;
@@ -969,7 +973,7 @@ input.input-search::placeholder{
 }
 
 .services-text-one::before{
-  content:"";
+  content: "";
   position: absolute;
   width: 136px;
   height: 164px;
@@ -979,7 +983,7 @@ input.input-search::placeholder{
 }
 
 .services-text-two::before{
-  content:"";
+  content: "";
   position: absolute;
   width: 171px;
   height: 195px;
@@ -988,7 +992,7 @@ input.input-search::placeholder{
 }
 
 .services-text-three::before{
-  content:"";
+  content: "";
   position: absolute;
   width: 156px;
   height: 188px;
@@ -1021,7 +1025,7 @@ input.input-search::placeholder{
   z-index: -1;
 }
 
-.tab:checked+.services-tab {
+.tab:checked + .services-tab {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -1032,15 +1036,15 @@ input.input-search::placeholder{
   color: var(--bg-bright);
 }
 
-.tab:checked+.services-tab:hover{
+.tab:checked + .services-tab:hover{
   color:rgba(255, 225, 127, 0.6);
 }
 
-.tab:checked+.services-tab:focus{
+.tab:checked + .services-tab:focus{
   outline: 2px solid var(--focus);
 }
 
-.tab:checked+.services-tab:active{
+.tab:checked + .services-tab:active{
   color:rgba(255, 225, 127, 0.3);
 }
 
@@ -1096,7 +1100,7 @@ input.input-search::placeholder{
   opacity: 0.5;
   background-image: url("../images/icons/icons-button-i.svg");
   background-repeat: no-repeat;
-  background-position:19px 14px;
+  background-position: 19px 14px;
 }
 
 .tooltip:focus-visible{
@@ -1104,7 +1108,7 @@ input.input-search::placeholder{
 }
 
 .delivery-button::before{
-  content:"";
+  content: "";
   position: absolute;
   width: 125px;
   height: 100%;
@@ -1114,7 +1118,7 @@ input.input-search::placeholder{
 }
 
 .delivery-button::after{
-  content:"";
+  content: "";
   position: absolute;
   width: 47px;
   height: 31px;
@@ -1124,7 +1128,7 @@ input.input-search::placeholder{
 }
 
 .delivery-button:hover:before{
-  content:"";
+  content: "";
   position: absolute;
   width: 125px;
   height: 100%;
@@ -1165,7 +1169,7 @@ input.input-search::placeholder{
 }
 
 .information-title::before{
-  content:"";
+  content: "";
   display: block;
   width: 80px;
   height: 7px;
@@ -1174,7 +1178,7 @@ input.input-search::placeholder{
 }
 
 .information-about-text{
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 .information-list{
@@ -1213,7 +1217,7 @@ input.input-search::placeholder{
 
 .container-contacts{
   max-width: 530px;
-  margin-left:130px;
+  margin-left: 130px;
 }
 
 .information-subtitle{
@@ -1291,7 +1295,7 @@ input.input-search::placeholder{
 
 .mailing-form-input{
   width: 540px;
-  height:55px;
+  height: 55px;
   background-color: transparent;
   border: none;
   border-bottom: 3px solid var(--bb-mailing);
@@ -1584,7 +1588,7 @@ input.input-search::placeholder{
 }
 
 .modal-close{
-  border:none;
+  border: none;
   background: transparent;
 }
 
@@ -1690,6 +1694,8 @@ input.field::placeholder{
   background-repeat: no-repeat;
   background-position: right 24px center;
 }
+
+/* Состояния ошибки */
 
 .error{
   outline: 2px solid var(--color-status-error);

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Rubik";
-  src:url("../fonts/rubik/rubik-400.woff2") format("woff2"),
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2"),
       url("../fonts/rubik/rubik-400.woff") format("woff");
   font-style: normal;
   font-weight: 400;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "Rubik";
-  src:url("../fonts/rubik/rubik-700.woff2") format("woff2"),
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2"),
       url("../fonts/rubik/rubik-700.woff") format("woff");
   font-style: normal;
   font-weight: 700;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "Raleway";
-  src:url("../fonts/raleway/raleway-800.woff2") format("woff2"),
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2"),
       url("../fonts/raleway/raleway-800.woff") format("woff");
   font-weight: 800;
   font-display: swap;
@@ -76,6 +76,8 @@ body{
   overflow: hidden;
 }
 
+/* Button */
+
 .button {
   position: relative;
   display: inline-block;
@@ -129,7 +131,6 @@ body{
   opacity: 0.3;
 }
 
-
 .title {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -148,6 +149,8 @@ body{
   text-transform: uppercase;
   margin: 0;
 }
+
+/* Состояния ссылок */
 
 .link-states:hover{
   opacity: 0.6;
@@ -263,7 +266,7 @@ input.input-search::placeholder{
 }
 
 .button-search:focus-visible::before{
-  content:"";
+  content: "";
   position: absolute;
   width: 164px;
   height: 44px;
@@ -356,7 +359,7 @@ input.input-search::placeholder{
 }
 
 .popover-cart::before{
-  content:"";
+  content: "";
   position: absolute;
   width: 14px;
   height: 6px;
@@ -528,7 +531,7 @@ input.input-search::placeholder{
 
 .button-menu-link::before,
 .button-menu-link::after{
-  content:"";
+  content: "";
   position: absolute;
   width: 16px;
   height: 2px;
@@ -568,7 +571,7 @@ input.input-search::placeholder{
   width: 1160px;
   background-color: var(--bg-bright);
   left: -60px;
-  top:59px;
+  top: 59px;
   z-index: 3;
   padding: 32px 60px 60px 60px;
 }
@@ -729,7 +732,7 @@ input.input-search::placeholder{
 }
 
 .range-toggle:focus-visible::before{
-  content:"";
+  content: "";
   position: absolute;
   left: -5px;
   top: -5px;
@@ -765,7 +768,7 @@ input.input-search::placeholder{
 
 .range-input{
   width: 30px;
-  border:none;
+  border: none;
   background-color: transparent;
   font-size: 15px;
   line-height: 18px;
@@ -811,7 +814,7 @@ input.input-search::placeholder{
 }
 
 .catalog-filter-title::before{
-  content:"";
+  content: "";
   position: absolute;
   width: 200px;
   height: 2px;
@@ -859,7 +862,7 @@ input.input-search::placeholder{
 
 .control-input:focus-visible + .control-mark::after{
   position: absolute;
-  content:"";
+  content: "";
   width: 28px;
   height: 28px;
   border: 2px solid var(--focus);
@@ -879,7 +882,7 @@ input.input-search::placeholder{
 
 .control-input[type="checkbox"]:checked + .control-mark::before{
   position: absolute;
-  content:"";
+  content: "";
   width: 10px;
   height: 10px;
   background-image: url("../images/icons/icons-tick.svg");
@@ -899,7 +902,7 @@ input.input-search::placeholder{
 
 .control-input[type="radio"]:checked + .control-mark::before{
   position: absolute;
-  content:"";
+  content: "";
   width: 8px;
   height: 8px;
   background-color: var(--color-dark-text);
@@ -932,8 +935,8 @@ input.input-search::placeholder{
 }
 
 .container-select-control{
-    margin-top: -8px;
-    margin-right: 90px;
+  margin-top: -8px;
+  margin-right: 90px;
 }
 
 .select-control{
@@ -963,7 +966,7 @@ input.input-search::placeholder{
 }
 
 .button-arrow-one::before{
-  content:"";
+  content: "";
   position: absolute;
   width: 11px;
   height: 10px;
@@ -978,7 +981,7 @@ input.input-search::placeholder{
 }
 
 .button-arrow-two::before{
-  content:"";
+  content: "";
   position: absolute;
   width: 11px;
   height: 10px;
@@ -1038,7 +1041,7 @@ input.input-search::placeholder{
 /* Метка NEW для товара */
 
 .product-new::before{
-  content:"";
+  content: "";
   position: absolute;
   width: 60px;
   height: 60px;
@@ -1091,7 +1094,7 @@ input.input-search::placeholder{
 .product-card-link .product-card-button{
   display: none;
   position: absolute;
-  font-family: 'Raleway';
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -1104,7 +1107,7 @@ input.input-search::placeholder{
 }
 
 .product-card-button::before{
-  content:"";
+  content: "";
   position: absolute;
   height: 8px;
   width: 220px;
