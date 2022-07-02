@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "Rubik";
   src:url(../fonts/rubik/rubik-400.woff2) format("woff2"),
@@ -968,7 +969,7 @@ input.input-search::placeholder{
   position: absolute;
   width: 136px;
   height: 164px;
-  background-image: url(../images/delivery.svg);
+  background-image: url(../images/index/delivery.svg);
   right: 60px;
   top: 5px;
 }
@@ -978,7 +979,7 @@ input.input-search::placeholder{
   position: absolute;
   width: 171px;
   height: 195px;
-  background-image: url(../images/guarantee.svg);
+  background-image: url(../images/index/guarantee.svg);
   right: 60px;
 }
 
@@ -987,7 +988,7 @@ input.input-search::placeholder{
   position: absolute;
   width: 156px;
   height: 188px;
-  background-image: url(../images/credit.svg);
+  background-image: url(../images/index/credit.svg);
   right: 60px;
 }
 
