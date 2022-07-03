@@ -55,9 +55,10 @@ body{
   min-height: 100%;
   margin: 0;
   font-family: "Rubik","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 400;
   color: var(--color-primary-text);
 }
 
@@ -85,6 +86,7 @@ body{
   max-width: 270px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
+  font-style: normal;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
@@ -134,6 +136,7 @@ body{
 .title {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
+  font-style: normal;
   font-size: 50px;
   line-height: 50px;
   color: var(--color-dark-text);
@@ -141,7 +144,7 @@ body{
 }
 
 .about-text{
-  font-family: "Rubik","Arial",sans-serif;
+  font-family: inherit;
   margin: 0;
   max-width: 500px;
 }
@@ -212,6 +215,7 @@ body{
 .input-search{
   width: 360px;
   font-family: inherit;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -232,6 +236,7 @@ input.input-search::placeholder{
 .button-search{
   font-family: inherit;
   font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   line-height: 20px;
   padding: 7px 55px;
@@ -303,8 +308,9 @@ input.input-search::placeholder{
 
 .icon-number{
   position: relative;
-  font-family: "Rubik","Arial",sans-serif;
+  font-family: inherit;
   font-size: 14px;
+  font-style: normal;
   line-height: 17px;
   text-align: center;
   width: 21px;
@@ -405,6 +411,8 @@ input.input-search::placeholder{
 }
 
 .popover-link{
+  font-family: inherit;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -439,6 +447,7 @@ input.input-search::placeholder{
 .popover-button{
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
+  font-style: normal;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -523,6 +532,7 @@ input.input-search::placeholder{
 .page-link {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
+  font-style: normal;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -610,6 +620,7 @@ input.input-search::placeholder{
 
 .subcatalog-item{
   font-family: inherit;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -684,8 +695,9 @@ input.input-search::placeholder{
   right: 50px;
   z-index: -1;
   content: "01";
-  font-family: 'Rubik';
+  font-family: inherit;
   font-weight: 700;
+  font-style: normal;
   font-size: 180px;
   line-height: 30px;
   color: var(--color-light);
@@ -720,6 +732,7 @@ input.input-search::placeholder{
 .title-slider{
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
+  font-style: normal;
   font-size: 50px;
   line-height: 50px;
   color: var(--color-dark-text);
@@ -938,6 +951,7 @@ input.input-search::placeholder{
 .products-navigation-item a{
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
+  font-style: normal;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: -0.02em;
@@ -980,6 +994,7 @@ input.input-search::placeholder{
   position: relative;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
+  font-style: normal;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -1061,6 +1076,7 @@ input.input-search::placeholder{
 .tab:checked + .services-tab {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
+  font-style: normal;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -1113,6 +1129,7 @@ input.input-search::placeholder{
   display: block;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 20px;
+  font-style: normal;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.2em;
@@ -1258,6 +1275,7 @@ input.input-search::placeholder{
 .information-subtitle{
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
+  font-style: normal;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1342,6 +1360,7 @@ input.input-search::placeholder{
   border-bottom: 3px solid var(--bb-mailing);
   font-family: inherit;
   font-weight: 400;
+  font-style: normal;
   font-size: 18px;
   line-height: 30px;
   padding-left: 16px;
@@ -1446,6 +1465,7 @@ input.input-search::placeholder{
 .footer-information-link{
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
+  font-style: normal;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -1748,7 +1768,9 @@ input.error::placeholder{
 }
 
 .error-text{
+  font-size: inherit;
   font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 20px;
   color: var(--color-status-error);
@@ -1860,6 +1882,7 @@ input.field:hover{
   margin: 0;
   font-family: inherit;
   font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   line-height: 20px;
   background-color: var(--color-dark-text);
