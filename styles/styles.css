@@ -82,6 +82,7 @@ body{
 .button {
   position: relative;
   display: inline-block;
+  max-width: 270px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -445,7 +446,7 @@ input.input-search::placeholder{
   text-transform: uppercase;
   background-color: var(--color-light);
   border: none;
-  padding: 14px 21px;
+  padding: 14px 20px;
   margin: 20px;
   cursor: pointer;
 }
@@ -721,6 +722,7 @@ input.input-search::placeholder{
   font-size: 50px;
   line-height: 50px;
   color: var(--color-dark-text);
+  max-width: 545px;
   margin-top: 95px;
   margin-bottom: 30px;
 }
@@ -731,6 +733,7 @@ input.input-search::placeholder{
 }
 
 .button-slider{
+  max-width: 270px;
   display: inline-block;
   margin-bottom: 45px;
 }
@@ -949,6 +952,7 @@ input.input-search::placeholder{
     "label content"
     "label content"
     "label content";
+  align-items:start;
   padding-bottom: 105px;
   padding-top: 65px;
   position: relative;
@@ -974,7 +978,7 @@ input.input-search::placeholder{
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-dark-text);
-  padding: 10px 0 10px 20px;
+  padding: 10px 20px;
   margin-bottom: 30px;
   cursor: pointer;
 }
@@ -986,6 +990,7 @@ input.input-search::placeholder{
 }
 
 .services-title{
+  max-width: 450px;
   margin-bottom: 34px;
 }
 
@@ -1038,8 +1043,8 @@ input.input-search::placeholder{
   position: absolute;
   height: 8px;
   width: 160px;
-  left: 0%;
-  right: 0%;
+  left: 0;
+  right: 0;
   top: 40%;
   bottom: 40%;
   background-color: var(--bg-bright);
@@ -1055,6 +1060,7 @@ input.input-search::placeholder{
   text-transform: uppercase;
   background-color: var(--color-dark-text);
   color: var(--bg-bright);
+  padding-right: 20px;
 }
 
 .tab:checked + .services-tab:hover{
@@ -1106,7 +1112,7 @@ input.input-search::placeholder{
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-dark-text);
-  padding: 40px;
+  padding: 40px 150px;
 }
 
 .tooltip{
@@ -1167,7 +1173,8 @@ input.input-search::placeholder{
   outline-offset: 2px;
 }
 
-.delivery-button:active{
+.delivery-button:active,
+.delivery-button:active+.tooltip{
   opacity: 0.3;
 }
 
@@ -1290,6 +1297,12 @@ input.input-search::placeholder{
   padding-bottom: 55px;
 }
 
+.mailing-form{
+  display: flex;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+
 .container-mailing-text{
   display: flex;
   margin-bottom: 138px;
@@ -1351,6 +1364,7 @@ input.input-search::placeholder{
   cursor: pointer;
   padding: 18px 35px;
   margin-left: -6px;
+  max-width: 350px;
 }
 
 .mailing-button:hover{
@@ -1367,7 +1381,7 @@ input.input-search::placeholder{
 .mailing-button:active{
   background-color: var(--color-dark-text);
   color: var(--bb-mailing);
-  border: 3px solid var(--color-light);
+  border: 3px solid var(--color-dark-text);
 }
 
 .mailing-button:disabled{
@@ -1788,7 +1802,7 @@ input.error::placeholder{
   text-align: center;
 }
 
-.field:hover{
+input.field:hover{
   background-color: var(--bg-dark);
 }
 

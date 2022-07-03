@@ -376,6 +376,7 @@ input.input-search::placeholder{
   z-index: 3;
   color: var(--color-light);
   left: -120px;
+  max-width: 320px;
 }
 
 .popover-cart::before{
@@ -445,9 +446,10 @@ input.input-search::placeholder{
   text-transform: uppercase;
   background-color: var(--color-light);
   border: none;
-  padding: 14px 21px;
+  padding: 14px 20px;
   margin: 20px;
   cursor: pointer;
+  max-width: 280px;
 }
 
 .popover-link:focus,
@@ -947,10 +949,11 @@ input.input-search::placeholder{
   display: flex;
   justify-content: space-between;
   margin: 25px 0 20px 0;
-  position: relative;
+  max-width: 840px;
 }
 
 .subtitle-sorting{
+  max-width: 250px;
   margin-left: 40px;
 }
 
@@ -971,6 +974,7 @@ input.input-search::placeholder{
   background-image: url("../images/icons/icons-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  max-width: 200px;
 }
 
 .select-control:hover{
@@ -1162,7 +1166,7 @@ input.input-search::placeholder{
   color: var(--color-dark-text);
   border: 3px solid var(--br-product);
   background-color: var(--color-light);
-  width: 100%;
+  width: 760px;
   margin-bottom: 43px;
   padding: 18px 0;
 }
@@ -1189,8 +1193,10 @@ input.input-search::placeholder{
 
 .container-pagination{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background: var(--bg-light-dark);
+  width: 760px;
 }
 
 .pagination{
