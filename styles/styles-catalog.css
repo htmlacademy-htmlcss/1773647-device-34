@@ -816,6 +816,10 @@ input.input-search::placeholder{
   margin: 0;
 }
 
+.range-input[type='number'] {
+  -moz-appearance: textfield;
+}
+
 .catalog-filter-label{
   font-size: 15px;
   line-height: 18px;
