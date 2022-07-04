@@ -120,7 +120,7 @@ body{
   outline-offset: 2px;
 }
 
-.button:active::before{
+.button:active:not(:disabled)::before{
   height: 100%;
   top: 0;
   background-color: var(--hover);
@@ -254,7 +254,7 @@ input.input-search::placeholder{
   outline: none;
 }
 
-.button-search:hover{
+.button-search:hover:not(:disabled){
   background-color: var(--color-dark-text);
   color: var(--color-light);
 }
@@ -462,7 +462,7 @@ input.input-search::placeholder{
   outline: none;
 }
 
-.popover-button:hover{
+.popover-button:hover:not(:disabled){
   background-color: var(--bg-bright);
 }
 
@@ -583,6 +583,10 @@ input.input-search::placeholder{
 
 .button-menu:focus .button-menu-link::after{
   transform: rotate(360deg);
+}
+
+.button-menu:disabled{
+  opacity: 0.3;
 }
 
 .main-container{
@@ -754,7 +758,7 @@ input.input-search::placeholder{
   cursor: pointer;
 }
 
-.range-toggle:hover{
+.range-toggle:hover:not(:disabled){
   border-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -881,6 +885,12 @@ input.input-search::placeholder{
   padding-left: 36px;
 }
 
+/* Неактивное состояние у label */
+
+.control-disabled{
+  opacity: 0.1;
+}
+
 .control-mark{
   position: absolute;
   width: 16px;
@@ -953,6 +963,10 @@ input.input-search::placeholder{
 .button-catalog{
   background: linear-gradient(var(--bg-light) 40%, var(--bg-bright) 40%, var(--bg-bright) 60%, var(--bg-light) 60%, var(--bg-light) 100%);
   padding: 10px 50px;
+}
+
+.button-catalog:disabled{
+  opacity: 0.3;
 }
 
 /* Продукты */
@@ -1187,16 +1201,16 @@ input.input-search::placeholder{
   padding: 18px 0;
 }
 
-.product-button:hover{
+.product-button:hover:not(:disabled){
   border: 3px solid var(--color-dark-text);
 }
 
-.product-button:focus-visible{
+.product-button:focus-visible:not(:disabled){
   outline: 2px solid var(--focus);
   outline-offset: 2px;
 }
 
-.product-button:active{
+.product-button:active:not(:disabled){
   border: 3px solid var(--color-dark-text);
   opacity: 0.3;
 }
@@ -1248,7 +1262,7 @@ input.input-search::placeholder{
   padding: 10px;
 }
 
-.pagination-link-button:hover{
+.pagination-link-button:hover:not(:disabled){
   background-color: var(--bg-dark);
 }
 
@@ -1261,7 +1275,7 @@ input.input-search::placeholder{
   opacity: 0.3;
 }
 
-.pagination-link-pare:hover{
+.pagination-link-pare:hover:not(:disabled){
   color: var(--color-primary-text);
   opacity: 1;
 }
