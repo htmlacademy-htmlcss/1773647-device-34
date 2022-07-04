@@ -1370,6 +1370,7 @@ input.input-search::placeholder{
   padding-left: 16px;
 }
 
+.mailing-form-input:hover,
 .mailing-form-input:focus-visible{
   outline: none;
   background-color: var(--bg-dark);
@@ -1661,9 +1662,9 @@ input.input-search::placeholder{
   z-index: 5;
 }
 
-/* .modal-holder-close{
+.modal-holder-close{
   display: none;
-} */
+}
 
 .container-modal{
   position: relative;
