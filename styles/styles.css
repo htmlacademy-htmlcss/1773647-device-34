@@ -1421,6 +1421,7 @@ input.input-search::placeholder{
 }
 
 .container-footer{
+  position: relative;
   margin-top: 60px;
   margin-bottom: 60px;
 }
@@ -1520,24 +1521,26 @@ input.input-search::placeholder{
 /* Соц сети */
 
 .footer-social{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 288px 439px 293px;
+  gap: 70px;
 }
 
-.footer-inner{
+.footer-social::before{
+  content: "";
+  position: absolute;
   width: 80px;
   height: 7px;
+  top: 179px;
+  left: 0;
   background-color: var(--hover);
-  margin-top: 9px;
 }
 
 .footer-social-list{
-  display: grid;
-  grid-template-columns: repeat(3,40px);
-  column-gap: 15px;
+  grid-column: 2/3;
+  margin: 0 auto;
+  display: flex;
   padding: 0;
-  margin: 0;
-  margin-left: 30px;
 }
 
 .button-social{
@@ -1608,6 +1611,11 @@ input.input-search::placeholder{
 }
 
 /* Лого html */
+
+.logo-html{
+  grid-column: 3/4;
+  margin-left: auto;
+}
 
 .footer-logo-html{
   fill: var(--hover);
