@@ -116,18 +116,18 @@ body{
   transition: background-color 0.2s ease-in-out, height 0.2s ease-in-out, top 0.2s ease-in-out;
 }
 
-.button:hover::before{
+.button:not(:disabled):hover::before{
   height: 100%;
   top: 0;
   background-color: var(--bg-bright);
 }
 
-.button:focus-visible:not(:disabled){
+.button:focus-visible{
   outline: 2px solid var(--focus);
   outline-offset: 2px;
 }
 
-.button:active:not(:disabled)::before{
+.button:not(:disabled):active::before{
   height: 100%;
   top: 0;
   background-color: var(--hover);
@@ -1046,10 +1046,6 @@ input.input-search::placeholder{
   padding: 10px 50px;
 }
 
-.button-catalog:disabled{
-  opacity: 0.3;
-}
-
 /* Продукты */
 
 .container-sorting{
@@ -1083,7 +1079,7 @@ input.input-search::placeholder{
   color: var(--color-dark-text);
   border: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
+      -moz-appearance: none;
           appearance: none;
   background-color: var(--dg-dark);
   background-image: url("../images/icons/icons-arrow.svg");
@@ -1092,7 +1088,7 @@ input.input-search::placeholder{
   max-width: 200px;
 }
 
-.select-control:hover{
+.select-control:not(:disabled):hover{
   opacity: 0.6;
 }
 
@@ -1100,8 +1096,12 @@ input.input-search::placeholder{
   outline: 2px solid var(--focus);
 }
 
-.select-control:active{
+.select-control:not(:disabled):active{
   opacity: 0.3;
+}
+
+.select-control:disabled{
+  opacity: 0.1;
 }
 
 .button-arrow-one::before{
@@ -1170,7 +1170,7 @@ input.input-search::placeholder{
 .product-card-image{
   background-color: var(--bg-light);
   -o-object-fit: cover;
-     object-fit: cover;
+      object-fit: cover;
 }
 
 .product-card{
@@ -1614,6 +1614,7 @@ input.input-search::placeholder{
 
 .footer-social-item:focus-within{
   outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
 
 .button-social-tv:active::before,
@@ -1644,10 +1645,11 @@ input.input-search::placeholder{
   fill: var(--color-light);
 }
 
-.logo-html:focus-visible{
+.logo-html-link:focus-visible{
   outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
 
-.footer-logo-html:active{
+.logo-html-link:active{
   opacity: 0.3;
 }
