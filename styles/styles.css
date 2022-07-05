@@ -2076,6 +2076,7 @@ input.field:hover:not(:disabled){
 .field:focus-visible,
 .button-number:focus-visible{
   outline: 2px solid var(--focus);
+  z-index: 2;
 }
 
 .field:disabled,
