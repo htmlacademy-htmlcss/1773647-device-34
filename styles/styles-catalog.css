@@ -1597,6 +1597,7 @@ input.input-search::placeholder{
 .footer-social-item{
   margin-right: 15px;
   margin-bottom: 5px;
+  list-style-type: none;
 }
 
 .footer-social-item:last-child{
