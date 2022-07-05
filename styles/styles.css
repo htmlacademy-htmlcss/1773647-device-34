@@ -2069,6 +2069,7 @@ input.field:hover:not(:disabled){
   outline: none;
 }
 
+.field:focus-visible,
 .button-number:focus-visible{
   outline: 2px solid var(--focus);
 }

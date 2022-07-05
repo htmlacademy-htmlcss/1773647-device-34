@@ -979,8 +979,8 @@ input.input-search::placeholder{
   border-radius: 3px;
 }
 
-.control-input:hover:not(:disabled) .control-mark,
-.control-input:hover:not(:disabled) .control-label{
+.control-input:hover:not(:disabled) + .control-mark,
+.control-input:hover:not(:disabled) ~ .control-label{
   opacity: 0.6;
 }
 
@@ -994,8 +994,8 @@ input.input-search::placeholder{
   left: -7px;
 }
 
-.control-input:active:not(:disabled) .control-mark,
-.control-input:active:not(:disabled) .control-label{
+.control-input:active:not(:disabled) + .control-mark,
+.control-input:active:not(:disabled) ~ .control-label{
   opacity: 0.3;
 }
 
