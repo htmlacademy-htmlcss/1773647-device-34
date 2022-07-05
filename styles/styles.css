@@ -1076,7 +1076,7 @@ input.input-search::placeholder{
   -webkit-box-align:start;
       -ms-flex-align:start;
           align-items:start;
-  padding-bottom: 110px;
+  padding-bottom: 100px;
   padding-top: 60px;
   position: relative;
   z-index: 2;
@@ -1092,19 +1092,90 @@ input.input-search::placeholder{
   background-color: var(--color-dark-text);
 }
 
-.services-tab{
+.services-button-active{
+  font-family: "Raleway", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: var(--color-dark-text);
+  color: var(--bg-bright);
+  padding: 10px 138px 10px 18px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.services-button{
   position: relative;
+  display: inline-block;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
-  letter-spacing: 0.2em;
+  text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
   color: var(--color-dark-text);
-  padding: 10px 20px;
-  margin-bottom: 30px;
+  max-width: 160px;
+  border: none;
   cursor: pointer;
+  padding: 10px 6px;
+  margin-bottom: 35px;
+  z-index: 2;
+}
+
+.services-button::before{
+  content:"";
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  left: 0%;
+  right: 0%;
+  top: 40%;
+  bottom: 40%;
+  background-color: var(--bg-bright);
+  z-index: -1;
+  -webkit-transition: background-color 0.2s ease-in-out, height 0.2s ease-in-out, top 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out, height 0.2s ease-in-out, top 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, height 0.2s ease-in-out, top 0.2s ease-in-out;
+}
+
+.services-button-active:hover{
+  color: rgba(255, 225, 127, 0.5);
+}
+
+.services-button-active:focus-visible{
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.services-button-active:active{
+  color: rgba(255, 225, 127, 0.3);
+}
+
+.services-button:not(:disabled):hover::before{
+  height: 100%;
+  top: 0;
+  background-color: var(--bg-bright);
+}
+
+.services-button:focus-visible{
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.services-button:not(:disabled):active::before{
+  height: 100%;
+  top: 0;
+  background-color: var(--hover);
+}
+
+.services-button:disabled{
+  opacity: 0.3;
 }
 
 .container-inner{
@@ -1120,10 +1191,6 @@ input.input-search::placeholder{
   max-width: 450px;
   margin-bottom: 34px;
   margin-top: 5px;
-}
-
-.services-text{
-  display: none;
 }
 
 .services-text-one::before{
@@ -1152,69 +1219,6 @@ input.input-search::placeholder{
   height: 188px;
   background-image: url("../images/index/credit.svg");
   right: 60px;
-}
-
-.tab-one:checked ~ .container-inner>.services-text-one {
-  display: block;
-}
-
-.tab-two:checked ~ .container-inner>.services-text-two {
-  display: block;
-}
-
-.tab-three:checked ~ .container-inner>.services-text-three {
-  display: block;
-}
-
-.services-tab::before{
-  content: "";
-  position: absolute;
-  height: 8px;
-  width: 160px;
-  left: 0;
-  right: 0;
-  top: 40%;
-  bottom: 40%;
-  background-color: var(--bg-bright);
-  z-index: -1;
-}
-
-.tab:checked + .services-tab {
-  font-family: "Raleway", "Arial", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  background-color: var(--color-dark-text);
-  color: var(--bg-bright);
-  padding-right: 20px;
-}
-
-.tab:checked + .services-tab:hover{
-  color:rgba(255, 225, 127, 0.6);
-}
-
-.tab:checked + .services-tab:focus{
-  outline: 2px solid var(--focus);
-}
-
-.tab:checked + .services-tab:active{
-  color:rgba(255, 225, 127, 0.3);
-}
-
-.services-tab:hover{
-  background: var(--bg-bright);
-}
-
-.services-tab:focus-visible{
-  outline: 2px solid var(--focus);
-  outline-offset: 2px;
-}
-
-.services-tab:active{
-  background-color: var(--hover);
 }
 
 /* Информация о достаке */
