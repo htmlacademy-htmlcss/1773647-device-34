@@ -122,7 +122,7 @@ body{
   background-color: var(--bg-bright);
 }
 
-.button:focus-visible{
+.button:focus-visible:not(:disabled){
   outline: 2px solid var(--focus);
   outline-offset: 2px;
 }
@@ -170,6 +170,10 @@ body{
 }
 
 .link-states:active{
+  opacity: 0.3;
+}
+
+.link-states:disabled{
   opacity: 0.3;
 }
 
@@ -644,7 +648,8 @@ input.input-search::placeholder{
           transform: rotate(360deg);
 }
 
-.button-menu:disabled{
+.button-menu:disabled,
+.button-menu:disabled .button-menu-link{
   opacity: 0.3;
 }
 
@@ -965,12 +970,6 @@ input.input-search::placeholder{
   padding-left: 36px;
 }
 
-/* Неактивное состояние у label */
-
-.control-disabled{
-  opacity: 0.1;
-}
-
 .control-mark{
   position: absolute;
   width: 16px;
@@ -980,12 +979,12 @@ input.input-search::placeholder{
   border-radius: 3px;
 }
 
-.control:hover .control-mark,
-.control:hover .control-label{
+.control:hover:not(:disabled) .control-mark,
+.control:hover:not(:disabled) .control-label{
   opacity: 0.6;
 }
 
-.control-input:focus-visible + .control-mark::after{
+.control-input:focus-visible:not(:disabled) + .control-mark::after{
   position: absolute;
   content: "";
   width: 26px;
@@ -995,13 +994,13 @@ input.input-search::placeholder{
   left: -7px;
 }
 
-.control:active .control-mark,
-.control:active .control-label{
+.control:active:not(:disabled) .control-mark,
+.control:active:not(:disabled) .control-label{
   opacity: 0.3;
 }
 
-.control:disabled + .control-mark,
-.control:disabled + .control-label{
+.control-input:disabled + .control-mark,
+.control-input:disabled + .control-label{
   opacity: 0.1;
 }
 

@@ -167,6 +167,10 @@ body{
   opacity: 0.3;
 }
 
+.link-states:disabled{
+  opacity: 0.3;
+}
+
 .link-states-active{
   border-bottom: 2px solid var(--color-dark-text);
   padding-bottom: 4px;
@@ -642,7 +646,8 @@ input.input-search::placeholder{
           transform: rotate(360deg);
 }
 
-.button-menu:disabled{
+.button-menu:disabled,
+.button-menu:disabled .button-menu-link{
   opacity: 0.3;
 }
 
